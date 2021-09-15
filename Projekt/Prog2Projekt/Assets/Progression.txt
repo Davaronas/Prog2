@@ -1,0 +1,27 @@
+
+
+
+
+2021. 09. 14
+
+
+Elkezdtem írni a játékos irányítását. 
+
+Csináltam egy Controls.cs nevû scriptet ahol meg lesz fogalmazva az összes irányítási gomb, ha belefér az idõbe rebindolhatóra akarok minden cselekvést csinálni
+
+Modelleztem egy pisztolyt amit a játékos fog tudni használni (lehetségesen az ellenfelek is). A modell kinézetét nem textúrával készítettem, hanem a különbözõ részeire különbözõ materialokat tettem, unityben ezekre a részekre
+rá tudok húzni más materialokat, ezt azért így csináltam mert így a fegyver kinézetének a változtatása sokkal könnyebb és gyorsabb lesz mintha textúrákat rajzolnék minden különbözõ kinézethez.
+Lehetségesen a játékosnak meg lesz a lehetõsége hogy customizálja a fegyverek kinézetét, ha az idõ megengedi.
+
+
+
+
+2021. 09. 15
+
+Elkészült a játékos irányítás. Mozgás + nézelõdés.
+
+LeanTween-t importáltam: akár UI elemeket, akár GameObject-eket is lehet animálni vele. A játékos fegyvereinek nagyon egyszerû animációi lesznek, ezért ez is elegendõ, és kevesebb erõforrásba kerül
+mint a Unitys Animator rendszer.
+
+Importáltam a pisztoly modellt. Csináltam egy fegyver kamerát ami a fõ kamera gyereke, mindig együtt fog vele mozogni. Ez azért szükséges hogy egy kamera a környezetet renderelje, egy pedig csak a játékos fegyvereit. Ha nem így lenne
+a fegyverek modeljei belemennének a falakba és egyéb tárgyakba, és az nem szép.
