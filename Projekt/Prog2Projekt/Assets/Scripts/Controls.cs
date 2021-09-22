@@ -11,5 +11,13 @@ public static class Controls
     public static KeyCode Right = KeyCode.D;
     public static KeyCode Back = KeyCode.S;
 
+    public static KeyCode Jetpack = KeyCode.Space;
+
+    public static KeyCode MainAttack = KeyCode.Mouse0;
+
+
+    public static KeyCode SwitchToSecondary = KeyCode.Alpha1;
+    public static KeyCode SwitchToMain = KeyCode.Alpha2;
+
 
 }

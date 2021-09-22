@@ -1,6 +1,16 @@
 
 
 
+TODO
+-----------------------------
+-Player death
+-Enemy shoot predicted position of player calculated from velocity (like in oblivion)
+
+
+-----------------------------
+
+
+
 
 2021. 09. 14
 
@@ -25,3 +35,41 @@ mint a Unitys Animator rendszer.
 
 Importáltam a pisztoly modellt. Csináltam egy fegyver kamerát ami a fõ kamera gyereke, mindig együtt fog vele mozogni. Ez azért szükséges hogy egy kamera a környezetet renderelje, egy pedig csak a játékos fegyvereit. Ha nem így lenne
 a fegyverek modeljei belemennének a falakba és egyéb tárgyakba, és az nem szép.
+
+
+2021. 09. 16
+
+Életerõnek és lõszernek raktam UI csíkokat. Egy másik projektembõl importáltam az ImageColoring.cs scriptet ami a GameObject-hez hozzárendelt Image komponens sprite-jából készít egy színátmenetes verziót.
+
+Alap lövés mechanika kész. Célkereszt kész, ami követi a tényleges pontot ahova fog érkezni a lõvedék. Lövedékre raktam trailt hogy szebben nézzen ki. Lõszer rendszer kész.
+
+A lõszer becsapódáskor keresi a HitBroadcast.cs nevû scriptet az eltalált objektumon. Ha megtalálja, akkor átadja neki a lövedéknek megadott sebzést. Erre az eseményre fel vannak iratkozva az életerõért felelõs
+scriptek az általált objektumon. Ekkor leveszi a megfelelõ mennyiségû életerõt. Egy piros kapszulát már el is tudunk pusztítani a pisztolyunkkal.
+
+2021. 09. 17
+
+Fegyverek mostmár felszerelhetõek elsõdleges és másodlagos helyre. Ezt majd egy UI elem kattintásával (körök végén shop: fegyver vásárlás) vagy lehetségesen ellenségekbõl dobott fegyverek felvételével fogjuk elérni.
+
+Beleraktam egy main weapont. 
+
+Elsõdleges és másodlagos fegyver váltogatható.
+
+
+2021. 09. 18
+
+Programozni ma már nem volt kedvem, inkább vizuálisabb dolgokat tettem hozzá a játékhoz. A Star Wars Republic Commando által inspirálva modelleztem egy sisak belsejét, ami mindig a kamera elõtt lesz, így a játékos úgy érezheti hogy 
+a karaktere ténylegesen hord egy sisakot. Az üveg és a másik anyag interaktál a fényekkel, így még hihetõbbé teszi a az élményt. Ez valószínûleg ki és be kapcsolható lesz a menüben mivel valamennyire gátolja a láthatóságot.
+
+Modelleztem egy fegyvert, ez egy lassabban tüzelõ, de nagyobbakat sebzõ és több lõszert fogyasztó fegyver.
+
+2021. 09. 19
+
+A sisak mostmár tartalmaz 3d-s hengereket amik kijelzik az életerõt és a lõszert. Lehet váltani sisak és szimpla ui között (a szimpla egyszerû 2d csikok).
+
+Modelleztem egy drónt, ami egy alacsony szintû ellenfél lesz. A rotorjaira irtam egy scriptet ami folyamatosan forgatja a lokális Y tengelyein õket.
+
+Új erõforrás: jetpack energia, ha lenyomva tartjuk a Space gombot és van elég energiánk akkor elkezdünk emelkedni. Miután elengedtük a gombot nemsokkal késõbb õjratermelõdik ez az erõforrás.
+Ez az erõforrás ki van jelezve mind a két típusu UI-on is.
+
+A drón mostmár tüzel a játékosra ha elég közel van és le is veszi az életerejét ha eltalálja.
+

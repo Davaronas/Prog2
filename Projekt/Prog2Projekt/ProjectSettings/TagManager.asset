@@ -12,11 +12,11 @@ TagManager:
   - Water
   - UI
   - PlayerWeapon
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlayerProjectile
+  - Player
+  - EnemyProjectile
+  - Helmet
+  - Enemy
   - 
   - 
   - 

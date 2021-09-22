@@ -6,8 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerCamera))]
 public class PlayerControl : MonoBehaviour
 {
-    private PlayerMovement playerMovement;
-    private PlayerCamera playerCamera;
+    private PlayerMovement playerMovement = null;
+    private PlayerCamera playerCamera = null;
+    private PlayerEquipment playerEquipment = null;
 
 
     private  List<Controls.MovementDirections> movementDirections_ = new List<Controls.MovementDirections>();
@@ -17,8 +18,14 @@ public class PlayerControl : MonoBehaviour
     {
         playerMovement = GetComponent<PlayerMovement>();
         playerCamera = GetComponent<PlayerCamera>();
+        playerEquipment = GetComponent<PlayerEquipment>();
 
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+
+
+        
     }
 
     // Update is called once per frame
@@ -26,7 +33,15 @@ public class PlayerControl : MonoBehaviour
     {
         Movement();
         Rotation();
+
+        Jetpack();
+
+        MainAttack();
+
+        SwitchWeapon();
     }
+
+   
 
 
 
@@ -61,5 +76,41 @@ public class PlayerControl : MonoBehaviour
     {
         playerCamera.RotatePlayer(Input.GetAxis("Mouse X"));
         playerCamera.RotateCamera(Input.GetAxis("Mouse Y"));
+    }
+
+
+    private void Jetpack()
+    {
+        if(Input.GetKey(Controls.Jetpack))
+        {
+            playerMovement.UseJetpack();
+        }
+
+        if(Input.GetKeyUp(Controls.Jetpack))
+        {
+            playerMovement.EndJetpackUse();
+        }
+      
+    }
+    private void MainAttack()
+    {
+        if(Input.GetKey(Controls.MainAttack))
+        {
+            playerEquipment.FireEquippedWeapon();
+        }
+
+        
+    }
+
+    private void SwitchWeapon()
+    {
+        if(Input.GetKeyDown(Controls.SwitchToSecondary))
+        {
+            playerEquipment.SwitchToSecondary();
+        }    
+        else if(Input.GetKeyDown(Controls.SwitchToMain))
+        {
+            playerEquipment.SwitchToMain();
+        }
     }
 }

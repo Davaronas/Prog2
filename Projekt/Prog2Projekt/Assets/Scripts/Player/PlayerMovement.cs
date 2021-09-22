@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float speed = 5f;
     [SerializeField] private Vector3 gravity = Vector3.down;
+    [SerializeField] private Vector3 jetpackForce = Vector3.up;
 
 
-     private CharacterController characterController;
+     private CharacterController characterController = null;
+    private PlayerResources playerResources = null;
    // private Rigidbody rb = null;
 
 
@@ -20,11 +22,15 @@ public class PlayerMovement : MonoBehaviour
     private int left_;
     private int right_;
     private Vector3 movementVector_ = Vector3.zero;
+    private Vector3 constantForceVector = Vector3.zero;
 
 
     private void Start()
     {
          characterController = GetComponent<CharacterController>();
+        playerResources = GetComponent<PlayerResources>();
+
+        constantForceVector = gravity;
     }
 
 
@@ -62,6 +68,30 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-          characterController.Move(movementVector_ + (gravity * Time.deltaTime));
+          characterController.Move(movementVector_ + (constantForceVector * Time.deltaTime));
+    }
+
+    public void UseJetpack()
+    {
+        if(playerResources.GetJetpackEnergy() > 0)
+        {
+            constantForceVector = jetpackForce;
+            playerResources.ChangeJetpackEnergy();
+        }
+        else
+        {
+            EndJetpackUse();
+        }
+    }
+
+    public void EndJetpackUse()
+    {
+        constantForceVector = gravity;
+        playerResources.EndJetpackUse();
+    }
+
+    public Vector3 GetVelocity()
+    {
+        return characterController.velocity;
     }
 }
