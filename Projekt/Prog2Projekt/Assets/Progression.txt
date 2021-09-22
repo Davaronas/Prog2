@@ -1,10 +1,37 @@
 
 
+* kész
+*_ kész de lehetne jobb
+? nem biztos hogy benne lesz
+
 
 TODO
 -----------------------------
+-Enemy shoot predicted position of player calculated from velocity (like in oblivion) *_
+
+
+
+
+
+
 -Player death
--Enemy shoot predicted position of player calculated from velocity (like in oblivion)
+
+
+-----------------------------
+
+
+
+
+
+KÉRDÉSEK/DILEMMÁK
+-----------------------------
+-Ellenséges lõszerek menjenek e keresztül más ellenfeleken, illetve azok okozzanak e sebzés ?
+	Egyelõre mind a kettõre nem a válasz, könnyen arról szólhatna a játék hogy jól álljunk be ellenfelek elé, vagy irni kéne egy bonyolultabb AI-t ami erre odafigyel
+
+-Szükség van e sprintelésre, illetve fogyasszon e erõforrást, és milyet ?
+	Egyelõre úgy gondolom nem fogok bele tenni sprintelést, viszont a mozgási sebesség boltból növelhetõ lesz
+	Gondolkoztam rajta hogy tudjunk sprintelni ugyanabból az erõforrásból mint a jetpack, de egyelõre elvetettem ezt az ötletet.
+
 
 
 -----------------------------
@@ -37,6 +64,7 @@ Importáltam a pisztoly modellt. Csináltam egy fegyver kamerát ami a fõ kamera gy
 a fegyverek modeljei belemennének a falakba és egyéb tárgyakba, és az nem szép.
 
 
+
 2021. 09. 16
 
 Életerõnek és lõszernek raktam UI csíkokat. Egy másik projektembõl importáltam az ImageColoring.cs scriptet ami a GameObject-hez hozzárendelt Image komponens sprite-jából készít egy színátmenetes verziót.
@@ -45,6 +73,7 @@ Alap lövés mechanika kész. Célkereszt kész, ami követi a tényleges pontot ahova 
 
 A lõszer becsapódáskor keresi a HitBroadcast.cs nevû scriptet az eltalált objektumon. Ha megtalálja, akkor átadja neki a lövedéknek megadott sebzést. Erre az eseményre fel vannak iratkozva az életerõért felelõs
 scriptek az általált objektumon. Ekkor leveszi a megfelelõ mennyiségû életerõt. Egy piros kapszulát már el is tudunk pusztítani a pisztolyunkkal.
+
 
 2021. 09. 17
 
@@ -62,14 +91,27 @@ a karaktere ténylegesen hord egy sisakot. Az üveg és a másik anyag interaktál a 
 
 Modelleztem egy fegyvert, ez egy lassabban tüzelõ, de nagyobbakat sebzõ és több lõszert fogyasztó fegyver.
 
+
 2021. 09. 19
 
 A sisak mostmár tartalmaz 3d-s hengereket amik kijelzik az életerõt és a lõszert. Lehet váltani sisak és szimpla ui között (a szimpla egyszerû 2d csikok).
 
 Modelleztem egy drónt, ami egy alacsony szintû ellenfél lesz. A rotorjaira irtam egy scriptet ami folyamatosan forgatja a lokális Y tengelyein õket.
 
-Új erõforrás: jetpack energia, ha lenyomva tartjuk a Space gombot és van elég energiánk akkor elkezdünk emelkedni. Miután elengedtük a gombot nemsokkal késõbb õjratermelõdik ez az erõforrás.
+Új erõforrás: jetpack energia, ha lenyomva tartjuk a Space gombot és van elég energiánk akkor elkezdünk emelkedni. Miután elengedtük a gombot nemsokkal késõbb újratermelõdik ez az erõforrás.
 Ez az erõforrás ki van jelezve mind a két típusu UI-on is.
 
 A drón mostmár tüzel a játékosra ha elég közel van és le is veszi az életerejét ha eltalálja.
+
+
+2021. 09.22
+
+Fegyvereket és ellenfeleket akarok hozzáadni a játékhoz mai nap folyamán.
+
+Az eredeti drónon kicseréltem a materialokat, növeltem a sebességét, sebzését, lövedék sebességét, életerejét. Ez egy másik fajta ellenfél lesz.
+
+Modelleztem egy tank/robot szerûséget, ebbõl is készítettem két fajta ellenfelet, adatait, materialjait változtatva.
+
+Elkezdtem modellezni egy másik fajta pisztolyt, a Mass Effect-es pisztolyt veszem referenciának. Ez egy gyorsan tüzelõ, keveset sebzõ, és gyorsan újtratöltõdõ pisztoly lesz 
+( pisztoly lõszer magától újratöltõdik, elsõdleges fegyverekét pedig ellenségebõl dobott, vagy boltból vásárolt lõszerrel kell feltölteni majd)
 
