@@ -11,10 +11,11 @@ public class PlayerEquipment : MonoBehaviour
 
     private PlayerResources playerResources = null;
 
-    private Weapon secondaryWeapon = null;
-    private Weapon mainWeapon = null;
+    [Space]
+   [SerializeField] private Weapon secondaryWeapon = null;
+    [SerializeField] private Weapon mainWeapon = null;
 
-    private Weapon equippedWeapon = null;
+    [SerializeField] private Weapon equippedWeapon = null;
 
 
     //  PLAYER RESOURCES START NEEDS TO RUN BEFORE PLAYER EQUIPMENT START (EquipSecondary)
@@ -54,7 +55,7 @@ public class PlayerEquipment : MonoBehaviour
             }
 
             secondaryWeapon.ShowModel();
-            playerResources.ChangeSecondaryAmmo(0); // csak ui frissités miatt
+            playerResources.ChangeSecondaryAmmo(0,true); // csak ui frissités miatt
             equippedWeapon = secondaryWeapon;
         }
     }
@@ -72,10 +73,23 @@ public class PlayerEquipment : MonoBehaviour
             }
 
             mainWeapon.ShowModel();
-            playerResources.ChangeMainAmmo(0); // csak ui frissités miatt
+            playerResources.ChangeMainAmmo(0,true); // csak ui frissités miatt
             equippedWeapon = mainWeapon;
         }
     }
+
+    public void EquipWeapon(GameObject _weapon)
+    {
+        if(_weapon.GetComponent<Weapon>().isSecondary)
+        {
+            EquipSecondary(_weapon);
+        }
+        else
+        {
+            EquipMain(_weapon);
+        }
+    }
+
 
     public void EquipMain(GameObject _main)
     {
@@ -95,14 +109,14 @@ public class PlayerEquipment : MonoBehaviour
 
         equippedWeapon = mainWeapon;
 
-        playerResources.ChangeMainAmmo(0); // csak ui frissités miatt
+        playerResources.ChangeMainAmmo(0,true); // csak ui frissités miatt
     }
 
     private void EquipSecondary(GameObject _secondary)
     {
         if(secondaryWeapon != null)
         {
-            Destroy(secondaryWeapon);
+            Destroy(secondaryWeapon.gameObject);
         }
 
         if(mainWeapon != null)
@@ -119,7 +133,7 @@ public class PlayerEquipment : MonoBehaviour
 
         equippedWeapon = secondaryWeapon;
  
-        playerResources.ChangeSecondaryAmmo(0); // csak ui frissités miatt
+        playerResources.ChangeSecondaryAmmo(0,true); // csak ui frissités miatt
     }
 
     public void FireEquippedWeapon()

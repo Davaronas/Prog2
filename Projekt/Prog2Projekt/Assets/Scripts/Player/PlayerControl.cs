@@ -9,6 +9,9 @@ public class PlayerControl : MonoBehaviour
     private PlayerMovement playerMovement = null;
     private PlayerCamera playerCamera = null;
     private PlayerEquipment playerEquipment = null;
+    private Shop shop = null;
+
+    private int blockActions = 0;   // there will be possibly several things that block action at the same time, so this won't be just a boolean
 
 
     private  List<Controls.MovementDirections> movementDirections_ = new List<Controls.MovementDirections>();
@@ -24,26 +27,69 @@ public class PlayerControl : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
 
-
+        shop = FindObjectOfType<Shop>();
+        shop.OnShopOpened += ShopOpenedCallback;
+        shop.OnShopClosed += ShopClosedCallback;
         
+    }
+
+    private void OnDestroy()
+    {
+        shop.OnShopOpened -= ShopOpenedCallback;
+        shop.OnShopClosed -= ShopClosedCallback;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        Rotation();
+        if (blockActions == 0)
+        {
+            Movement();
+            Rotation();
 
-        Jetpack();
+            Jetpack();
 
-        MainAttack();
+            MainAttack();
 
-        SwitchWeapon();
+            SwitchWeapon();
+        }
+
+
+
+        DEV_OpenShop();
     }
 
    
+    private void ShopOpenedCallback()
+    {
+        blockActions++;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void ShopClosedCallback()
+    {
+        blockActions--;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
 
+
+    private void DEV_OpenShop()
+    {
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (shop.isOpened)
+            {
+                shop.CloseShop();
+            }
+            else
+            {
+                shop.OpenShop();
+            }
+        }
+    }
 
     private void Movement()
     {

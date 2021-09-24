@@ -23,10 +23,13 @@ public class PlayerUI : MonoBehaviour
 
     [SerializeField] private Camera mainCam = null;
     [SerializeField] private RectTransform crosshair = null;
+    private Image crosshairImage = null;
     [Space]
     [SerializeField] private HelmetUI helmetUI = null;
 
-    private Image crosshairImage = null;
+
+
+    private Shop shop = null;
 
 
     private void Awake()
@@ -59,6 +62,28 @@ public class PlayerUI : MonoBehaviour
 
             helmetUI.gameObject.SetActive(false);
         }
+
+        shop = FindObjectOfType<Shop>();
+        shop.OnShopOpened += ShopOpenedCallback;
+        shop.OnShopClosed += ShopClosedCallback;
+
+    }
+
+    private void OnDestroy()
+    {
+        shop.OnShopOpened -= ShopOpenedCallback;
+        shop.OnShopClosed -= ShopClosedCallback;
+    }
+
+
+    private void ShopOpenedCallback()
+    {
+        crosshairImage.enabled = false;
+    }
+
+    private void ShopClosedCallback()
+    {
+        crosshairImage.enabled = true;
     }
 
 

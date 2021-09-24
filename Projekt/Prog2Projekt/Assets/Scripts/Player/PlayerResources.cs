@@ -72,9 +72,19 @@ public class PlayerResources : MonoBehaviour
         }
     }
 
-    public void ChangeSecondaryAmmo(int _amount, bool _showUI = true)
+    public void ChangeSecondaryAmmo(int _amount)
     {
         secondaryAmmo = Mathf.Clamp(secondaryAmmo + _amount,0,baseSecondaryAmmo);
+
+        if (playerEquipment.IsSecondarySelected())
+        {
+            playerUI.Ammo(secondaryAmmo, baseSecondaryAmmo);
+        }
+    }
+
+    public void ChangeSecondaryAmmo(int _amount, bool _showUI)
+    {
+        secondaryAmmo = Mathf.Clamp(secondaryAmmo + _amount, 0, baseSecondaryAmmo);
 
         if (_showUI)
         {
@@ -82,9 +92,19 @@ public class PlayerResources : MonoBehaviour
         }
     }
 
-    public void ChangeMainAmmo(int _amount, bool _showUI = true)
+    public void ChangeMainAmmo(int _amount)
     {
         mainAmmo = Mathf.Clamp(mainAmmo + _amount,0,baseMainAmmo);
+
+        if (!playerEquipment.IsSecondarySelected())
+        {
+            playerUI.Ammo(mainAmmo, baseMainAmmo);
+        }
+    }
+
+    public void ChangeMainAmmo(int _amount, bool _showUI)
+    {
+        mainAmmo = Mathf.Clamp(mainAmmo + _amount, 0, baseMainAmmo);
 
         if (_showUI)
         {

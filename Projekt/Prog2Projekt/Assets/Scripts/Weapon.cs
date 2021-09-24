@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     public Vector3 localPlayerPosOnCamera = Vector3.zero;
     public Vector3 localPlayerRotOnCameraEuler = Vector3.zero;
     [Space]
-    [SerializeField] private bool isSecondary = false;
+    [SerializeField] public bool isSecondary = false;
     [SerializeField] private float secondaryRechargeInterval = 0.6f;
     [SerializeField] private int ammoCost = 5;
     [SerializeField] private float fireInterval = 0.5f;
@@ -117,15 +117,7 @@ public class Weapon : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(secondaryRechargeInterval);
-
-            if (playerEquipment.IsSecondarySelected())
-            {
-                playerResources.ChangeSecondaryAmmo(1);
-            }
-            else
-            {
-                playerResources.ChangeSecondaryAmmo(1,false);
-            }
+            playerResources.ChangeSecondaryAmmo(1);
         }
 
     }

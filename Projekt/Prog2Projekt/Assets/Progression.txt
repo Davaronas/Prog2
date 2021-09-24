@@ -2,35 +2,56 @@
 
 * kész
 *_ kész de lehetne jobb
-? nem biztos hogy benne lesz
+? nem biztos hogy benne lesz/meg lesz csinálva/ki lesz javitva
 
 
-TODO
+TODO 
+nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad sokáig
 -----------------------------
 -Enemy shoot predicted position of player calculated from velocity (like in oblivion) *_
 
 
 
 
-
-
 -Player death
+-Weapon fire animations
+-Tooltip for weapon informations in shop
 
+-When the shop is active gravity is blocked  ?
 
 -----------------------------
 
 
 
+
+
+
+
+
+
+* le van zárva teljesen
 
 
 KÉRDÉSEK/DILEMMÁK
 -----------------------------
--Ellenséges lõszerek menjenek e keresztül más ellenfeleken, illetve azok okozzanak e sebzés ?
+-Ellenséges lõszerek akadjanak e meg más ellenfeleken, illetve azok okozzanak e sebzés ?
 	Egyelõre mind a kettõre nem a válasz, könnyen arról szólhatna a játék hogy jól álljunk be ellenfelek elé, vagy irni kéne egy bonyolultabb AI-t ami erre odafigyel
 
 -Szükség van e sprintelésre, illetve fogyasszon e erõforrást, és milyet ?
 	Egyelõre úgy gondolom nem fogok bele tenni sprintelést, viszont a mozgási sebesség boltból növelhetõ lesz
 	Gondolkoztam rajta hogy tudjunk sprintelni ugyanabból az erõforrásból mint a jetpack, de egyelõre elvetettem ezt az ötletet.
+
+-Pénz hova/hogyan legyen kiírva ?
+	Két megoldásra gondoltam, állandóan ki van írva a képernyõn, vagy csak mikor vásárolunk a boltban.
+	Egyelõre mind a két fajta UI stílusnál a képernyõ tetejére bal sarokba gondoltam rakni.
+
+		Ha állandóan ki van írva az azért jó mert a játékos látja hogy egy egy ellenfél mennyi pénzt dob, illetve 
+		körök végén is látjuk hogy az mennyit ad. Viszont ez egy plusz UI elem, szeretnék minél kevesebb elemet a képernyõn.
+
+		Ha csak körök végén van kiirva mikor megnyílik a bolt az azért jó mert akkor az ennek szánt hely szabad marad a képernyõn.
+		Hátrány lehet hogy a játékosnak megtévesztõ lehet hogy most mi a francért pont ennyi pénzünk van kör végén.
+
+			Valószíbûleg az elsõ megoldást fogom választani.
 
 
 
@@ -104,7 +125,7 @@ Ez az erõforrás ki van jelezve mind a két típusu UI-on is.
 A drón mostmár tüzel a játékosra ha elég közel van és le is veszi az életerejét ha eltalálja.
 
 
-2021. 09.22
+2021. 09. 22
 
 Fegyvereket és ellenfeleket akarok hozzáadni a játékhoz mai nap folyamán.
 
@@ -114,4 +135,21 @@ Modelleztem egy tank/robot szerûséget, ebbõl is készítettem két fajta ellenfelet
 
 Elkezdtem modellezni egy másik fajta pisztolyt, a Mass Effect-es pisztolyt veszem referenciának. Ez egy gyorsan tüzelõ, keveset sebzõ, és gyorsan újtratöltõdõ pisztoly lesz 
 ( pisztoly lõszer magától újratöltõdik, elsõdleges fegyverekét pedig ellenségebõl dobott, vagy boltból vásárolt lõszerrel kell feltölteni majd)
+
+
+2021. 09. 24
+
+Befejeztem a pisztoly modellt, és bele is raktam a játékba.
+
+A játék gazdaságot akarom ma elkezdeni: pénz, bolt, elsõdleges és másodlagos fegyverek megvásárolhatóak.
+
+Árnyékokat kikapcsoltam a fegyver modelleken mert rosszul nézett ki hogy árnyékot vet egy lebegõ fegyver.
+
+Van bolt panel (egyelõre Tab billentyûvel tudjuk megnyitni, késõbb a bolt meccsek végén fog megjelenni egy rövid idõre) , amikor ez bekapcsol nem tudunk semmilyen akciót végrehajtanak, megkapjuk az egerünket és tudunk vásárolni a boltból. 
+Egyelõre csak rákkatintunk a fegyver képére és felszereli nekünk.
+Késõbb pénzért fogjuk tudni ezeket megvenni, és ellenõrizni fogja a játék hogy nem e az a fegyver van jelenleg nálunk, mert ekkor nem fogjuk tudni ujra megvenni.
+
+
+Modelleztem egy elsõsegély csomagot, meg 6 darab töltényt egymást mellett ami a lõszeres felvehetõ tárgyat fogja jelezni.
+Ezeket felhasználtam arra is hogy képet csináljak róluk és a boltban is lehet venni életet és lõszert.
 

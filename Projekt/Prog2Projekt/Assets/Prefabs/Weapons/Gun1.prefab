@@ -52,7 +52,7 @@ MonoBehaviour:
   ammoCost: 10
   fireInterval: 0.8
   projectileSpeed: 100
-  damage: 50
+  damage: 100
   projectile: {fileID: 5307188461605554704, guid: 33b545e98cf5db44ca84da705ccbeaaa, type: 3}
   projectileSpawn: {fileID: 3253580183201294782}
   pSystem: {fileID: 0}
@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4917150475621013137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.3}
+  m_LocalPosition: {x: 0, y: 0.24, z: 6.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5432480936040231859}
@@ -151,6 +151,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e94c86b4f01a578439f4e07f9c6f9f95, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e94c86b4f01a578439f4e07f9c6f9f95, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e94c86b4f01a578439f4e07f9c6f9f95, type: 3}
