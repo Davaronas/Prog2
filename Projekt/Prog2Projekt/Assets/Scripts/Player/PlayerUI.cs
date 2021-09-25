@@ -26,6 +26,9 @@ public class PlayerUI : MonoBehaviour
     private Image crosshairImage = null;
     [Space]
     [SerializeField] private HelmetUI helmetUI = null;
+    [Space]
+    [SerializeField] private Transform damageIndicatorSpawn = null;
+    [SerializeField] private GameObject damageIndicatorPrefab = null;
 
 
 
@@ -100,6 +103,13 @@ public class PlayerUI : MonoBehaviour
         {
             healthBar.fillAmount = (float)_current / _max;
         }
+    }
+
+
+    public void DamageIndicator(Vector3 _pos)
+    {
+       DamageIndicator _di = Instantiate(damageIndicatorPrefab, damageIndicatorSpawn.position, Quaternion.identity, damageIndicatorSpawn).GetComponent<DamageIndicator>();
+        _di.SetHitOriginPosition(_pos);
     }
 
     public void Ammo(int _current, int _max)

@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4065241278291939322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4174176807468490353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53b8dba087393864892fb9a2c8f1e000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationEuler: {x: 0, y: 0, z: 80}
 --- !u!1 &3845282992196689931
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +11,7 @@ GameObject:
   - component: {fileID: 5309949550563692942}
   - component: {fileID: 8943581782664161231}
   - component: {fileID: 5472193220253666860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3845282992196689931}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.171, y: 0.55, z: -18.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -72,6 +59,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containsAmmo: 20
+--- !u!114 &4065241278291939322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4174176807468490353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b8dba087393864892fb9a2c8f1e000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationEuler: {x: 0, y: 0, z: 80}
 --- !u!1001 &3831664299711423264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,11 +109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
       propertyPath: m_LocalRotation.y
@@ -121,11 +121,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -150,6 +150,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
       propertyPath: m_Name
       value: Ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c9ada3a6e3b4a743a5e030f1051c2b5, type: 3}

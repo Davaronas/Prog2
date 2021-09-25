@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &375178020782940863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717637760645965622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53b8dba087393864892fb9a2c8f1e000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationEuler: {x: 0, y: 80, z: 0}
 --- !u!1 &375178021728833297
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +11,7 @@ GameObject:
   - component: {fileID: 375178021728833311}
   - component: {fileID: 375178021728833308}
   - component: {fileID: 375178021728833310}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Medkit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,6 +59,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containsHealth: 10
+--- !u!114 &375178020782940863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717637760645965622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b8dba087393864892fb9a2c8f1e000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationEuler: {x: 0, y: 80, z: 0}
 --- !u!1001 &375178022065052263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154,6 +154,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0c8d9a57b918d6147bb0635331b11fd6, type: 3}
       propertyPath: m_Name
       value: Medkit
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0c8d9a57b918d6147bb0635331b11fd6, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c8d9a57b918d6147bb0635331b11fd6, type: 3}

@@ -21,6 +21,8 @@ public class PlayerResources : MonoBehaviour
     private int mainAmmo = 0;
     private int secondaryAmmo = 0;
 
+    private int money = 0;
+
     private float jetpackEnergy = 0;
 
     private PlayerUI playerUI = null;
@@ -44,6 +46,7 @@ public class PlayerResources : MonoBehaviour
         hitBroadcast = GetComponent<HitBroadcast>();
 
         hitBroadcast.onHit += OnHitCallback;
+        EnemyResourceDrop.OnEnemyDeathGlobal += OnEnemyDeathGlobalCallback;
 
         playerEquipment = GetComponent<PlayerEquipment>();
         
@@ -52,12 +55,20 @@ public class PlayerResources : MonoBehaviour
     private void OnDestroy()
     {
         hitBroadcast.onHit -= OnHitCallback;
+        EnemyResourceDrop.OnEnemyDeathGlobal -= OnEnemyDeathGlobalCallback;
+    }
+
+
+    private void OnEnemyDeathGlobalCallback(int _amount)
+    {
+        money += _amount;
     }
 
 
     private void OnHitCallback(int _health, Vector3 _pos)
     {
         ChangeHealth(_health);
+        playerUI.DamageIndicator(_pos);
     }
 
     public void ChangeHealth(int _amount)

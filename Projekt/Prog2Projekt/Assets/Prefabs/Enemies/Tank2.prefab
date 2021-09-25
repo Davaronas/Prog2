@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5812126839405141436}
   - component: {fileID: 2975997206229913908}
   - component: {fileID: 6382646065582593646}
+  - component: {fileID: -4175127232302160349}
   m_Layer: 0
   m_Name: Tank2
   m_TagString: Untagged
@@ -102,6 +103,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHealth: 400
+--- !u!114 &-4175127232302160349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013512763704779218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ce7c6534cf5274985f8f5a9cf33ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropChanceMedkit: 90
+  dropChanceAmmo: 90
+  dropHealth: 20
+  dropAmmo: 30
+  moneyDrop: 100
+  medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
+  ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}
 --- !u!1 &2498644354466235047
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ public class PlayerEquipment : MonoBehaviour
 
         
 
-        Invoke(nameof(TestMain), 5f);
+       // Invoke(nameof(TestMain), 5f);
     }
 
 

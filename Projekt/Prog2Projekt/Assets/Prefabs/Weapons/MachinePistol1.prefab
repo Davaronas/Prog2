@@ -79,7 +79,7 @@ MonoBehaviour:
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 0
   secondaryRechargeInterval: 0.6
-  ammoCost: 1
+  ammoCost: 2
   fireInterval: 0.14
   projectileSpeed: 50
   damage: 12

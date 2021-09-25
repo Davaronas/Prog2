@@ -16,6 +16,7 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Player death
 -Weapon fire animations
 -Tooltip for weapon informations in shop
+-Enemy drops should be spawned at the same height
 
 -When the shop is active gravity is blocked  ?
 
@@ -152,4 +153,19 @@ Késõbb pénzért fogjuk tudni ezeket megvenni, és ellenõrizni fogja a játék hogy n
 
 Modelleztem egy elsõsegély csomagot, meg 6 darab töltényt egymást mellett ami a lõszeres felvehetõ tárgyat fogja jelezni.
 Ezeket felhasználtam arra is hogy képet csináljak róluk és a boltban is lehet venni életet és lõszert.
+
+
+2021. 09. 25
+
+Hozzáadtam még egy fegyvert a játékhoz, a star wars-os E5 blaster riflet vettem referenciának. 
+
+
+Ellenségekre ráraktam egy új scriptet, ami azért felelõs hogy véletlenszerûen dobjanak életerõt vagy lõszert halálukkor. Be lehet állítani ezekre az eseményekre mennyi az esély, illetve hogy mennyit dobjanak ezekbõl az erõforrásokól
+amikor ez az esemény megtörténik.
+
+
+Hozzáadtam a játkhoz sebzés indikátort. Mutat a bekapott sebzés irányára, 2 másodperc után elhalványodik és elpusztul. Megrajzoltam hozzá egy képet, lehet késõbb ezt még változtatni fogom ha nem fog tetszeni.
+A forgását az indikátornak egy tutorialból néztem, annyira a Quaternionokhoz és a forgatásokhoz nem értek.
+
+Ellenfelek dobnak pénzt mikor meghalnak, viszont ez még nincs kiírva sehol és nem tudunk vele semmit csinálni.
 

@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour
 
             hit = true;
 
-            if (collision.gameObject.TryGetComponent<HitBroadcast>(out possibleTarget_))
+            if (collision.gameObject.TryGetComponent(out possibleTarget_))
             {
                 possibleTarget_.Hit(damage, startPos);
             }

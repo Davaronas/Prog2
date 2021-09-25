@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1204031819348962121}
   - component: {fileID: 239763726}
   - component: {fileID: 239763727}
+  - component: {fileID: 284844488055185491}
   m_Layer: 11
   m_Name: Drone2
   m_TagString: Untagged
@@ -132,6 +133,25 @@ MonoBehaviour:
   attackIntervalRandomizing: 0.15
   damage: 15
   projectileSpeed: 30
+--- !u!114 &284844488055185491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204031819348962120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ce7c6534cf5274985f8f5a9cf33ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropChanceMedkit: 40
+  dropChanceAmmo: 60
+  dropHealth: 5
+  dropAmmo: 10
+  moneyDrop: 40
+  medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
+  ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}
 --- !u!65 &1204031819277662947
 BoxCollider:
   m_ObjectHideFlags: 0

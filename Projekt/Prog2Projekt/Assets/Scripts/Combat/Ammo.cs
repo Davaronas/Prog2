@@ -17,6 +17,7 @@ public class Ammo : MonoBehaviour
     {
         if (other.TryGetComponent(out PlayerResources _pr))
         {
+            _pr.ChangeSecondaryAmmo(50);
             _pr.ChangeMainAmmo(containsAmmo);
             Destroy(gameObject);
         }
