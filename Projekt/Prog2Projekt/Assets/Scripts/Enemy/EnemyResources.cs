@@ -9,11 +9,13 @@ public class EnemyResources : MonoBehaviour
 {
     [SerializeField] private int baseHealth = 100;
     [Space]
+    public int powerLevel = 1;
+    public int powerPoint = 1;
 
 
 
     public Action OnEnemyDeath;
-    
+    public static Action<int, int> OnEnemyHoverGlobal;
 
 
 
@@ -33,18 +35,26 @@ public class EnemyResources : MonoBehaviour
             hitBroadcast = GetComponentInChildren<HitBroadcast>();
         }
 
-        hitBroadcast.onHit += OnHitCallback;
+        hitBroadcast.OnHit += OnHitCallback;
+        hitBroadcast.OnHover += OnHoverCallback;
     }
 
     private void OnDestroy()
     {
-        hitBroadcast.onHit -= OnHitCallback;
+        hitBroadcast.OnHit -= OnHitCallback;
+        hitBroadcast.OnHover -= OnHoverCallback;
     }
 
     private void OnHitCallback(int _health, Vector3 _pos)
     {
         ChangeHealth(_health);
         
+    }
+
+    private void OnHoverCallback()
+    {
+        print("dsa");
+        OnEnemyHoverGlobal?.Invoke(health, baseHealth);
     }
 
     public void ChangeHealth(int _amount)

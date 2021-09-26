@@ -17,6 +17,8 @@ public class EnemyBehaviour : MonoBehaviour
 
 
 
+
+
     public void Attack(Vector3 _targetPos,Vector3 _targetVelocity)
     {
         if (canAttack)
@@ -24,6 +26,8 @@ public class EnemyBehaviour : MonoBehaviour
 
            // print(Mathf.Clamp(1 - ((projectileSpeed / 100) * 2),0,2f));
            // print((transform.position - _targetPos).magnitude);
+
+
             predictedPosition_ = _targetPos + (_targetVelocity * ((Mathf.Clamp(1 - ((projectileSpeed / 100) * 2.5f), 0, 2f)) +
                (Mathf.Clamp((transform.position - _targetPos).magnitude / 100, 0, 1f))));
 

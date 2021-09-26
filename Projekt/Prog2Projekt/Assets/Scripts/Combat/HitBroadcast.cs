@@ -6,13 +6,20 @@ using UnityEngine;
 
 public class HitBroadcast : MonoBehaviour
 {
-    public Action<int, Vector3> onHit;
+
+    public Action<int, Vector3> OnHit;
+    public Action OnHover;
 
 
     public void Hit(int _damage, Vector3 _pos)
     {
-        onHit?.Invoke(-_damage,_pos);
+        OnHit?.Invoke(-_damage,_pos);
     }
 
+    public void Hover()
+    {
+        OnHover?.Invoke();
+    }
 
+   
 }

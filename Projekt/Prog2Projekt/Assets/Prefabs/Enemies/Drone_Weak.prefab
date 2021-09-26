@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 239763727}
   - component: {fileID: 1828011271543867529}
   m_Layer: 11
-  m_Name: Drone
+  m_Name: Drone_Weak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.99
-  m_Speed: 5
+  m_Speed: 4.5
   m_Acceleration: 12
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -101,9 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5b269e0f6dd4749a91a7fe31ac863f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHealth: 80
-  powerLevel: 2
-  powerPoint: 5
+  baseHealth: 40
+  powerLevel: 1
+  powerPoint: 3
 --- !u!114 &239763726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,9 +131,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5307188461605554704, guid: add97ab7bdac7f34b81081dbc83e1d7f, type: 3}
   projectileSpawn: {fileID: 1355550240}
-  attackInterval: 1
+  attackInterval: 1.2
   attackIntervalRandomizing: 0.15
-  damage: 6
+  damage: 3
   projectileSpeed: 20
 --- !u!114 &1828011271543867529
 MonoBehaviour:
@@ -147,11 +147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ce7c6534cf5274985f8f5a9cf33ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropChanceMedkit: 50
-  dropChanceAmmo: 50
-  dropHealth: 10
-  dropAmmo: 15
-  moneyDrop: 20
+  dropChanceMedkit: 40
+  dropChanceAmmo: 40
+  dropHealth: 5
+  dropAmmo: 10
+  moneyDrop: 15
   medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
   ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}
 --- !u!65 &1204031819277662947
@@ -244,15 +244,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_LocalPosition.x
@@ -305,15 +305,15 @@ PrefabInstance:
     - target: {fileID: -7308718804694308083, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 166afa16367e8324ca72d9ac02111526, type: 2}
+      objectReference: {fileID: 2100000, guid: a42416c45dae0d2428b1879019716301, type: 2}
     - target: {fileID: -6093592463355912122, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a42416c45dae0d2428b1879019716301, type: 2}
+      objectReference: {fileID: 2100000, guid: 46a4670a960f09d4491200dbbd25e9af, type: 2}
     - target: {fileID: -6093592463355912122, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 9448f2f188fe3c34c8249be41f47f75f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b6f391f94f5c7848bd75dd63a5516bd, type: 2}
     - target: {fileID: -6093592463355912122, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -329,11 +329,11 @@ PrefabInstance:
     - target: {fileID: -3195828791156449804, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 166afa16367e8324ca72d9ac02111526, type: 2}
+      objectReference: {fileID: 2100000, guid: a42416c45dae0d2428b1879019716301, type: 2}
     - target: {fileID: -2947538861075970057, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 166afa16367e8324ca72d9ac02111526, type: 2}
+      objectReference: {fileID: 2100000, guid: a42416c45dae0d2428b1879019716301, type: 2}
     - target: {fileID: 919132149155446097, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Name
       value: DroneModel
@@ -345,7 +345,7 @@ PrefabInstance:
     - target: {fileID: 1738776581880846596, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 166afa16367e8324ca72d9ac02111526, type: 2}
+      objectReference: {fileID: 2100000, guid: a42416c45dae0d2428b1879019716301, type: 2}
     - target: {fileID: 4356877828898064976, guid: 2c52e64538471f849862f71b26fab692, type: 3}
       propertyPath: m_Name
       value: Rotor

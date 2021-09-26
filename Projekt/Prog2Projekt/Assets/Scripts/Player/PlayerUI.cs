@@ -23,12 +23,16 @@ public class PlayerUI : MonoBehaviour
 
     [SerializeField] private Camera mainCam = null;
     [SerializeField] private RectTransform crosshair = null;
+    [SerializeField] private Image enemyHealthbarBg = null;
+    [SerializeField] private Image enemyHealthbar = null;
     private Image crosshairImage = null;
     [Space]
     [SerializeField] private HelmetUI helmetUI = null;
     [Space]
     [SerializeField] private Transform damageIndicatorSpawn = null;
     [SerializeField] private GameObject damageIndicatorPrefab = null;
+    [Space]
+    [SerializeField] private Text moneyText = null;
 
 
 
@@ -38,6 +42,7 @@ public class PlayerUI : MonoBehaviour
     private void Awake()
     {
         crosshairImage = crosshair.GetComponent<Image>();
+        enemyHealthbarBg.gameObject.SetActive(false);
 
         if(ui == TypeUI.Helmet)
         {
@@ -70,12 +75,16 @@ public class PlayerUI : MonoBehaviour
         shop.OnShopOpened += ShopOpenedCallback;
         shop.OnShopClosed += ShopClosedCallback;
 
+        EnemyResources.OnEnemyHoverGlobal += OnEnemyHoverGlobalCallback;
+
     }
 
     private void OnDestroy()
     {
         shop.OnShopOpened -= ShopOpenedCallback;
         shop.OnShopClosed -= ShopClosedCallback;
+
+        EnemyResources.OnEnemyHoverGlobal -= OnEnemyHoverGlobalCallback;
     }
 
 
@@ -87,6 +96,12 @@ public class PlayerUI : MonoBehaviour
     private void ShopClosedCallback()
     {
         crosshairImage.enabled = true;
+    }
+
+    private void OnEnemyHoverGlobalCallback(int _health, int _baseHealth)
+    {
+        enemyHealthbar.fillAmount = (float)_health / _baseHealth;
+        print("asd");
     }
 
 
@@ -146,13 +161,30 @@ public class PlayerUI : MonoBehaviour
     {
         crosshair.position = mainCam.WorldToScreenPoint(_pos);
 
-        if(_hb != null)
+        if(_hb != null) // we found an enemy, enabling enemy healthbar gameobject, fill amount will be et from global enemy hover event
         {
             crosshairImage.color = Color.red;
+
+            if (!enemyHealthbarBg.gameObject.activeInHierarchy)
+            {
+                enemyHealthbarBg.gameObject.SetActive(true);
+            }
+
+            _hb.OnHover();
         }
         else
         {
             crosshairImage.color = Color.white;
+
+            if (enemyHealthbarBg.gameObject.activeInHierarchy)
+            {
+                enemyHealthbarBg.gameObject.SetActive(false);
+            }
         }
+    }
+
+    public void Money(int _amount)
+    {
+        moneyText.text = _amount.ToString();
     }
 }

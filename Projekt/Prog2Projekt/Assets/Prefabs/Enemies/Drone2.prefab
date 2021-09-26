@@ -102,6 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHealth: 150
+  powerLevel: 3
+  powerPoint: 10
 --- !u!114 &239763726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +133,7 @@ MonoBehaviour:
   projectileSpawn: {fileID: 1355550240}
   attackInterval: 0.7
   attackIntervalRandomizing: 0.15
-  damage: 15
+  damage: 8
   projectileSpeed: 30
 --- !u!114 &284844488055185491
 MonoBehaviour:
@@ -147,8 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropChanceMedkit: 40
   dropChanceAmmo: 60
-  dropHealth: 5
-  dropAmmo: 10
+  dropHealth: 12
+  dropAmmo: 18
   moneyDrop: 40
   medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
   ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}

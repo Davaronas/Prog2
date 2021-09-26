@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3407397225348775701}
   - component: {fileID: 9138540301505630719}
+  - component: {fileID: 6382646065582593646}
   - component: {fileID: 5812126839405141436}
   - component: {fileID: 2975997206229913908}
-  - component: {fileID: 6382646065582593646}
   - component: {fileID: -4175127232302160349}
   m_Layer: 0
   m_Name: Tank2
@@ -59,6 +59,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6382646065582593646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013512763704779218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5b269e0f6dd4749a91a7fe31ac863f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 400
+  powerLevel: 5
+  powerPoint: 100
 --- !u!114 &5812126839405141436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +90,7 @@ MonoBehaviour:
   projectileSpawn: {fileID: 5567610315474652879}
   attackInterval: 2
   attackIntervalRandomizing: 0.15
-  damage: 30
+  damage: 15
   projectileSpeed: 25
 --- !u!114 &2975997206229913908
 MonoBehaviour:
@@ -90,19 +105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alwaysTurnToPlayer: 1
---- !u!114 &6382646065582593646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013512763704779218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b5b269e0f6dd4749a91a7fe31ac863f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseHealth: 400
 --- !u!114 &-4175127232302160349
 MonoBehaviour:
   m_ObjectHideFlags: 0

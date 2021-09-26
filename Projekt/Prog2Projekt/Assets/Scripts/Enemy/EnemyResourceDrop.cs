@@ -40,7 +40,7 @@ public class EnemyResourceDrop : MonoBehaviour
     private void DropCheck()
     {
         randomNumber_ = Random.Range(0, 201);
-        print(randomNumber_ + " " + dropChanceMedkit + " " + (dropChanceMedkit + dropChanceAmmo));
+       // print(randomNumber_ + " " + dropChanceMedkit + " " + (dropChanceMedkit + dropChanceAmmo));
 
         if (randomNumber_ <= dropChanceMedkit)
         {

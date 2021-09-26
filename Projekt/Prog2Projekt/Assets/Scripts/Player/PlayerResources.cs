@@ -45,7 +45,7 @@ public class PlayerResources : MonoBehaviour
 
         hitBroadcast = GetComponent<HitBroadcast>();
 
-        hitBroadcast.onHit += OnHitCallback;
+        hitBroadcast.OnHit += OnHitCallback;
         EnemyResourceDrop.OnEnemyDeathGlobal += OnEnemyDeathGlobalCallback;
 
         playerEquipment = GetComponent<PlayerEquipment>();
@@ -54,14 +54,20 @@ public class PlayerResources : MonoBehaviour
 
     private void OnDestroy()
     {
-        hitBroadcast.onHit -= OnHitCallback;
+        hitBroadcast.OnHit -= OnHitCallback;
         EnemyResourceDrop.OnEnemyDeathGlobal -= OnEnemyDeathGlobalCallback;
     }
 
 
     private void OnEnemyDeathGlobalCallback(int _amount)
     {
+        ChangeMoney(_amount);
+    }
+
+    public void ChangeMoney(int _amount)
+    {
         money += _amount;
+        playerUI.Money(money);
     }
 
 

@@ -17,6 +17,9 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Weapon fire animations
 -Tooltip for weapon informations in shop
 -Enemy drops should be spawned at the same height
+-Should not be able buy/pick up health and ammo when they are full
+-Healthbar for enemies on hover
+
 
 -When the shop is active gravity is blocked  ?
 
@@ -148,7 +151,7 @@ A játék gazdaságot akarom ma elkezdeni: pénz, bolt, elsõdleges és másodlagos feg
 
 Van bolt panel (egyelõre Tab billentyûvel tudjuk megnyitni, késõbb a bolt meccsek végén fog megjelenni egy rövid idõre) , amikor ez bekapcsol nem tudunk semmilyen akciót végrehajtanak, megkapjuk az egerünket és tudunk vásárolni a boltból. 
 Egyelõre csak rákkatintunk a fegyver képére és felszereli nekünk.
-Késõbb pénzért fogjuk tudni ezeket megvenni, és ellenõrizni fogja a játék hogy nem e az a fegyver van jelenleg nálunk, mert ekkor nem fogjuk tudni ujra megvenni.
+Késõbb pénzért fogjuk tudni ezeket megvenni, és ellenõrizni fogja a játék hogy nem e az a fegyver van jelenleg nálunk, mert ekkor nem fogjuk tudni újra megvenni.
 
 
 Modelleztem egy elsõsegély csomagot, meg 6 darab töltényt egymást mellett ami a lõszeres felvehetõ tárgyat fogja jelezni.
@@ -168,4 +171,37 @@ Hozzáadtam a játkhoz sebzés indikátort. Mutat a bekapott sebzés irányára, 2 máso
 A forgását az indikátornak egy tutorialból néztem, annyira a Quaternionokhoz és a forgatásokhoz nem értek.
 
 Ellenfelek dobnak pénzt mikor meghalnak, viszont ez még nincs kiírva sehol és nem tudunk vele semmit csinálni.
+
+
+2021. 09. 26
+
+Bal felsõ sarokban láthatjuk a pénzünket.
+
+Elkezdtem a tényleges játékmenetet elkészíteni. Körök lesznek, véletlenszerû ellenségek fognak spawnolni minden kör elején.
+Viszont ellenõriznünk kell hogy fokozatosan nehezedjen a játék, és ne találkozzunk túl hamar túl erõs ellenfelekkel. 
+
+(pl elsõ körben ne spawnoljon egy 400 életes tank miközben a kezdõ pisztoly 10-et sebez)
+
+Ezt úgy akarom megcsinálni hogy minden körhöz hozzá lesz rendelve egy mennyiség szám, meg egy szint szám.
+A szint az hogy mennyien lesznek, a szint pedig hogy milyen erõsségû ellenfél engedhetõ meg a körben.
+
+(pl ha pont elértük hogy a 400 életes tank be tud spawnolni, akkor se 5 darab jöjjön egybõl, hanem csak egy mert
+el is fogyott a mennyiség szám)
+
+
+
+Ellenség spawn pontokat is megcsináltam, ennek késõbb lesz haszna mikor a tényleges pályán fogom implementálni a játék mechanikát:
+Úgy lesz a játékos számára prezentálva mint hogyha egy portálon jönnének be az ellenfelek, ne a semmibõl tûnjenek elõ.
+
+(Egy kis szobába létrehozódnak, ezután átsétálnak egy különleges anyagu falon, amin csak az ellenfelek képesek átmenni,
+és addig nem is tüzelnek a játékosra amig ezen át nem értek, és a játékos
+sem tud átlõni ezen a falon)
+
+
+
+Láthatjuk egy ellenség életerejét mikor ráhuzzuk az egeret.
+
+
+
+
 
