@@ -251,6 +251,11 @@ Lehetségesen valami effektet a képernyõre is fogok késõbb helyezni hogy ezzel is
 
 Lefelenézést maximum megengedett szögét feljebb vettem, mert ha a közelharci robot üldöznek minket nem tudtunk rájük lõni mert alattunk voltak.
 
+Ellenséges sebzéseket lejjebb vettem mert túl hamar megölik a játékost.
+
+A pályára tervezek tenni vékony oszlopokat amikre fel lehet repülni, de vékony hogy ne lehessen kikerülni a lövedékeket(nincs mozgástér) -> nyitott részek lövészek ellen jók mert 
+ki lehet kerülni a lövedékeket, magas helyek pedig közelharcosok ellen, de egyik sem jó mind a kettõ ellen.
+
 
 
 
