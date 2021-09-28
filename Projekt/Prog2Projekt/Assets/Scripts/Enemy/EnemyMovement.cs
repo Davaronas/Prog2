@@ -8,7 +8,8 @@ using UnityEngine.AI;
 public class EnemyMovement : MonoBehaviour
 {
 
-    [SerializeField] private bool alwaysTurnToPlayer = false;
+    [SerializeField] private bool alwaysFacePlayer = false;
+    [SerializeField] private bool attackOnTheMove = true;
 
     private PlayerMovement player = null;
     private NavMeshAgent navMeshAgent = null;
@@ -73,7 +74,7 @@ public class EnemyMovement : MonoBehaviour
             playerPos_noY_.y = 0;
 
 
-            if (alwaysTurnToPlayer)
+            if (alwaysFacePlayer)
             {
                 transform.LookAt(playerPos_noY_);
             }

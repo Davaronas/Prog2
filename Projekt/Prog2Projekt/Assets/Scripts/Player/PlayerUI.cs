@@ -25,6 +25,8 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] private RectTransform crosshair = null;
     [SerializeField] private Image enemyHealthbarBg = null;
     [SerializeField] private Image enemyHealthbar = null;
+   // [SerializeField] private Color enemyFullHealthColor = Color.green;
+   // [SerializeField] private Color enemyLowHealthColor = Color.red;
     private Image crosshairImage = null;
     [Space]
     [SerializeField] private HelmetUI helmetUI = null;
@@ -37,6 +39,8 @@ public class PlayerUI : MonoBehaviour
 
 
     private Shop shop = null;
+
+    private float enemyHealthPercent_ = 0;
 
 
     private void Awake()
@@ -100,8 +104,10 @@ public class PlayerUI : MonoBehaviour
 
     private void OnEnemyHoverGlobalCallback(int _health, int _baseHealth)
     {
-        enemyHealthbar.fillAmount = (float)_health / _baseHealth;
-        print("asd");
+        enemyHealthPercent_ = (float)_health / _baseHealth;
+
+        enemyHealthbar.fillAmount = enemyHealthPercent_;
+      //  enemyHealthbar.color = (enemyHealthPercent_ * enemyFullHealthColor) + ((1 - enemyHealthPercent_) * enemyLowHealthColor);
     }
 
 

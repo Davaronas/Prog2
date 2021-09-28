@@ -11,8 +11,18 @@ public class RoundManager : MonoBehaviour
     void Start()
     {
         enemyManager = GetComponent<EnemyManager>();
-        enemyManager.SpawnEnemies(roundNumber * 5, Mathf.CeilToInt(roundNumber/3));
+        enemyManager.SpawnEnemies(GetPowerPoint(roundNumber), GetPowerLevel(roundNumber));
     }
 
    
+
+    private int GetPowerPoint(int _round)
+    {
+        return _round * 7;
+    }
+
+    private int GetPowerLevel(int _round)
+    {
+        return Mathf.CeilToInt((float)_round / 5);
+    }
 }

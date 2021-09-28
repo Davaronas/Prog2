@@ -5,11 +5,12 @@
 ? nem biztos hogy benne lesz/meg lesz csinálva/ki lesz javitva
 
 
-TODO 
+TODO/BUGS
 nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad sokáig
 -----------------------------
--Enemy shoot predicted position of player calculated from velocity (like in oblivion) *_
+-Healthbar for enemies on hover*
 
+-Enemy shoot predicted position of player calculated from velocity (like in oblivion) *_
 
 
 
@@ -18,7 +19,8 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Tooltip for weapon informations in shop
 -Enemy drops should be spawned at the same height
 -Should not be able buy/pick up health and ammo when they are full
--Healthbar for enemies on hover
+-If the shop is opened while you're using your jetpack, you'll keep flying after you quit
+
 
 
 -When the shop is active gravity is blocked  ?
@@ -45,6 +47,9 @@ KÉRDÉSEK/DILEMMÁK
 	Egyelõre úgy gondolom nem fogok bele tenni sprintelést, viszont a mozgási sebesség boltból növelhetõ lesz
 	Gondolkoztam rajta hogy tudjunk sprintelni ugyanabból az erõforrásból mint a jetpack, de egyelõre elvetettem ezt az ötletet.
 
+
+
+*
 -Pénz hova/hogyan legyen kiírva ?
 	Két megoldásra gondoltam, állandóan ki van írva a képernyõn, vagy csak mikor vásárolunk a boltban.
 	Egyelõre mind a két fajta UI stílusnál a képernyõ tetejére bal sarokba gondoltam rakni.
@@ -56,6 +61,21 @@ KÉRDÉSEK/DILEMMÁK
 		Hátrány lehet hogy a játékosnak megtévesztõ lehet hogy most mi a francért pont ennyi pénzünk van kör végén.
 
 			Valószíbûleg az elsõ megoldást fogom választani.
+*
+
+
+
+-Bármilyen lõszer felvétele adjon e pisztoly lõszert és mennyit ?
+	Mivel a pisztolyok nem annyira erõs fegyverek, én egyelõre azon a döntésen vagyok
+	hogy minden lõszer amit felveszünk, akármennyit is vettünk fel a fõ fegyverünkhöz, töltse
+	fel teljesen a pisztolyt.
+
+
+-A játékosnak több mobilitásra van szüksége, mert könnyen be tudunk szorulni egy rossz helyzetbe
+ és lehetségesen nem is tudjuk elérni az ellenfelek által eldobott életet és lõszert
+	Boltban vásárolható dash ability ?
+	Boltban vásárolható teleportálás ability ?
+	Sprintelés ?
 
 
 
@@ -100,6 +120,7 @@ A lõszer becsapódáskor keresi a HitBroadcast.cs nevû scriptet az eltalált objekt
 scriptek az általált objektumon. Ekkor leveszi a megfelelõ mennyiségû életerõt. Egy piros kapszulát már el is tudunk pusztítani a pisztolyunkkal.
 
 
+
 2021. 09. 17
 
 Fegyverek mostmár felszerelhetõek elsõdleges és másodlagos helyre. Ezt majd egy UI elem kattintásával (körök végén shop: fegyver vásárlás) vagy lehetségesen ellenségekbõl dobott fegyverek felvételével fogjuk elérni.
@@ -109,12 +130,14 @@ Beleraktam egy main weapont.
 Elsõdleges és másodlagos fegyver váltogatható.
 
 
+
 2021. 09. 18
 
 Programozni ma már nem volt kedvem, inkább vizuálisabb dolgokat tettem hozzá a játékhoz. A Star Wars Republic Commando által inspirálva modelleztem egy sisak belsejét, ami mindig a kamera elõtt lesz, így a játékos úgy érezheti hogy 
 a karaktere ténylegesen hord egy sisakot. Az üveg és a másik anyag interaktál a fényekkel, így még hihetõbbé teszi a az élményt. Ez valószínûleg ki és be kapcsolható lesz a menüben mivel valamennyire gátolja a láthatóságot.
 
 Modelleztem egy fegyvert, ez egy lassabban tüzelõ, de nagyobbakat sebzõ és több lõszert fogyasztó fegyver.
+
 
 
 2021. 09. 19
@@ -129,6 +152,7 @@ Ez az erõforrás ki van jelezve mind a két típusu UI-on is.
 A drón mostmár tüzel a játékosra ha elég közel van és le is veszi az életerejét ha eltalálja.
 
 
+
 2021. 09. 22
 
 Fegyvereket és ellenfeleket akarok hozzáadni a játékhoz mai nap folyamán.
@@ -139,6 +163,7 @@ Modelleztem egy tank/robot szerûséget, ebbõl is készítettem két fajta ellenfelet
 
 Elkezdtem modellezni egy másik fajta pisztolyt, a Mass Effect-es pisztolyt veszem referenciának. Ez egy gyorsan tüzelõ, keveset sebzõ, és gyorsan újtratöltõdõ pisztoly lesz 
 ( pisztoly lõszer magától újratöltõdik, elsõdleges fegyverekét pedig ellenségebõl dobott, vagy boltból vásárolt lõszerrel kell feltölteni majd)
+
 
 
 2021. 09. 24
@@ -158,6 +183,7 @@ Modelleztem egy elsõsegély csomagot, meg 6 darab töltényt egymást mellett ami a 
 Ezeket felhasználtam arra is hogy képet csináljak róluk és a boltban is lehet venni életet és lõszert.
 
 
+
 2021. 09. 25
 
 Hozzáadtam még egy fegyvert a játékhoz, a star wars-os E5 blaster riflet vettem referenciának. 
@@ -171,6 +197,7 @@ Hozzáadtam a játkhoz sebzés indikátort. Mutat a bekapott sebzés irányára, 2 máso
 A forgását az indikátornak egy tutorialból néztem, annyira a Quaternionokhoz és a forgatásokhoz nem értek.
 
 Ellenfelek dobnak pénzt mikor meghalnak, viszont ez még nincs kiírva sehol és nem tudunk vele semmit csinálni.
+
 
 
 2021. 09. 26
@@ -198,8 +225,32 @@ Ellenség spawn pontokat is megcsináltam, ennek késõbb lesz haszna mikor a tényle
 sem tud átlõni ezen a falon)
 
 
-
 Láthatjuk egy ellenség életerejét mikor ráhuzzuk az egeret.
+
+
+
+2021. 09. 28
+
+Mûködõképes az ellenségek random generálása attól függõen hogy hanyadik körben vagyunk.
+A számokat lehet kellesz állítani, kicsit túl sok ellenfél jön túl hamar.
+
+Hozzáadtam még egy fegyvert, a P90-est véve referenciának.
+
+Modelleztem egy pályát, még a materialokat állítgatni kell Blenderbe hogy több material behelyezésére legyen lehetõség, 
+ezután be fogom rakni a játékba.
+
+Közelharci ellenfelet tervezek belerakni. Ezzel az a célom hogy tántorítsuk el a játékost attól hogy egy helyen maradjon sokáig, illetve hogy 
+rákényszerítsük hogy repüljön, mert ugye akkor nem tudnak megsebezni minket.
+
+Modelleztem illetve beleraktam egy robot szerûséget a játékba amit Skorpiónak neveztem el , ebbõl is 3 erõsségût. Ezek közel akarnak kerülni a játékoshoz és akkor támadnak csak.
+Gyorsak, nagyokat sebeznek, kevés életük van. 
+Elektromossággal támadnak, rajzolam paint.net-ben egy képet amit úgy gondoltam hogy átadja a játékosnak hogy ez az akar lenni.
+Egy particle systembe belehelyeztem és így akarom kelteni a hatást hogy megráznak minket. 
+Lehetségesen valami effektet a képernyõre is fogok késõbb helyezni hogy ezzel is erõsítsük a beleélést.
+
+
+Lefelenézést maximum megengedett szögét feljebb vettem, mert ha a közelharci robot üldöznek minket nem tudtunk rájük lõni mert alattunk voltak.
+
 
 
 

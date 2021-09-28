@@ -6,9 +6,9 @@ public class EnemyBehaviour : MonoBehaviour
 {
     [SerializeField] private GameObject projectile = null;
     [SerializeField] private Transform projectileSpawn = null;
-    [SerializeField] private float attackInterval = 1f;
-    [SerializeField] private float attackIntervalRandomizing = 0.15f;
-    [SerializeField] private int damage = 20;
+    [SerializeField] protected float attackInterval = 1f;
+    [SerializeField] protected float attackIntervalRandomizing = 0.15f;
+    [SerializeField] protected int damage = 20;
     [SerializeField] private float projectileSpeed = 40f;
 
     private bool canAttack = true;
@@ -19,7 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
 
 
 
-    public void Attack(Vector3 _targetPos,Vector3 _targetVelocity)
+    public virtual void Attack(Vector3 _targetPos,Vector3 _targetVelocity)
     {
         if (canAttack)
         {

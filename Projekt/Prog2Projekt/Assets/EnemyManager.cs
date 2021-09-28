@@ -51,18 +51,22 @@ public class EnemyManager : MonoBehaviour
         int _randomNumber = 0;
 
         while(_powerPoint > 0)
+       // for(int i = 0; i < 5; i++)
         {
             roll:
             _randomNumber = Random.Range(0, enemyTypes.Length);
+            print(_randomNumber + " Random");
             EnemyResources _eR = enemyTypes[_randomNumber].GetComponent<EnemyResources>();
 
             if (_eR.powerLevel <= _powerLevel)
             {
+                print("Added enemy: " + enemyTypes[_randomNumber].gameObject.name);
                 _enemies.Add(enemyTypes[_randomNumber]);
                 _powerPoint -= _eR.powerPoint;
             }
             else
             {
+                print("Power level smaller, roll again: " + _eR.powerLevel);
                 goto roll;
             }
         }
