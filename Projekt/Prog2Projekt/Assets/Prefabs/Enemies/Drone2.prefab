@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropChanceMedkit: 40
-  dropChanceAmmo: 60
+  dropChanceAmmo: 80
   dropHealth: 12
   dropAmmo: 18
   moneyDrop: 40

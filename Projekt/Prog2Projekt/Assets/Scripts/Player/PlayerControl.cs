@@ -56,7 +56,7 @@ public class PlayerControl : MonoBehaviour
 
 
 
-        DEV_OpenShop();
+
     }
 
    

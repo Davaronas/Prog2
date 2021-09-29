@@ -5,12 +5,23 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     [SerializeField] private float spawnInterval = 1f;
+    [SerializeField] private float checkForEnemiesInterval = 2f;
     [Space]
     [SerializeField] private GameObject[] enemyTypes = null;
 
     private EnemySpawn[] enemySpawns = null;
+
+    private RoundManager roundManager = null;
+
+
+    private EnemyResources[] enemiesLeft_ = null;
     private int spawnIndex_ = 0;
 
+
+    void Start()
+    {
+        roundManager = GetComponent<RoundManager>();
+    }
 
     public void SpawnEnemies(int _powerPoint, int _powerLevel)
     {
@@ -18,7 +29,7 @@ public class EnemyManager : MonoBehaviour
 
       
 
-            StartCoroutine(SpawnEnemy(CollectRandomEnemies(_powerPoint,_powerLevel), _powerPoint,_powerLevel));
+            StartCoroutine(SpawnEnemies(CollectRandomEnemies(_powerPoint,_powerLevel), _powerPoint,_powerLevel));
         
 
 
@@ -26,7 +37,7 @@ public class EnemyManager : MonoBehaviour
     }
 
 
-    IEnumerator SpawnEnemy(GameObject[] _enemies, int _powerPoint, int _powerLevel)
+    IEnumerator SpawnEnemies(GameObject[] _enemies, int _powerPoint, int _powerLevel)
     {
         
 
@@ -40,6 +51,8 @@ public class EnemyManager : MonoBehaviour
             }
             yield return new WaitForSeconds(spawnInterval);
         }
+
+        StartCoroutine(CheckForEnemies());
     }
        
     
@@ -51,22 +64,18 @@ public class EnemyManager : MonoBehaviour
         int _randomNumber = 0;
 
         while(_powerPoint > 0)
-       // for(int i = 0; i < 5; i++)
         {
             roll:
             _randomNumber = Random.Range(0, enemyTypes.Length);
-            print(_randomNumber + " Random");
             EnemyResources _eR = enemyTypes[_randomNumber].GetComponent<EnemyResources>();
 
             if (_eR.powerLevel <= _powerLevel)
             {
-                print("Added enemy: " + enemyTypes[_randomNumber].gameObject.name);
                 _enemies.Add(enemyTypes[_randomNumber]);
                 _powerPoint -= _eR.powerPoint;
             }
             else
             {
-                print("Power level smaller, roll again: " + _eR.powerLevel);
                 goto roll;
             }
         }
@@ -77,15 +86,25 @@ public class EnemyManager : MonoBehaviour
     }
 
 
-    void Start()
-    {
-        
-    }
+    
 
     
     void Update()
     {
         
+    }
+
+    IEnumerator CheckForEnemies()
+    {
+        enemiesLeft_ = FindObjectsOfType<EnemyResources>();
+
+        while (enemiesLeft_.Length > 0)
+        {
+            yield return new WaitForSeconds(checkForEnemiesInterval);
+            enemiesLeft_ = FindObjectsOfType<EnemyResources>();
+        }
+
+        roundManager.RoundEnded();
     }
 
 

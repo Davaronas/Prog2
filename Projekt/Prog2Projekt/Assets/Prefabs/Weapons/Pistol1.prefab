@@ -78,7 +78,7 @@ MonoBehaviour:
   localPlayerPosOnCamera: {x: 0.1, y: -0.145, z: 0.322}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 1
-  secondaryRechargeInterval: 0.4
+  secondaryRechargeInterval: 0.3
   ammoCost: 5
   fireInterval: 0.5
   projectileSpeed: 20

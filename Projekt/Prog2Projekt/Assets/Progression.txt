@@ -20,6 +20,8 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Enemy drops should be spawned at the same height
 -Should not be able buy/pick up health and ammo when they are full
 -If the shop is opened while you're using your jetpack, you'll keep flying after you quit
+-Grenades 3
+-Ability: chance to not use ammo when firing on main weapon
 
 
 
@@ -257,7 +259,18 @@ A pályára tervezek tenni vékony oszlopokat amikre fel lehet repülni, de vékony h
 ki lehet kerülni a lövedékeket, magas helyek pedig közelharcosok ellen, de egyik sem jó mind a kettõ ellen.
 
 
+2021. 09. 29
 
+Hozzáadtam egy lángszórót a játékhoz. Nagyon sokat sebez, viszont a lõszerének van gravitációja és a saját lõszerei gátolják a láthatóságot (fényes particle-ök),
+ezek miatt nehézkes vele pontosan lõni.
+
+Kicsit a jetpack újratöltési idejét lejjebb veszem, mert ha a közelharcos egységek elkapnak minket miközben nincs jetpack energiánk
+az nagyon halálos fõleg ha nincs erõs tûzerõ a kezünkben (4 sec -> 3.5 sec).
+Enyhén csökkentem a fogyasztását is (30 -> 28)
+
+A körök mennek maguktól, amint megöltük egy körben az utolsó ellenfelet megnyílik a bolt, vásárolhatunk, ezután pedig ha
+megnyjuk a gombot hogy kész vagyunk akkor jön a következõ kör. Lehet több idõt fogok hagyni ezek között, mivel a játékos lehet szeretné
+felszedegetni a pályán hagyott életerõt és lõszert.
 
 
 
