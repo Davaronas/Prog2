@@ -16,6 +16,7 @@ public class PlayerResources : MonoBehaviour
     [SerializeField] private float jetpackRechargeTime = 5f;
 
     private PlayerEquipment playerEquipment = null;
+    private PlayerModifiers playerModifiers = null;
 
     private int health = 0;
     private int mainAmmo = 0;
@@ -49,6 +50,7 @@ public class PlayerResources : MonoBehaviour
         EnemyResourceDrop.OnEnemyDeathGlobal += OnEnemyDeathGlobalCallback;
 
         playerEquipment = GetComponent<PlayerEquipment>();
+        playerModifiers = GetComponent<PlayerModifiers>();
         
     }
 
@@ -79,6 +81,8 @@ public class PlayerResources : MonoBehaviour
 
     public void ChangeHealth(int _amount)
     {
+        _amount = Mathf.CeilToInt((float)_amount * playerModifiers.GetDamageReductionPercent());
+
         health = Mathf.Clamp(health + _amount,0, baseHealth);
         playerUI.Health(health, baseHealth);
 
@@ -111,6 +115,14 @@ public class PlayerResources : MonoBehaviour
 
     public void ChangeMainAmmo(int _amount)
     {
+        if(_amount < 0)
+        {
+            if(playerModifiers.IsAmmoSpared())
+            {
+                return;
+            }
+        }
+
         mainAmmo = Mathf.Clamp(mainAmmo + _amount,0,baseMainAmmo);
 
         if (!playerEquipment.IsSecondarySelected())

@@ -9,6 +9,7 @@ TODO/BUGS
 nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad sokáig
 -----------------------------
 -Healthbar for enemies on hover*
+-Grenades 3*
 
 -Enemy shoot predicted position of player calculated from velocity (like in oblivion) *_
 
@@ -20,8 +21,8 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Enemy drops should be spawned at the same height
 -Should not be able buy/pick up health and ammo when they are full
 -If the shop is opened while you're using your jetpack, you'll keep flying after you quit
--Grenades 3
 -Ability: chance to not use ammo when firing on main weapon
+-Ability: enhanced armor -33% taken damage
 
 
 
@@ -271,6 +272,21 @@ Enyhén csökkentem a fogyasztását is (30 -> 28)
 A körök mennek maguktól, amint megöltük egy körben az utolsó ellenfelet megnyílik a bolt, vásárolhatunk, ezután pedig ha
 megnyjuk a gombot hogy kész vagyunk akkor jön a következõ kör. Lehet több idõt fogok hagyni ezek között, mivel a játékos lehet szeretné
 felszedegetni a pályán hagyott életerõt és lõszert.
+
+
+
+2021. 09. 30
+
+Gránát benne van a játékba, mûködnek. A játékosnál 3 darab lehetlesz összesen, ezeket a boltból lehetlesz venni. 
+Eldobjuk és a pár másodpercen belül egy bizonyos területen belül mindent megsebez (játékost is).
+Valószínûleg leszenk olyan ellenfelek akik fognak gránátot használni.
+Még kellesz készíteni valamilyen effektet hogy láthassuk mekkora körben fog sebezni/sebzett a gránát.
+
+Létrehoztam egy PlayerModifiers nevû class-t amiben meg lesznek határozva a játékos tulajdonságait változtató
+számok. Egyelõre bekapott sebzés csökkentés, mozgási sebesség és esély arra hogy a fõ fegyverünkbõl
+ne fogyjon lõszer amikor lövünk. Ilyen tulajdonságokat a boltból fogunk tudni venni.
+
+
 
 
 

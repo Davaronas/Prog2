@@ -52,13 +52,17 @@ public class PlayerControl : MonoBehaviour
             MainAttack();
 
             SwitchWeapon();
+
+            ThrowGrenade();
         }
 
 
-
+        DEV_OpenShop();
 
     }
 
+
+   
    
     private void ShopOpenedCallback()
     {
@@ -157,6 +161,14 @@ public class PlayerControl : MonoBehaviour
         else if(Input.GetKeyDown(Controls.SwitchToMain))
         {
             playerEquipment.SwitchToMain();
+        }
+    }
+
+    private void ThrowGrenade()
+    {
+        if(Input.GetKeyDown(Controls.ThrowGrenade))
+        {
+            playerEquipment.ThrowGrenade();
         }
     }
 }

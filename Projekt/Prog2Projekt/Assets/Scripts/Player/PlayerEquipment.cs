@@ -7,15 +7,20 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] private Transform playerCam = null;
     [Space]
     [SerializeField] private GameObject defaultPistol = null;
-    [SerializeField] private GameObject machinePistol = null;
+    [Space]
+    [SerializeField] private GameObject grenadePrefab = null;
+    [SerializeField] private int baseGrenades = 3;
+    [SerializeField] private Transform grenadeThrowPoint = null;
+    [SerializeField] private float grenadeThrowForce = 100f;
+
 
     private PlayerResources playerResources = null;
+    private int grenades = 0;
+    private Weapon secondaryWeapon = null;
+    private Weapon mainWeapon = null;
+    private Weapon equippedWeapon = null;
 
-    [Space]
-   [SerializeField] private Weapon secondaryWeapon = null;
-    [SerializeField] private Weapon mainWeapon = null;
 
-    [SerializeField] private Weapon equippedWeapon = null;
 
 
     //  PLAYER RESOURCES START NEEDS TO RUN BEFORE PLAYER EQUIPMENT START (EquipSecondary)
@@ -24,21 +29,6 @@ public class PlayerEquipment : MonoBehaviour
     {
         playerResources = GetComponent<PlayerResources>();
         EquipSecondary(defaultPistol);
-
-        
-
-       // Invoke(nameof(TestMain), 5f);
-    }
-
-
-    private void TestMain()
-    {
-        EquipMain(machinePistol);
-    }
-    
-    void Update()
-    {
-        
     }
 
 
@@ -153,6 +143,25 @@ public class PlayerEquipment : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    public void ThrowGrenade()
+    {
+        if(grenades <= 0) { return; }
+
+        Rigidbody _rb = Instantiate(grenadePrefab, grenadeThrowPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
+        _rb.AddForce(playerCam.forward * grenadeThrowForce, ForceMode.VelocityChange);
+        grenades--;
+    }
+
+
+
+    public void AddGrenade()
+    {
+        if(grenades < baseGrenades )
+        {
+            grenades++;
         }
     }
 }

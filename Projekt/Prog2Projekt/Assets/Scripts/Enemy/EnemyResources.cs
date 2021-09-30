@@ -53,7 +53,6 @@ public class EnemyResources : MonoBehaviour
 
     private void OnHoverCallback()
     {
-        print("dsa");
         OnEnemyHoverGlobal?.Invoke(health, baseHealth);
     }
 

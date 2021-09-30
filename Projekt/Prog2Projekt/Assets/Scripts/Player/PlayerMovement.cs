@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
      private CharacterController characterController = null;
     private PlayerResources playerResources = null;
+    private PlayerModifiers playerModifiers = null;
    // private Rigidbody rb = null;
 
 
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
          characterController = GetComponent<CharacterController>();
         playerResources = GetComponent<PlayerResources>();
+        playerModifiers = GetComponent<PlayerModifiers>();
 
         constantForceVector = gravity;
     }
@@ -64,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         movementVector_ = ((transform.forward * forward_) +
                           (-transform.forward * back_) +
                           (transform.right * right_) +
-                           (-transform.right * left_)).normalized * speed * Time.deltaTime;
+                           (-transform.right * left_)).normalized * (speed+playerModifiers.GetMovementSpeedIncrease()) * Time.deltaTime;
 
 
 

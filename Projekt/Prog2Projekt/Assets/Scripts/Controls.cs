@@ -19,5 +19,7 @@ public static class Controls
     public static KeyCode SwitchToSecondary = KeyCode.Alpha1;
     public static KeyCode SwitchToMain = KeyCode.Alpha2;
 
+    public static KeyCode ThrowGrenade = KeyCode.G;
+
 
 }
