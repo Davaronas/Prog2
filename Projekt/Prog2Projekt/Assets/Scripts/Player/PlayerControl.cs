@@ -48,6 +48,7 @@ public class PlayerControl : MonoBehaviour
             Rotation();
 
             Jetpack();
+            Dash();
 
             MainAttack();
 
@@ -57,7 +58,7 @@ public class PlayerControl : MonoBehaviour
         }
 
 
-      //  DEV_OpenShop();
+        DEV_OpenShop();
 
     }
 
@@ -66,19 +67,27 @@ public class PlayerControl : MonoBehaviour
    
     private void ShopOpenedCallback()
     {
-        blockActions++;
+        AddBlockAction();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
 
     private void ShopClosedCallback()
     {
-        blockActions--;
+        RemoveBlockAction();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    public void AddBlockAction()
+    {
+        blockActions++;
+    }
 
+    public void RemoveBlockAction()
+    {
+        blockActions--;
+    }
 
     private void DEV_OpenShop()
     {
@@ -142,6 +151,18 @@ public class PlayerControl : MonoBehaviour
         }
       
     }
+
+    private void Dash()
+    {
+        if(Input.GetKeyDown(Controls.Dash))
+        {
+            playerMovement.Dash(movementDirections_.ToArray()); // a movementDirections_ majd csak a következõ frameben fog kitisztulni.
+        }
+    }
+
+
+
+
     private void MainAttack()
     {
         if(Input.GetKey(Controls.MainAttack))

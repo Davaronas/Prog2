@@ -32,8 +32,10 @@ public class Grenade : MonoBehaviour
         Collider[] _objectsHit = Physics.OverlapSphere(transform.position, explosionRadius);
         HitBroadcast _hb_out = null;
 
+        print(_objectsHit.Length + " le");
         for (int i = 0; i < _objectsHit.Length; i++)
         {
+            print(_objectsHit[i].name);
             if(_objectsHit[i].TryGetComponent(out _hb_out))
             {
                 _hb_out.Hit(damage, transform.position);

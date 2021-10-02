@@ -23,6 +23,9 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -If the shop is opened while you're using your jetpack, you'll keep flying after you quit
 -Ability: chance to not use ammo when firing on main weapon
 -Ability: enhanced armor -33% taken damage
+-Grenade launcher ?
+-Rocket launcher ?
+-Skill tree to buy abilities instead of just being in the shop, this is a good way to introduce prerequisite abilites
 
 
 
@@ -287,6 +290,23 @@ számok. Egyelõre bekapott sebzés csökkentés, mozgási sebesség és esély arra hogy
 ne fogyjon lõszer amikor lövünk. Ilyen tulajdonságokat a boltból fogunk tudni venni.
 
 
+2021. 10. 02
+
+A Perk tree-t készítem. Úgy döntöttem hogy egymásból kiinduló perkeket rakok a boltba, és csak akkor
+lehet megvásárolni õket ha az elõzõt megvásároltuk.
+
+Egyelõre 3 ág van, Endurance, Ammunition és Mobility. Endurance az egyszerû bekapott sebzés csökkentést
+kínáló perkeket tartalmaz, az Ammunitionben két fajta van, a felvett lõszer többet ad, a másik pedig hogy
+amikor lövünk van rá esély hogy a játék nem von le tõlünk lõszert.
+A Mobilityben pedig ki tudjuk oldani a jetpacket (alapból nem használható), mozgási sebességet vehetünk
+és a Dash képességet kioldhatjuk (utolsó perk: egymás után kétszer is használhatjuk akár);
+
+
+Kész van a Dash ability, már csak a játékossal kell tudatni az információkat hogy mikor töltenek be, 
+illetve aktívak e.
+
+A Perk tree készen van, egyedül az hiányzik hogy szükséges legyen az elõzõket kioldani ahhoz hogy meg tudjuk venni. 
+Meg persze hogy ténylegesen pénzbe is kerüljön, de az még a fegyvereknél is hiányzik.
 
 
 

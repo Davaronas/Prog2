@@ -21,5 +21,5 @@ public static class Controls
 
     public static KeyCode ThrowGrenade = KeyCode.G;
 
-
+    public static KeyCode Dash = KeyCode.Mouse1;
 }

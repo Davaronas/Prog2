@@ -7,6 +7,8 @@ public class HelmetUI : MonoBehaviour
     [SerializeField] private Renderer[] healthDisplays;
     [SerializeField] private Renderer[] ammoDisplays;
     [SerializeField] private Renderer[] jetpackDisplays;
+    [SerializeField] private Renderer Dash1Display;
+    [SerializeField] private Renderer Dash2Display;
     [Space]
     [SerializeField] private Material healthActiveMaterial;
     [SerializeField] private Material ammoActiveMaterial;

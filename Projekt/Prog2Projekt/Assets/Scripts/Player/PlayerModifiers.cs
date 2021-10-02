@@ -5,6 +5,7 @@ public class PlayerModifiers : MonoBehaviour
    [SerializeField] private int damageReduction = 0;
    [SerializeField] private int chanceToNotUseAmmo = 0;
    [SerializeField] private int movementSpeedIncrease = 0;
+    [SerializeField] private int ammoPickedUpPlus = 0;
 
 
     private int ammoUse_ = 0;
@@ -22,6 +23,11 @@ public class PlayerModifiers : MonoBehaviour
     public void SetMovementSpeedIncrease( int _m)
     {
         movementSpeedIncrease = _m;
+    }
+
+    public void SetPlusAmmoPickedUp(int _m)
+    {
+        ammoPickedUpPlus = _m;
     }
 
 
@@ -49,5 +55,10 @@ public class PlayerModifiers : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public float GetPlusAmmoPickedUpMultiplier()
+    {
+        return 1 + ((float)ammoPickedUpPlus / 100);
     }
 }

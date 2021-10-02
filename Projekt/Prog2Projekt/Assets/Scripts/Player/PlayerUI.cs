@@ -16,11 +16,12 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] private Image healthBarBg = null;
     [SerializeField] private Image ammoBarBg = null;
     [SerializeField] private Image jetpackBarBg = null;
-
-
+    [SerializeField] private Image dash1Display = null;
+    [SerializeField] private Image dash2Display = null;
+    [Space]
     [SerializeField] private Text healthText = null;
     [SerializeField] private Text ammoText = null;
-
+    [Space]
     [SerializeField] private Camera mainCam = null;
     [SerializeField] private RectTransform crosshair = null;
     [SerializeField] private Image enemyHealthbarBg = null;
@@ -59,6 +60,9 @@ public class PlayerUI : MonoBehaviour
             jetpackBarBg.enabled = false;
             jetpackBar.enabled = false;
 
+            dash1Display.enabled = false;
+            dash2Display.enabled = false;
+
             helmetUI.gameObject.SetActive(true);
         }
         else if(ui == TypeUI.Simplistic)
@@ -71,6 +75,9 @@ public class PlayerUI : MonoBehaviour
 
             jetpackBarBg.enabled = true;
             jetpackBar.enabled = true;
+
+            dash1Display.enabled = true;
+            dash2Display.enabled = true;
 
             helmetUI.gameObject.SetActive(false);
         }

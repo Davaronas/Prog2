@@ -43,6 +43,7 @@ public class PlayerResources : MonoBehaviour
         playerUI = GetComponent<PlayerUI>();
         playerUI.Health(health, baseHealth);
         playerUI.Ammo(secondaryAmmo, baseSecondaryAmmo);
+        playerUI.Jetpack(0, baseJetpackEnergy);
 
         hitBroadcast = GetComponent<HitBroadcast>();
 
@@ -81,7 +82,12 @@ public class PlayerResources : MonoBehaviour
 
     public void ChangeHealth(int _amount)
     {
-        _amount = Mathf.CeilToInt((float)_amount * playerModifiers.GetDamageReductionPercent());
+        if (_amount < 0)
+        {
+            _amount = Mathf.CeilToInt((float)_amount * playerModifiers.GetDamageReductionPercent());
+        }
+
+        print(_amount);
 
         health = Mathf.Clamp(health + _amount,0, baseHealth);
         playerUI.Health(health, baseHealth);
@@ -123,6 +129,12 @@ public class PlayerResources : MonoBehaviour
             }
         }
 
+        if(_amount > 0)
+        {
+            _amount = Mathf.FloorToInt((float)_amount * playerModifiers.GetPlusAmmoPickedUpMultiplier());
+        }
+
+
         mainAmmo = Mathf.Clamp(mainAmmo + _amount,0,baseMainAmmo);
 
         if (!playerEquipment.IsSecondarySelected())
@@ -133,6 +145,21 @@ public class PlayerResources : MonoBehaviour
 
     public void ChangeMainAmmo(int _amount, bool _showUI)
     {
+       
+
+        if (_amount < 0)
+        {
+            if (playerModifiers.IsAmmoSpared())
+            {
+                return;
+            }
+        }
+
+        if (_amount > 0)
+        {
+            _amount = Mathf.FloorToInt((float)_amount * playerModifiers.GetPlusAmmoPickedUpMultiplier());
+        }
+
         mainAmmo = Mathf.Clamp(mainAmmo + _amount, 0, baseMainAmmo);
 
         if (_showUI)
@@ -155,7 +182,7 @@ public class PlayerResources : MonoBehaviour
         playerUI.Jetpack(jetpackEnergy,baseJetpackEnergy);
     }
 
-    private void SetJetpackToFull()
+    public void SetJetpackToFull()
     {
         jetpackEnergy = baseJetpackEnergy;
 
@@ -182,6 +209,7 @@ public class PlayerResources : MonoBehaviour
     {
         return jetpackEnergy;
     }
+
 
     public void EndJetpackUse()
     {
