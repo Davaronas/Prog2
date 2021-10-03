@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6302392557225159208}
   - component: {fileID: 6302392557225159255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pistol2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6302392557769160651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProjectileSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,6 +178,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c1a8bee1ada07f64a90afd50c5d18db8, type: 3}
       propertyPath: m_Name
       value: Pistol2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1a8bee1ada07f64a90afd50c5d18db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a8bee1ada07f64a90afd50c5d18db8, type: 3}

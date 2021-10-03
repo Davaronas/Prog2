@@ -82,8 +82,9 @@ MonoBehaviour:
   secondaryRechargeInterval: 0.6
   ammoCost: 2
   fireInterval: 0.14
-  projectileSpeed: 50
+  projectileSpeed: 40
   damage: 12
+  cost: 200
   projectile: {fileID: 5307188461605554704, guid: 8e06d1afced7b55469ce44efb379bf7c, type: 3}
   projectileSpawn: {fileID: 5503121482725576343}
   pSystem: {fileID: 0}
