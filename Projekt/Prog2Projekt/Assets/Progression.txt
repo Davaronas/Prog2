@@ -310,3 +310,13 @@ Meg persze hogy ténylegesen pénzbe is kerüljön, de az még a fegyvereknél is hián
 
 
 
+2021. 10. 03
+
+
+Mind a két fajta UI-nál mûködik a Dash jelzése.
+
+A Perk tree-nél mûködik hogy az elõzõket elõször ki kell oldani hogy meg tudjuk venni. 
+Illetve amit egyszer megvettünk, azt már mégegyszer nem tudjuk megvenni.
+
+Tooltip készítése a fegyverekhez és a Perkekhez a következõ kitûzött cél.
+

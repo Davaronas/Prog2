@@ -70,4 +70,25 @@ public class HelmetUI : MonoBehaviour
             }
         }
     }
+
+    public void DisplayDashes(bool _dash1, bool _dash2)
+    {
+        if(_dash1)
+        {
+            Dash1Display.material = jetpackActiveMaterial;
+        }
+        else
+        {
+            Dash1Display.material = inactiveMaterial;
+        }
+
+        if(_dash2)
+        {
+            Dash2Display.material = jetpackActiveMaterial;
+        }
+        else
+        {
+            Dash2Display.material = inactiveMaterial;
+        }
+    }
 }

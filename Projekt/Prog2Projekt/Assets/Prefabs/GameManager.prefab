@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5861169338547443122}
   - component: {fileID: 5861169338547443121}
   - component: {fileID: 5861169338547443120}
+  - component: {fileID: 7297623976172582770}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cfc03763a836240bfdab57eb163cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundNumber: 7
+  roundNumber: 8
+  timeDelay: 10
 --- !u!114 &5861169338547443120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnInterval: 1
+  checkForEnemiesInterval: 2
   enemyTypes:
   - {fileID: 1204031819348962120, guid: cc97e7ed8da3a4a4286fe0f214dd0bd0, type: 3}
   - {fileID: 1204031819348962120, guid: 3c0f75d7cf83dff4f854af17fa0ef5e4, type: 3}
@@ -68,3 +71,15 @@ MonoBehaviour:
   - {fileID: 7550592940314706587, guid: cbdcc86442b603747aea286716d78f17, type: 3}
   - {fileID: 2013512763704779218, guid: e27ace8927b98e24a91e1e7b40fbe100, type: 3}
   - {fileID: 7550592940314706587, guid: 8b172c784e4b6a84ab0938642add2cf6, type: 3}
+--- !u!114 &7297623976172582770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861169338547443119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0a14b5d9839d84cbce961df34ca629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

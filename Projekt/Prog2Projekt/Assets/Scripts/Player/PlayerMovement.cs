@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerResources playerResources = null;
     private PlayerModifiers playerModifiers = null;
     private PlayerControl playerControl = null;
+    private PlayerUI playerUI = null;
     // private Rigidbody rb = null;
 
     private bool isJetpackEnabled = false;
@@ -46,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         playerResources = GetComponent<PlayerResources>();
         playerModifiers = GetComponent<PlayerModifiers>();
         playerControl = GetComponent<PlayerControl>();
+        playerUI = GetComponent<PlayerUI>();
 
         constantForceVector = gravity;
 
@@ -138,7 +140,10 @@ public class PlayerMovement : MonoBehaviour
                           (transform.right * right_) +
                            (-transform.right * left_)).normalized * dashSpeed * Time.deltaTime;
 
+        constantForceVector = gravity;
         StartCoroutine(DashCoroutine(movementVector_));
+        playerUI.Dashes(isDash1Active, isDash2Active);
+        
     }
 
     public void EnableJetpack(int _delegateInvokeValue)
@@ -150,11 +155,13 @@ public class PlayerMovement : MonoBehaviour
     public void EnableDash1(int _delegateInvokeValue)
     {
         isDash1Active = true;
+        playerUI.Dashes(isDash1Active, isDash2Active);
     }
 
     public void EnableDash2(int _delegateInvokeValue)
     {
         isDash2Active = true;
+        playerUI.Dashes(isDash1Active, isDash2Active);
     }
 
     public void UseJetpack()
@@ -217,6 +224,7 @@ public class PlayerMovement : MonoBehaviour
 
                 dash1RegenTimer_ = 0;
                 isDash1Active = true;
+                playerUI.Dashes(isDash1Active, isDash2Active);
 
                 break;
             case 2:
@@ -229,6 +237,7 @@ public class PlayerMovement : MonoBehaviour
 
                 dash2RegenTimer_ = 0;
                 isDash2Active = true;
+                playerUI.Dashes(isDash1Active, isDash2Active);
 
 
 

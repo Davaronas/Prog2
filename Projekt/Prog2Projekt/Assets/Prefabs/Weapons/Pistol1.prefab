@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0917c6adf76576b49bc4d55b7a5c602c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: pre war pistol
   localPlayerPosOnCamera: {x: 0.1, y: -0.145, z: 0.322}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 1
@@ -83,6 +84,7 @@ MonoBehaviour:
   fireInterval: 0.5
   projectileSpeed: 20
   damage: 10
+  cost: 50
   projectile: {fileID: 5307188461605554704, guid: 8e06d1afced7b55469ce44efb379bf7c, type: 3}
   projectileSpawn: {fileID: 2716052343181031718}
   pSystem: {fileID: 0}

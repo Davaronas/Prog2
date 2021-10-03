@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0917c6adf76576b49bc4d55b7a5c602c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: submachine gun
   localPlayerPosOnCamera: {x: 0.2, y: -0.298, z: 0.202}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 0

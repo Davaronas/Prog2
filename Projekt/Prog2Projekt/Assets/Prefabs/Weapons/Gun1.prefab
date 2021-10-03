@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0917c6adf76576b49bc4d55b7a5c602c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: carbine rifle
   localPlayerPosOnCamera: {x: 0.066, y: -0.04799998, z: 0.107}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 0
@@ -53,6 +54,7 @@ MonoBehaviour:
   fireInterval: 0.8
   projectileSpeed: 200
   damage: 100
+  cost: 500
   projectile: {fileID: 5307188461605554704, guid: 33b545e98cf5db44ca84da705ccbeaaa, type: 3}
   projectileSpawn: {fileID: 3253580183201294782}
   pSystem: {fileID: 0}

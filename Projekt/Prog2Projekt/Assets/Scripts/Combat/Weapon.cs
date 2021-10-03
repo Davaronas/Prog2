@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-
-    public Vector3 localPlayerPosOnCamera = Vector3.zero;
-    public Vector3 localPlayerRotOnCameraEuler = Vector3.zero;
+    public  string weaponName = "";
     [Space]
-    [SerializeField] public bool isSecondary = false;
-    [SerializeField] private float secondaryRechargeInterval = 0.6f;
-    [SerializeField] private int ammoCost = 5;
-    [SerializeField] private float fireInterval = 0.5f;
-    [SerializeField] private float projectileSpeed = 20f;
-    [SerializeField] private int damage = 10;
+    public  Vector3 localPlayerPosOnCamera = Vector3.zero;
+    public  Vector3 localPlayerRotOnCameraEuler = Vector3.zero;
+    [Space]
+    public  bool isSecondary = false;
+    public  float secondaryRechargeInterval = 0.6f;
+    public int ammoCost = 5;
+    public   float fireInterval = 0.5f;
+    public  float projectileSpeed = 20f;
+    public  int damage = 10;
+    public int cost = 200;
     [Space]
     [SerializeField] private GameObject projectile;
     [SerializeField] private Transform projectileSpawn;

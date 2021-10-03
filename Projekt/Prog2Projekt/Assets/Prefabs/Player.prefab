@@ -150,7 +150,7 @@ MonoBehaviour:
   jetpackForce: {x: 0, y: 7, z: 0}
   dashSpeed: 40
   dashDuration: 0.25
-  dashRegenTime: 5
+  dashRegenTime: 4
 --- !u!114 &2889353748659984295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +206,8 @@ MonoBehaviour:
   jetpackBarBg: {fileID: 0}
   dash1Display: {fileID: 0}
   dash2Display: {fileID: 0}
+  dashActiveColor: {r: 1, g: 1, b: 1, a: 1}
+  dashInactiveColor: {r: 0, g: 0, b: 0, a: 1}
   healthText: {fileID: 0}
   ammoText: {fileID: 0}
   mainCam: {fileID: 2889353750490443170}

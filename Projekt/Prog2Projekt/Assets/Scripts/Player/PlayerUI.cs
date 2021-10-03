@@ -18,6 +18,8 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] private Image jetpackBarBg = null;
     [SerializeField] private Image dash1Display = null;
     [SerializeField] private Image dash2Display = null;
+    [SerializeField] private Color dashActiveColor = Color.white;
+    [SerializeField] private Color dashInactiveColor = Color.black;
     [Space]
     [SerializeField] private Text healthText = null;
     [SerializeField] private Text ammoText = null;
@@ -174,7 +176,7 @@ public class PlayerUI : MonoBehaviour
     {
         crosshair.position = mainCam.WorldToScreenPoint(_pos);
 
-        if(_hb != null) // we found an enemy, enabling enemy healthbar gameobject, fill amount will be et from global enemy hover event
+        if(_hb != null) // we found an enemy, enabling enemy healthbar gameobject, fill amount will be set from global enemy hover event
         {
             crosshairImage.color = Color.red;
 
@@ -194,6 +196,36 @@ public class PlayerUI : MonoBehaviour
                 enemyHealthbarBg.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void Dashes(bool _dash1, bool _dash2)
+    {
+        if(ui == TypeUI.Helmet)
+        {
+            helmetUI.DisplayDashes(_dash1, _dash2);
+        }
+        else if(ui == TypeUI.Simplistic)
+        {
+            if(_dash1)
+            {
+                dash1Display.color = dashActiveColor;
+            }
+            else
+            {
+                dash1Display.color = dashInactiveColor;
+            }
+
+            if(_dash2)
+            {
+                dash2Display.color = dashActiveColor;
+            }
+            else
+            {
+                dash2Display.color = dashInactiveColor;
+            }
+        }
+
+     
     }
 
     public void Money(int _amount)

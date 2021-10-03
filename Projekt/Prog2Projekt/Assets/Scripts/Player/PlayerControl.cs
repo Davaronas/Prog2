@@ -68,6 +68,7 @@ public class PlayerControl : MonoBehaviour
     private void ShopOpenedCallback()
     {
         AddBlockAction();
+        playerMovement.EndJetpackUse();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }

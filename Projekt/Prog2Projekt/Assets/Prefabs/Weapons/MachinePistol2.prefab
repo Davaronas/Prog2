@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0917c6adf76576b49bc4d55b7a5c602c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: machine gun
   localPlayerPosOnCamera: {x: 0.157, y: -0.13, z: -0.092}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 0
@@ -167,6 +168,7 @@ MonoBehaviour:
   fireInterval: 0.04
   projectileSpeed: 70
   damage: 14
+  cost: 3000
   projectile: {fileID: 5307188461605554704, guid: c61808c2c53f5544ebf4f0646860a2ea, type: 3}
   projectileSpawn: {fileID: 3524912137347946159}
   pSystem: {fileID: 0}

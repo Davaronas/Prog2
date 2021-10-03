@@ -75,14 +75,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0917c6adf76576b49bc4d55b7a5c602c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: blaster pistol
   localPlayerPosOnCamera: {x: 0.167, y: -0.108, z: 0.29}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 1
-  secondaryRechargeInterval: 0.15
+  secondaryRechargeInterval: 0.17
   ammoCost: 4
   fireInterval: 0.2
   projectileSpeed: 50
   damage: 30
+  cost: 1000
   projectile: {fileID: 5307188461605554704, guid: 672ead84ceef2f247a5a2e2987aa1db4, type: 3}
   projectileSpawn: {fileID: 3312584121572639565}
   pSystem: {fileID: 0}
