@@ -13,6 +13,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private RectTransform perkTooltip = null;
     [SerializeField] private Text perkTooltip_name = null;
     [SerializeField] private Text perkTooltip_content = null;
+    [SerializeField] private Text perkTooltip_cost = null;
     [SerializeField] private float perkTooltip_MinusY = 100f;
     [Space]
     [SerializeField] private RectTransform weaponTooltip = null;
@@ -24,6 +25,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private Image weaponTooltip_projectileSpeed = null;
     [SerializeField] private Image weaponTooltip_damage = null;
     [SerializeField] private float weaponTooltip_MinusY = 100f;
+    [SerializeField] private BuyConfirmPanel buyConfirmPanel = null;
 
 
     public Action OnShopOpened;
@@ -47,6 +49,12 @@ public class Shop : MonoBehaviour
         shopPanel.SetActive(false);
         perkTooltip.gameObject.SetActive(false);
         minusTooltipVector_ = new Vector3(0, -perkTooltip_MinusY, 0);
+
+        buyConfirmPanel = FindObjectOfType<BuyConfirmPanel>();
+        buyConfirmPanel.gameObject.SetActive(false);
+
+
+
         Perk.OnPerkHoverGlobal += OnPerkHoverCallback;
         Perk.OnPerkHoverEndGlobal += OnPerkHoverEndCallback;
 
@@ -93,10 +101,11 @@ public class Shop : MonoBehaviour
     }
 
 
-    private void OnPerkHoverCallback(string _n, string _c)
+    private void OnPerkHoverCallback(string _n, string _c, string _co)
     {
         perkTooltip_name.text = _n;
         perkTooltip_content.text = _c;
+        perkTooltip_cost.text = "Cost: " + _co;
         perkTooltip.gameObject.SetActive(true);
         isPerkTooltipActive = true;
     }

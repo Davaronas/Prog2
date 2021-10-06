@@ -168,7 +168,7 @@ MonoBehaviour:
   fireInterval: 0.04
   projectileSpeed: 70
   damage: 14
-  cost: 3000
+  cost: 4500
   projectile: {fileID: 5307188461605554704, guid: c61808c2c53f5544ebf4f0646860a2ea, type: 3}
   projectileSpawn: {fileID: 3524912137347946159}
   pSystem: {fileID: 0}

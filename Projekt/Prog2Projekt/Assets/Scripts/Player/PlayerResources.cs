@@ -87,7 +87,6 @@ public class PlayerResources : MonoBehaviour
             _amount = Mathf.CeilToInt((float)_amount * playerModifiers.GetDamageReductionPercent());
         }
 
-        print(_amount);
 
         health = Mathf.Clamp(health + _amount,0, baseHealth);
         playerUI.Health(health, baseHealth);
@@ -208,6 +207,11 @@ public class PlayerResources : MonoBehaviour
     public float GetJetpackEnergy()
     {
         return jetpackEnergy;
+    }
+
+    public int GetMoney()
+    {
+        return money;
     }
 
 

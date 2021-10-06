@@ -122,7 +122,7 @@ MonoBehaviour:
   dropChanceAmmo: 90
   dropHealth: 20
   dropAmmo: 30
-  moneyDrop: 100
+  moneyDrop: 160
   medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
   ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}
 --- !u!1 &2498644354466235047

@@ -320,3 +320,15 @@ Illetve amit egyszer megvettünk, azt már mégegyszer nem tudjuk megvenni.
 
 Tooltip készítése a fegyverekhez és a Perkekhez a következõ kitûzött cél.
 
+
+Kész van a tooltip a fegyverekhez (különbözõ statisztikája a fegyvereknek megjelenítésre kerülnek illetve a fegyver ára)
+és a perkekhez (mit csinál, és mennyibe kerül).
+
+
+2021. 10. 06
+
+Vásárlás megerõsítés panel elkészült, megkérdezi tõlünk a játék hogy az adott dolgot tényleg meg akarjuk e venni, mennyiért illetve hogy mi a neve az adott dolognak.
+Ez elõtt még ellenõrizni fogja a játék hogy ténylegesen képesek vagyunk e megvenni, mert ha nem akkor nem engedi megnyitni ezt a panelt.
+
+Fegyvereknek és perkeknek ára van. 
+

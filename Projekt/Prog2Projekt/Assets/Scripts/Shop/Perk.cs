@@ -180,18 +180,30 @@ public class Perk : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private int invokeValue = 0;
 
 
-    public static Action<string, string> OnPerkHoverGlobal;
+    public static Action<string, string, string> OnPerkHoverGlobal;
     public static Action OnPerkHoverEndGlobal;
 
 
 
     private PlayerModifiers playerModifers = null;
     private PlayerMovement playerMovement = null;
+    private PlayerResources playerResources = null;
+
+    private BuyConfirmPanel buyConfirmPanel = null;
+
+    private void Awake()
+    {
+
+        // ezt awakebe kell megszerezni mert Srartban a Shop kikapcsolja és a FindObjectOfType nem fogja megtalálni ha a Shop start hamarabb fut le mint ez a start
+        buyConfirmPanel = FindObjectOfType<BuyConfirmPanel>();
+    }
 
     void Start()
     {
         playerModifers = FindObjectOfType<PlayerModifiers>();
         playerMovement = FindObjectOfType<PlayerMovement>();
+        playerResources = FindObjectOfType<PlayerResources>();
+        
 
         switch(perkType)
         {
@@ -276,25 +288,32 @@ public class Perk : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         
     }
 
-    public void RemoteCall_BuyPerk()
+    public void RemoteCall_BuyCheck()
     {
-        // is already active check
         if (isActive) { return; }
 
         // prerequisites check
         for (int i = 0; i < prerequisites.Length; i++)
         {
-            if(!prerequisites[i].isActive)
+            if (!prerequisites[i].isActive)
             {
                 // show player that it cannot be purchased yet
                 return;
             }
         }
 
-        // money check
+        if(playerResources.GetMoney() < cost) { return; }
 
-        // are you sure check ?
+        buyConfirmPanel.SetItem(this, PerkData.GetPerkName(perkType, perkLevel), cost.ToString());
 
+    }
+
+
+    public void BuyPerk()
+    {
+        // vonjuk le a pénzt
+
+        playerResources.ChangeMoney(-cost);
         isActive = true;
         checkMark.enabled = true;
         attachedMethod.Invoke(invokeValue);
@@ -302,7 +321,7 @@ public class Perk : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        OnPerkHoverGlobal?.Invoke(PerkData.GetPerkName(perkType, perkLevel), PerkData.GetPerkContent(perkType, perkLevel));
+        OnPerkHoverGlobal?.Invoke(PerkData.GetPerkName(perkType, perkLevel), PerkData.GetPerkContent(perkType, perkLevel), cost.ToString());
     }
 
     public void OnPointerExit(PointerEventData eventData)
