@@ -60,6 +60,9 @@ public class PlayerControl : MonoBehaviour
 
         DEV_OpenShop();
 
+
+        DEV_ExitGame();
+
     }
 
 
@@ -102,6 +105,14 @@ public class PlayerControl : MonoBehaviour
             {
                 shop.OpenShop();
             }
+        }
+    }
+
+    private void DEV_ExitGame()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 

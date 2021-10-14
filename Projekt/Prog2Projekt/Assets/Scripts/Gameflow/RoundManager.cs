@@ -1,23 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class RoundManager : MonoBehaviour
 {
-    private EnemyManager enemyManager = null;
 
+    [Space]
     [SerializeField] private int roundNumber = 1;
     [SerializeField] private float timeDelay = 4f;
 
+    private EnemyManager enemyManager = null;
     private Shop shop = null;
+    private WaveDisplay waveDisplay = null;
    
     void Start()
     {
         shop = FindObjectOfType<Shop>();
+        waveDisplay = FindObjectOfType<WaveDisplay>();
+       
 
         enemyManager = GetComponent<EnemyManager>();
+        Invoke(nameof(FirstWaveDisplay), 1f); // ez azért kell mert az elsõ néhány frame-et nem szaggatva láthatjuk és a kiirás is rosszul fog kinézni
         Invoke(nameof(StartRound), timeDelay);
 
+    }
+
+    private void FirstWaveDisplay()
+    {
+        waveDisplay.Display(roundNumber);
     }
 
    
@@ -47,11 +59,13 @@ public class RoundManager : MonoBehaviour
     public void RemoteCall_RoundStart()
     {
         shop.CloseShop();
+        waveDisplay.Display(roundNumber);
         Invoke(nameof(StartRound), timeDelay);
     }
 
     private void StartRound()
     {
+       
         enemyManager.SpawnEnemies(GetPowerPoint(roundNumber), GetPowerLevel(roundNumber));
     }
 }
