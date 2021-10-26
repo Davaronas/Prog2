@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private bool attackOnTheMove = true;
 
     private PlayerMovement player = null;
-    private NavMeshAgent navMeshAgent = null;
+    protected NavMeshAgent navMeshAgent = null;
     private EnemyBehaviour enemyBehaviour = null;
 
     private Vector3 playerPos_noY_ = Vector3.zero;
@@ -23,6 +23,13 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 firstMovePosition = Vector3.zero;
 
     private float originalStoppingDistance = 0;
+    protected bool inRange = false;
+
+    private void Start()
+    {
+        //DEV
+     //   Initialize(transform.position + (Vector3.forward * 3));
+    }
 
     public void Initialize(Vector3 _firstMovementPosition)
     {
@@ -61,23 +68,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (enableFollowingPlayer)
         {
-            
-            navMeshAgent.SetDestination(player.transform.position);
-
-            if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-            {
-                enemyBehaviour.Attack(player.transform.position, player.GetVelocity());
-
-            }
-
-            playerPos_noY_ = player.transform.position;
-            playerPos_noY_.y = 0;
-
-
-            if (alwaysFacePlayer)
-            {
-                transform.LookAt(playerPos_noY_);
-            }
+            ChasePlayer();
         }
         else // check if we reached our first destination after spawning
         {
@@ -94,6 +85,30 @@ public class EnemyMovement : MonoBehaviour
                 }
             }
 
+        }
+    }
+
+    private void ChasePlayer()
+    {
+        navMeshAgent.SetDestination(player.transform.position);
+
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+        {
+            enemyBehaviour.Attack(player.transform.position, player.GetVelocity());
+            inRange = true;
+        }
+        else
+        {
+            inRange = false;
+        }
+
+        playerPos_noY_ = player.transform.position;
+        playerPos_noY_.y = 0;
+
+
+        if (alwaysFacePlayer)
+        {
+            transform.LookAt(playerPos_noY_);
         }
     }
 }

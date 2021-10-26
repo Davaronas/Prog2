@@ -26,6 +26,7 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Grenade launcher ?
 -Rocket launcher ?
 -Skill tree to buy abilities instead of just being in the shop, this is a good way to introduce prerequisite abilites
+-Enemy projectiles sometimes throw player in the air for a split second, including melee
 
 
 
@@ -331,4 +332,24 @@ Vásárlás megerõsítés panel elkészült, megkérdezi tõlünk a játék hogy az adott do
 Ez elõtt még ellenõrizni fogja a játék hogy ténylegesen képesek vagyunk e megvenni, mert ha nem akkor nem engedi megnyitni ezt a panelt.
 
 Fegyvereknek és perkeknek ára van. 
+
+2021. 10. 17
+
+Humanoid ellenség modellezése, hozzáadása, még a kód mögötte nincs meg, de van rajta animátor illetve animációk
+
+2021. 10. 24
+
+Humanoid ellenség mûködõképes, még kisebb bugok vannak benne. Valamiért az animator egyik Trigger paraméterét bekapcsolom, és beragad, azt eredményezve hogy néhányszor fog  egymást után lõni 
+a robotunk, valamikor csak egyszer valamikor egymás után ötször aztán befejezi. Nem értem ez miért történik, de mikor hivjuk az animációból a lövés metódust akkor Resetelem ezt a Triggert és ez megjavította.
+Az animációk nem néznek ki a legszebben, lehetségesen szükség lesz a bal kézre Inverse Kinematicsra hogy kövesse a fegyvert, ennek nem tesz eleget a jelenlegi animáció.
+A jobb kéz megfelelõ, mivel a fegyver ennek a gyereke. Illetve a fegyver nem teljesen néz elõre amikor lõ a robot.
+
+2021. 10. 26
+
+Importáltam az Animation Rigging packaget amivel Inverse Kinematicsot tudok hozzáadni a humanoid ellenséghez. A bal kéz mostmár követi a fegyvert állandóan, felülírja a pozíciókat amit az animáció adna a kéznek, alkarnak és karnak, ezáltal
+úgy néz ki mintha a fegyvert fogná. Igazából ez egy apróság, ha nem raktam volna bele valószínûleg soha senki nem vette volna észre, de úgy döntöttem megcsinálom hogy jobban nézzen ki.
+
+Ebbõl az ellenségbõl 4 erõsségût hozzáadtam a játékhoz. Messzire tudnak lõni, relative nagyot sebeznek, és nagyon gyors a lõszerük, de viszont ritkábban lõnek mint a többi ellenség.
+
+Gondolkozok hogy lassan hozzáadok egy menüt a játékhoz.
 

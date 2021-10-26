@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1892576996318254329}
   - component: {fileID: 8213360929578051949}
   - component: {fileID: 6964756849159981880}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: tank1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4502569813834182022}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Projectile spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 2562730601678421749}
   - component: {fileID: 6518022334764479101}
   - component: {fileID: 70790570597673962}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
