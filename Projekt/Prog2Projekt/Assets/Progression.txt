@@ -353,3 +353,10 @@ Ebbõl az ellenségbõl 4 erõsségût hozzáadtam a játékhoz. Messzire tudnak lõni, re
 
 Gondolkozok hogy lassan hozzáadok egy menüt a játékhoz.
 
+2021. 10. 27
+
+Hozzáadtam a játékohoz egy Menu scene-t, és elkezdtem elkészíteni a fõ gombokat. 
+
+Arra gondoltam hogy a játékosnak is kéne kezet csinálni. A fegyver pozicióját gondoltam animálni a LeanTween-nel (kevesebb erõforrásba kerül mint egy rendes animáció) a kezek pedig Inverse Kinematics segítségével (amit az ellenség
+bal kezénél is használtam) követik a fegyver pozícióját. A csontvázat a mixamo.com auto riggerével tettem rá a kezekre. A kezeken végeztem egy IK tesztelgetést egyelõre, rosssz irányba hajlik a könyök, ezt majd javitanom kellesz.
+
