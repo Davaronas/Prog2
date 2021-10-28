@@ -15,11 +15,11 @@ E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61376
+64213
 Successfully changed project path to: E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
 E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 108.96 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 161.51 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.3f1 (4bef613afd59)
 [Subsystems] Discovering subsystems at path E:/unityhub/2021.1.3f1/Editor/Data/Resources/UnitySubsystems
@@ -36,129 +36,48 @@ Initialize mono
 Mono path[0] = 'E:/unityhub/2021.1.3f1/Editor/Data/Managed'
 Mono path[1] = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/unityhub/2021.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001244 seconds.
+Registered in 0.001024 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 117.74 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 142.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.486 seconds
+- Completed reload, in  1.635 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003519 seconds.
+Registered in 0.006224 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 121.65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 153.59 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.948 seconds
+- Completed reload, in  2.522 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.12 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4294 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 172.6 MB.
 System memory in use after: 170.0 MB.
 
 Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 4717.
-Total: 4.501100 ms (FindLiveObjects: 0.797300 ms CreateObjectMapping: 0.234000 ms MarkObjects: 2.396900 ms  DeleteObjects: 1.072100 ms)
+Total: 4.141900 ms (FindLiveObjects: 0.320300 ms CreateObjectMapping: 0.187100 ms MarkObjects: 2.347100 ms  DeleteObjects: 1.286100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Models/PlayerHandsRigged.fbx
-  artifactKey: Guid(6421da1fdc8d1e24fb8c23a4779f4c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/PlayerHandsRigged.fbx using Guid(6421da1fdc8d1e24fb8c23a4779f4c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84537cd49e8f0a23ac8041a8b4829dd6') in 0.459287 seconds 
+  path: Assets/Progression.txt
+  artifactKey: Guid(43252b8fed42a934c90b19f0f4494695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Progression.txt using Guid(43252b8fed42a934c90b19f0f4494695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f2c049555dd38b129a9ab7a8382257') in 0.073730 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 33.654086 seconds.
-  path: Assets/Materials/YellowLight.mat
-  artifactKey: Guid(457d464388db6494d9de012a283141b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/YellowLight.mat using Guid(457d464388db6494d9de012a283141b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72772aaa2c4ab0aabaa50bf14b9127f9') in 0.135003 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 86.887430 seconds.
-  path: Packages/com.unity.animation.rigging/Editor/Shapes/LocatorEffector.asset
-  artifactKey: Guid(c6793350c150f456688e39a81f97364a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.animation.rigging/Editor/Shapes/LocatorEffector.asset using Guid(c6793350c150f456688e39a81f97364a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e93fd575bd6c62dd308226bc359919') in 0.315003 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000637 seconds.
-  path: Packages/com.unity.animation.rigging/Editor/Shapes/SquareEffector.asset
-  artifactKey: Guid(707439f5f179a460987ecbb96364c8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.animation.rigging/Editor/Shapes/SquareEffector.asset using Guid(707439f5f179a460987ecbb96364c8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09377bf9965e6eb3c965a9c6b74fb809') in 0.035312 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 117.719682 seconds.
-  path: Assets/Scripts/Gameflow/RoundManager.cs
-  artifactKey: Guid(b1cfc03763a836240bfdab57eb163cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Gameflow/RoundManager.cs using Guid(b1cfc03763a836240bfdab57eb163cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f1e705504eb2d73d28e0fa6c175518') in 0.087995 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004116 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.834 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4218 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.4 MB.
-System memory in use after: 186.9 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4802.
-Total: 5.269600 ms (FindLiveObjects: 0.348200 ms CreateObjectMapping: 0.189100 ms MarkObjects: 3.410400 ms  DeleteObjects: 1.319800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004082 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.372 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4218 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.5 MB.
-System memory in use after: 187.0 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4805.
-Total: 5.146800 ms (FindLiveObjects: 0.367000 ms CreateObjectMapping: 0.221100 ms MarkObjects: 3.403300 ms  DeleteObjects: 1.154200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004013 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.392 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4218 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.4 MB.
-System memory in use after: 186.9 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4808.
-Total: 6.240900 ms (FindLiveObjects: 0.518200 ms CreateObjectMapping: 0.214000 ms MarkObjects: 4.262400 ms  DeleteObjects: 1.244300 ms)
-
+  Time since last request: 271.067330 seconds.
+  path: Assets/Progression.txt
+  artifactKey: Guid(43252b8fed42a934c90b19f0f4494695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Progression.txt using Guid(43252b8fed42a934c90b19f0f4494695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22dbaed0b8ffc0afa4f618a93f79db0') in 0.002493 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
