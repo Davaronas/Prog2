@@ -216,10 +216,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5307188461605554704, guid: 9a0bd9281f0b8524fbada54c752dbbba, type: 3}
   projectileSpawn: {fileID: 1355550240}
-  attackInterval: 0.7
+  attackInterval: 1.2
   attackIntervalRandomizing: 0.15
   damage: 8
-  projectileSpeed: 30
+  projectileSpeed: 25
 --- !u!114 &284844488055185491
 MonoBehaviour:
   m_ObjectHideFlags: 0

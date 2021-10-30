@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
 
     private bool hit = false;
 
-    public void SetDamage(int _damage)
+    public virtual void SetDamage(int _damage)
     {
         damage = _damage;
         startPos = transform.position;
@@ -20,17 +20,19 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        
+
         if (!hit)
         {
 
             hit = true;
-
+           
             if (collision.gameObject.TryGetComponent(out possibleTarget_))
             {
                 possibleTarget_.Hit(damage, startPos);
             }
 
-
+           print(collision.gameObject.name + " " + (possibleTarget_ == null));
             Destroy(gameObject);
         }
     }

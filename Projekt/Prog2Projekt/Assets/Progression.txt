@@ -10,27 +10,37 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -----------------------------
 -Healthbar for enemies on hover*
 -Grenades 3*
+-Weapon fire animations*
+-Tooltip for weapon informations in shop*
+-Ability: chance to not use ammo when firing on main weapon*
+-Ability: enhanced armor -33% taken damage*
+-Skill tree to buy abilities instead of just being in the shop, 
+	this is a good way to introduce prerequisite abilites*
+-If the shop is opened while you're using your jetpack, you'll keep flying after you quit*
 
--Enemy shoot predicted position of player calculated from velocity (like in oblivion) *_
+-Enemy shoot predicted position of player calculated from player velocity and distance to player (like in oblivion) *_
 
 
 
 -Player death
--Weapon fire animations
--Tooltip for weapon informations in shop
 -Enemy drops should be spawned at the same height
 -Should not be able buy/pick up health and ammo when they are full
--If the shop is opened while you're using your jetpack, you'll keep flying after you quit
--Ability: chance to not use ammo when firing on main weapon
--Ability: enhanced armor -33% taken damage
+-When the shop is active gravity is blocked  ?
 -Grenade launcher ?
 -Rocket launcher ?
--Skill tree to buy abilities instead of just being in the shop, this is a good way to introduce prerequisite abilites
 -Enemy projectiles sometimes throw player in the air for a split second, including melee
+-Sounds
+-Map
+-Grenade explosion
+-Grenade counter
+-Health, ammo, grenade price
+-Spider like enemy with 8 legs that use IK for moving the legs, and their projectiles slow the 
+	player down. Lot of distance check with the way I would
+	like to do it, could cost performance. ?
+-Options menu player arms material
+-Options menu hud type: helmet or simple
 
 
-
--When the shop is active gravity is blocked  ?
 
 -----------------------------
 
@@ -48,7 +58,8 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 KÉRDÉSEK/DILEMMÁK
 -----------------------------
 -Ellenséges lõszerek akadjanak e meg más ellenfeleken, illetve azok okozzanak e sebzés ?
-	Egyelõre mind a kettõre nem a válasz, könnyen arról szólhatna a játék hogy jól álljunk be ellenfelek elé, vagy irni kéne egy bonyolultabb AI-t ami erre odafigyel
+	Egyelõre mind a kettõre nem a válasz, könnyen arról szólhatna a játék hogy jól 
+	álljunk be ellenfelek elé, vagy irni kéne egy bonyolultabb AI-t ami erre odafigyel
 
 -Szükség van e sprintelésre, illetve fogyasszon e erõforrást, és milyet ?
 	Egyelõre úgy gondolom nem fogok bele tenni sprintelést, viszont a mozgási sebesség boltból növelhetõ lesz
@@ -77,12 +88,16 @@ KÉRDÉSEK/DILEMMÁK
 	hogy minden lõszer amit felveszünk, akármennyit is vettünk fel a fõ fegyverünkhöz, töltse
 	fel teljesen a pisztolyt.
 
-
+*
 -A játékosnak több mobilitásra van szüksége, mert könnyen be tudunk szorulni egy rossz helyzetbe
  és lehetségesen nem is tudjuk elérni az ellenfelek által eldobott életet és lõszert
 	Boltban vásárolható dash ability ?
 	Boltban vásárolható teleportálás ability ?
 	Sprintelés ?
+
+	dash ability-t beleraktam a játékba, ha megvásároljuk az összes Mobility perket akkor kapunk jetpacket,
+	gyorsaságot, meg két dash-t.
+*
 
 
 
@@ -96,10 +111,13 @@ KÉRDÉSEK/DILEMMÁK
 
 Elkezdtem írni a játékos irányítását. 
 
-Csináltam egy Controls.cs nevû scriptet ahol meg lesz fogalmazva az összes irányítási gomb, ha belefér az idõbe rebindolhatóra akarok minden cselekvést csinálni
+Csináltam egy Controls.cs nevû scriptet ahol meg lesz fogalmazva az összes irányítási gomb, ha belefér az 
+idõbe rebindolhatóra akarok minden cselekvést csinálni
 
-Modelleztem egy pisztolyt amit a játékos fog tudni használni (lehetségesen az ellenfelek is). A modell kinézetét nem textúrával készítettem, hanem a különbözõ részeire különbözõ materialokat tettem, unityben ezekre a részekre
-rá tudok húzni más materialokat, ezt azért így csináltam mert így a fegyver kinézetének a változtatása sokkal könnyebb és gyorsabb lesz mintha textúrákat rajzolnék minden különbözõ kinézethez.
+Modelleztem egy pisztolyt amit a játékos fog tudni használni (lehetségesen az ellenfelek is). A modell 
+kinézetét nem textúrával készítettem, hanem a különbözõ részeire különbözõ materialokat tettem, unityben ezekre a részekre
+rá tudok húzni más materialokat, ezt azért így csináltam mert így a fegyver kinézetének a változtatása 
+sokkal könnyebb és gyorsabb lesz mintha textúrákat rajzolnék minden különbözõ kinézethez.
 Lehetségesen a játékosnak meg lesz a lehetõsége hogy customizálja a fegyverek kinézetét, ha az idõ megengedi.
 
 
@@ -109,28 +127,37 @@ Lehetségesen a játékosnak meg lesz a lehetõsége hogy customizálja a fegyverek ki
 
 Elkészült a játékos irányítás. Mozgás + nézelõdés.
 
-LeanTween-t importáltam: akár UI elemeket, akár GameObject-eket is lehet animálni vele. A játékos fegyvereinek nagyon egyszerû animációi lesznek, ezért ez is elegendõ, és kevesebb erõforrásba kerül
+LeanTween-t importáltam: akár UI elemeket, akár GameObject-eket is lehet animálni vele. 
+A játékos fegyvereinek nagyon egyszerû animációi lesznek, ezért ez is elegendõ, és kevesebb erõforrásba kerül
 mint a Unitys Animator rendszer.
 
-Importáltam a pisztoly modellt. Csináltam egy fegyver kamerát ami a fõ kamera gyereke, mindig együtt fog vele mozogni. Ez azért szükséges hogy egy kamera a környezetet renderelje, egy pedig csak a játékos fegyvereit. Ha nem így lenne
+Importáltam a pisztoly modellt. Csináltam egy fegyver kamerát ami a fõ kamera gyereke, 
+mindig együtt fog vele mozogni. Ez azért szükséges hogy egy kamera a környezetet renderelje, 
+egy pedig csak a játékos fegyvereit. Ha nem így lenne
 a fegyverek modeljei belemennének a falakba és egyéb tárgyakba, és az nem szép.
 
 
 
 2021. 09. 16
 
-Életerõnek és lõszernek raktam UI csíkokat. Egy másik projektembõl importáltam az ImageColoring.cs scriptet ami a GameObject-hez hozzárendelt Image komponens sprite-jából készít egy színátmenetes verziót.
+Életerõnek és lõszernek raktam UI csíkokat. Egy másik projektembõl importáltam az 
+ImageColoring.cs scriptet ami a GameObject-hez hozzárendelt Image komponens sprite-jából készít egy színátmenetes verziót.
 
-Alap lövés mechanika kész. Célkereszt kész, ami követi a tényleges pontot ahova fog érkezni a lõvedék. Lövedékre raktam trailt hogy szebben nézzen ki. Lõszer rendszer kész.
+Alap lövés mechanika kész. Célkereszt kész, ami követi a tényleges pontot ahova fog érkezni a lõvedék. 
+Lövedékre raktam trailt hogy szebben nézzen ki. Lõszer rendszer kész.
 
-A lõszer becsapódáskor keresi a HitBroadcast.cs nevû scriptet az eltalált objektumon. Ha megtalálja, akkor átadja neki a lövedéknek megadott sebzést. Erre az eseményre fel vannak iratkozva az életerõért felelõs
-scriptek az általált objektumon. Ekkor leveszi a megfelelõ mennyiségû életerõt. Egy piros kapszulát már el is tudunk pusztítani a pisztolyunkkal.
+A lõszer becsapódáskor keresi a HitBroadcast.cs nevû scriptet az eltalált objektumon. Ha megtalálja, 
+akkor átadja neki a lövedéknek megadott sebzést. Erre az eseményre fel vannak iratkozva az életerõért felelõs
+scriptek az általált objektumon. Ekkor leveszi a megfelelõ mennyiségû életerõt. 
+Egy piros kapszulát már el is tudunk pusztítani a pisztolyunkkal.
 
 
 
 2021. 09. 17
 
-Fegyverek mostmár felszerelhetõek elsõdleges és másodlagos helyre. Ezt majd egy UI elem kattintásával (körök végén shop: fegyver vásárlás) vagy lehetségesen ellenségekbõl dobott fegyverek felvételével fogjuk elérni.
+Fegyverek mostmár felszerelhetõek elsõdleges és másodlagos helyre. 
+Ezt majd egy UI elem kattintásával (körök végén shop: fegyver vásárlás) vagy lehetségesen 
+ellenségekbõl dobott fegyverek felvételével fogjuk elérni.
 
 Beleraktam egy main weapont. 
 
@@ -140,8 +167,12 @@ Elsõdleges és másodlagos fegyver váltogatható.
 
 2021. 09. 18
 
-Programozni ma már nem volt kedvem, inkább vizuálisabb dolgokat tettem hozzá a játékhoz. A Star Wars Republic Commando által inspirálva modelleztem egy sisak belsejét, ami mindig a kamera elõtt lesz, így a játékos úgy érezheti hogy 
-a karaktere ténylegesen hord egy sisakot. Az üveg és a másik anyag interaktál a fényekkel, így még hihetõbbé teszi a az élményt. Ez valószínûleg ki és be kapcsolható lesz a menüben mivel valamennyire gátolja a láthatóságot.
+Programozni ma már nem volt kedvem, inkább vizuálisabb dolgokat tettem hozzá a játékhoz. 
+A Star Wars Republic Commando által inspirálva modelleztem egy sisak belsejét, 
+ami mindig a kamera elõtt lesz, így a játékos úgy érezheti hogy 
+a karaktere ténylegesen hord egy sisakot. Az üveg és a másik anyag interaktál a fényekkel, 
+így még hihetõbbé teszi a az élményt. Ez valószínûleg ki és be kapcsolható lesz a 
+menüben mivel valamennyire gátolja a láthatóságot.
 
 Modelleztem egy fegyvert, ez egy lassabban tüzelõ, de nagyobbakat sebzõ és több lõszert fogyasztó fegyver.
 
@@ -149,11 +180,14 @@ Modelleztem egy fegyvert, ez egy lassabban tüzelõ, de nagyobbakat sebzõ és több 
 
 2021. 09. 19
 
-A sisak mostmár tartalmaz 3d-s hengereket amik kijelzik az életerõt és a lõszert. Lehet váltani sisak és szimpla ui között (a szimpla egyszerû 2d csikok).
+A sisak mostmár tartalmaz 3d-s hengereket amik kijelzik az életerõt és a lõszert.
+Lehet váltani sisak és szimpla ui között (a szimpla egyszerû 2d csikok).
 
-Modelleztem egy drónt, ami egy alacsony szintû ellenfél lesz. A rotorjaira irtam egy scriptet ami folyamatosan forgatja a lokális Y tengelyein õket.
+Modelleztem egy drónt, ami egy alacsony szintû ellenfél lesz. A rotorjaira irtam egy 
+scriptet ami folyamatosan forgatja a lokális Y tengelyein õket.
 
-Új erõforrás: jetpack energia, ha lenyomva tartjuk a Space gombot és van elég energiánk akkor elkezdünk emelkedni. Miután elengedtük a gombot nemsokkal késõbb újratermelõdik ez az erõforrás.
+Új erõforrás: jetpack energia, ha lenyomva tartjuk a Space gombot és van elég energiánk 
+akkor elkezdünk emelkedni. Miután elengedtük a gombot nemsokkal késõbb újratermelõdik ez az erõforrás.
 Ez az erõforrás ki van jelezve mind a két típusu UI-on is.
 
 A drón mostmár tüzel a játékosra ha elég közel van és le is veszi az életerejét ha eltalálja.
@@ -164,12 +198,16 @@ A drón mostmár tüzel a játékosra ha elég közel van és le is veszi az életerejét 
 
 Fegyvereket és ellenfeleket akarok hozzáadni a játékhoz mai nap folyamán.
 
-Az eredeti drónon kicseréltem a materialokat, növeltem a sebességét, sebzését, lövedék sebességét, életerejét. Ez egy másik fajta ellenfél lesz.
+Az eredeti drónon kicseréltem a materialokat, növeltem a sebességét, sebzését, lövedék 
+sebességét, életerejét. Ez egy másik fajta ellenfél lesz.
 
-Modelleztem egy tank/robot szerûséget, ebbõl is készítettem két fajta ellenfelet, adatait, materialjait változtatva.
+Modelleztem egy tank/robot szerûséget, ebbõl is készítettem két fajta ellenfelet,
+adatait, materialjait változtatva.
 
-Elkezdtem modellezni egy másik fajta pisztolyt, a Mass Effect-es pisztolyt veszem referenciának. Ez egy gyorsan tüzelõ, keveset sebzõ, és gyorsan újtratöltõdõ pisztoly lesz 
-( pisztoly lõszer magától újratöltõdik, elsõdleges fegyverekét pedig ellenségebõl dobott, vagy boltból vásárolt lõszerrel kell feltölteni majd)
+Elkezdtem modellezni egy másik fajta pisztolyt, a Mass Effect-es pisztolyt veszem referenciának. 
+Ez egy gyorsan tüzelõ, keveset sebzõ, és gyorsan újtratöltõdõ pisztoly lesz 
+( pisztoly lõszer magától újratöltõdik, elsõdleges fegyverekét pedig ellenségebõl dobott,
+vagy boltból vásárolt lõszerrel kell feltölteni majd)
 
 
 
@@ -181,9 +219,12 @@ A játék gazdaságot akarom ma elkezdeni: pénz, bolt, elsõdleges és másodlagos feg
 
 Árnyékokat kikapcsoltam a fegyver modelleken mert rosszul nézett ki hogy árnyékot vet egy lebegõ fegyver.
 
-Van bolt panel (egyelõre Tab billentyûvel tudjuk megnyitni, késõbb a bolt meccsek végén fog megjelenni egy rövid idõre) , amikor ez bekapcsol nem tudunk semmilyen akciót végrehajtanak, megkapjuk az egerünket és tudunk vásárolni a boltból. 
+Van bolt panel (egyelõre Tab billentyûvel tudjuk megnyitni, késõbb a bolt meccsek 
+végén fog megjelenni egy rövid idõre) , amikor ez bekapcsol nem tudunk semmilyen akciót végrehajtanak,
+megkapjuk az egerünket és tudunk vásárolni a boltból. 
 Egyelõre csak rákkatintunk a fegyver képére és felszereli nekünk.
-Késõbb pénzért fogjuk tudni ezeket megvenni, és ellenõrizni fogja a játék hogy nem e az a fegyver van jelenleg nálunk, mert ekkor nem fogjuk tudni újra megvenni.
+Késõbb pénzért fogjuk tudni ezeket megvenni, és ellenõrizni fogja a játék hogy 
+nem e az a fegyver van jelenleg nálunk, mert ekkor nem fogjuk tudni újra megvenni.
 
 
 Modelleztem egy elsõsegély csomagot, meg 6 darab töltényt egymást mellett ami a lõszeres felvehetõ tárgyat fogja jelezni.
@@ -196,11 +237,14 @@ Ezeket felhasználtam arra is hogy képet csináljak róluk és a boltban is lehet ve
 Hozzáadtam még egy fegyvert a játékhoz, a star wars-os E5 blaster riflet vettem referenciának. 
 
 
-Ellenségekre ráraktam egy új scriptet, ami azért felelõs hogy véletlenszerûen dobjanak életerõt vagy lõszert halálukkor. Be lehet állítani ezekre az eseményekre mennyi az esély, illetve hogy mennyit dobjanak ezekbõl az erõforrásokól
+Ellenségekre ráraktam egy új scriptet, ami azért felelõs hogy véletlenszerûen dobjanak életerõt 
+vagy lõszert halálukkor. Be lehet állítani ezekre az eseményekre mennyi az esély, illetve hogy
+mennyit dobjanak ezekbõl az erõforrásokól
 amikor ez az esemény megtörténik.
 
 
-Hozzáadtam a játkhoz sebzés indikátort. Mutat a bekapott sebzés irányára, 2 másodperc után elhalványodik és elpusztul. Megrajzoltam hozzá egy képet, lehet késõbb ezt még változtatni fogom ha nem fog tetszeni.
+Hozzáadtam a játkhoz sebzés indikátort. Mutat a bekapott sebzés irányára, 2 másodperc után elhalványodik
+és elpusztul. Megrajzoltam hozzá egy képet, lehet késõbb ezt még változtatni fogom ha nem fog tetszeni.
 A forgását az indikátornak egy tutorialból néztem, annyira a Quaternionokhoz és a forgatásokhoz nem értek.
 
 Ellenfelek dobnak pénzt mikor meghalnak, viszont ez még nincs kiírva sehol és nem tudunk vele semmit csinálni.
@@ -246,30 +290,37 @@ Hozzáadtam még egy fegyvert, a P90-est véve referenciának.
 Modelleztem egy pályát, még a materialokat állítgatni kell Blenderbe hogy több material behelyezésére legyen lehetõség, 
 ezután be fogom rakni a játékba.
 
-Közelharci ellenfelet tervezek belerakni. Ezzel az a célom hogy tántorítsuk el a játékost attól hogy egy helyen maradjon sokáig, illetve hogy 
+Közelharci ellenfelet tervezek belerakni. Ezzel az a célom hogy tántorítsuk el a játékost attól
+hogy egy helyen maradjon sokáig, illetve hogy 
 rákényszerítsük hogy repüljön, mert ugye akkor nem tudnak megsebezni minket.
 
-Modelleztem illetve beleraktam egy robot szerûséget a játékba amit Skorpiónak neveztem el , ebbõl is 3 erõsségût. Ezek közel akarnak kerülni a játékoshoz és akkor támadnak csak.
+Modelleztem illetve beleraktam egy robot szerûséget a játékba amit Skorpiónak neveztem el , 
+ebbõl is 3 erõsségût. Ezek közel akarnak kerülni a játékoshoz és akkor támadnak csak.
 Gyorsak, nagyokat sebeznek, kevés életük van. 
-Elektromossággal támadnak, rajzolam paint.net-ben egy képet amit úgy gondoltam hogy átadja a játékosnak hogy ez az akar lenni.
+Elektromossággal támadnak, rajzolam paint.net-ben egy képet amit úgy gondoltam hogy 
+átadja a játékosnak hogy ez az akar lenni.
 Egy particle systembe belehelyeztem és így akarom kelteni a hatást hogy megráznak minket. 
 Lehetségesen valami effektet a képernyõre is fogok késõbb helyezni hogy ezzel is erõsítsük a beleélést.
 
 
-Lefelenézést maximum megengedett szögét feljebb vettem, mert ha a közelharci robot üldöznek minket nem tudtunk rájük lõni mert alattunk voltak.
+Lefelenézést maximum megengedett szögét feljebb vettem, mert ha a közelharci robot üldöznek
+minket nem tudtunk rájük lõni mert alattunk voltak.
 
 Ellenséges sebzéseket lejjebb vettem mert túl hamar megölik a játékost.
 
-A pályára tervezek tenni vékony oszlopokat amikre fel lehet repülni, de vékony hogy ne lehessen kikerülni a lövedékeket(nincs mozgástér) -> nyitott részek lövészek ellen jók mert 
+A pályára tervezek tenni vékony oszlopokat amikre fel lehet repülni, de vékony hogy ne lehessen 
+kikerülni a lövedékeket(nincs mozgástér) -> nyitott részek lövészek ellen jók mert 
 ki lehet kerülni a lövedékeket, magas helyek pedig közelharcosok ellen, de egyik sem jó mind a kettõ ellen.
 
 
 2021. 09. 29
 
-Hozzáadtam egy lángszórót a játékhoz. Nagyon sokat sebez, viszont a lõszerének van gravitációja és a saját lõszerei gátolják a láthatóságot (fényes particle-ök),
+Hozzáadtam egy lángszórót a játékhoz. Nagyon sokat sebez, viszont a lõszerének van gravitációja 
+és a saját lõszerei gátolják a láthatóságot (fényes particle-ök),
 ezek miatt nehézkes vele pontosan lõni.
 
-Kicsit a jetpack újratöltési idejét lejjebb veszem, mert ha a közelharcos egységek elkapnak minket miközben nincs jetpack energiánk
+Kicsit a jetpack újratöltési idejét lejjebb veszem, mert ha a közelharcos egységek elkapnak 
+minket miközben nincs jetpack energiánk
 az nagyon halálos fõleg ha nincs erõs tûzerõ a kezünkben (4 sec -> 3.5 sec).
 Enyhén csökkentem a fogyasztását is (30 -> 28)
 
@@ -328,8 +379,10 @@ Kész van a tooltip a fegyverekhez (különbözõ statisztikája a fegyvereknek megjel
 
 2021. 10. 06
 
-Vásárlás megerõsítés panel elkészült, megkérdezi tõlünk a játék hogy az adott dolgot tényleg meg akarjuk e venni, mennyiért illetve hogy mi a neve az adott dolognak.
-Ez elõtt még ellenõrizni fogja a játék hogy ténylegesen képesek vagyunk e megvenni, mert ha nem akkor nem engedi megnyitni ezt a panelt.
+Vásárlás megerõsítés panel elkészült, megkérdezi tõlünk a játék hogy az adott dolgot
+tényleg meg akarjuk e venni, mennyiért illetve hogy mi a neve az adott dolognak.
+Ez elõtt még ellenõrizni fogja a játék hogy ténylegesen képesek vagyunk e megvenni, 
+mert ha nem akkor nem engedi megnyitni ezt a panelt.
 
 Fegyvereknek és perkeknek ára van. 
 
@@ -339,17 +392,23 @@ Humanoid ellenség modellezése, hozzáadása, még a kód mögötte nincs meg, de van r
 
 2021. 10. 24
 
-Humanoid ellenség mûködõképes, még kisebb bugok vannak benne. Valamiért az animator egyik Trigger paraméterét bekapcsolom, és beragad, azt eredményezve hogy néhányszor fog  egymást után lõni 
-a robotunk, valamikor csak egyszer valamikor egymás után ötször aztán befejezi. Nem értem ez miért történik, de mikor hivjuk az animációból a lövés metódust akkor Resetelem ezt a Triggert és ez megjavította.
-Az animációk nem néznek ki a legszebben, lehetségesen szükség lesz a bal kézre Inverse Kinematicsra hogy kövesse a fegyvert, ennek nem tesz eleget a jelenlegi animáció.
+Humanoid ellenség mûködõképes, még kisebb bugok vannak benne. Valamiért az animator egyik Trigger
+paraméterét bekapcsolom, és beragad, azt eredményezve hogy néhányszor fog  egymást után lõni 
+a robotunk, valamikor csak egyszer valamikor egymás után ötször aztán befejezi. Nem értem ez miért 
+történik, de mikor hivjuk az animációból a lövés metódust akkor Resetelem ezt a Triggert és ez megjavította.
+Az animációk nem néznek ki a legszebben, lehetségesen szükség lesz a bal kézre Inverse Kinematicsra
+hogy kövesse a fegyvert, ennek nem tesz eleget a jelenlegi animáció.
 A jobb kéz megfelelõ, mivel a fegyver ennek a gyereke. Illetve a fegyver nem teljesen néz elõre amikor lõ a robot.
 
 2021. 10. 26
 
-Importáltam az Animation Rigging packaget amivel Inverse Kinematicsot tudok hozzáadni a humanoid ellenséghez. A bal kéz mostmár követi a fegyvert állandóan, felülírja a pozíciókat amit az animáció adna a kéznek, alkarnak és karnak, ezáltal
-úgy néz ki mintha a fegyvert fogná. Igazából ez egy apróság, ha nem raktam volna bele valószínûleg soha senki nem vette volna észre, de úgy döntöttem megcsinálom hogy jobban nézzen ki.
+Importáltam az Animation Rigging packaget amivel Inverse Kinematicsot tudok hozzáadni a humanoid ellenséghez.
+A bal kéz mostmár követi a fegyvert állandóan, felülírja a pozíciókat amit az animáció adna a kéznek, alkarnak és karnak, ezáltal
+úgy néz ki mintha a fegyvert fogná. Igazából ez egy apróság, ha nem raktam volna bele valószínûleg soha senki
+nem vette volna észre, de úgy döntöttem megcsinálom hogy jobban nézzen ki.
 
-Ebbõl az ellenségbõl 4 erõsségût hozzáadtam a játékhoz. Messzire tudnak lõni, relative nagyot sebeznek, és nagyon gyors a lõszerük, de viszont ritkábban lõnek mint a többi ellenség.
+Ebbõl az ellenségbõl 4 erõsségût hozzáadtam a játékhoz. Messzire tudnak lõni, relative nagyot sebeznek, 
+és nagyon gyors a lõszerük, de viszont ritkábban lõnek mint a többi ellenség.
 
 Gondolkozok hogy lassan hozzáadok egy menüt a játékhoz.
 
@@ -357,6 +416,19 @@ Gondolkozok hogy lassan hozzáadok egy menüt a játékhoz.
 
 Hozzáadtam a játékohoz egy Menu scene-t, és elkezdtem elkészíteni a fõ gombokat. 
 
-Arra gondoltam hogy a játékosnak is kéne kezet csinálni. A fegyver pozicióját gondoltam animálni a LeanTween-nel (kevesebb erõforrásba kerül mint egy rendes animáció) a kezek pedig Inverse Kinematics segítségével (amit az ellenség
-bal kezénél is használtam) követik a fegyver pozícióját. A csontvázat a mixamo.com auto riggerével tettem rá a kezekre. A kezeken végeztem egy IK tesztelgetést egyelõre, rosssz irányba hajlik a könyök, ezt majd javitanom kellesz.
+Arra gondoltam hogy a játékosnak is kéne kezet csinálni. A fegyver pozicióját gondoltam animálni a 
+LeanTween-nel (kevesebb erõforrásba kerül mint egy rendes animáció) a kezek pedig Inverse Kinematics segítségével (amit az ellenség
+bal kezénél is használtam) követik a fegyver pozícióját. A csontvázat a mixamo.com auto riggerével tettem rá a kezekre.
+A kezeken végeztem egy IK tesztelgetést egyelõre, rosssz irányba hajlik a könyök, ezt majd javitanom kellesz.
+
+2021. 10. 30
+
+A játékos kezek mûködnek, rátapadnak a fegyverekre. Minden egyes fegyverre egyesével 
+meg kellett határoznom a kéz pozíciókat. A fegyverek modellezésekor egyáltalán nem volt tervben 
+hogy a játékosnak lesz keze,
+így a modelleknek nincs egységes méretezése, illetve a markolatok nem mindenhol illeszkednek a 
+kézbe/túl nagyok/túl kicsik. Többnyire nem okoztak túl sok problémát, nem annyira látszódnak.
+
+Végül úgy döntöttem saját kóddal fogom animálni a fegyvereket. A-ból el kell jutni B pozícióba,
+illetve A forgásból el kell jutni B forgásba. A kezek pedig folyamatosan lekövetik a fegyveren a megadott pozíciójukat.
 

@@ -28,7 +28,7 @@ public class EnemyMovement : MonoBehaviour
     private void Start()
     {
         //DEV
-     //   Initialize(transform.position + (Vector3.forward * 3));
+       // Initialize(transform.position + (Vector3.forward * 3));
     }
 
     public void Initialize(Vector3 _firstMovementPosition)
@@ -65,6 +65,7 @@ public class EnemyMovement : MonoBehaviour
             return; 
         }
 
+       
 
         if (enableFollowingPlayer)
         {
@@ -94,6 +95,11 @@ public class EnemyMovement : MonoBehaviour
 
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
+            if (navMeshAgent.stoppingDistance <= stoppingDistanceAfterSpawning)
+            {
+                return;
+            }
+
             enemyBehaviour.Attack(player.transform.position, player.GetVelocity());
             inRange = true;
         }

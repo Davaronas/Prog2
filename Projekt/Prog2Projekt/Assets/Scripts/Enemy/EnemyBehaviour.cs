@@ -45,9 +45,7 @@ public class EnemyBehaviour : MonoBehaviour
     IEnumerator AttackCooldown()
     {
         canAttack = false;
-        print("Can't attack " + attackInterval);
         yield return new WaitForSeconds(attackInterval + Random.Range(-attackIntervalRandomizing,attackIntervalRandomizing));
-        print("Can attack");
         canAttack = true;
     }
 

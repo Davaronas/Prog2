@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerEquipment : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class PlayerEquipment : MonoBehaviour
     private Weapon secondaryWeapon = null;
     private Weapon mainWeapon = null;
     private Weapon equippedWeapon = null;
+
+    public Action<Transform, Transform> OnWeaponEquipped;
 
 
 
@@ -47,6 +50,9 @@ public class PlayerEquipment : MonoBehaviour
             secondaryWeapon.ShowModel();
             playerResources.ChangeSecondaryAmmo(0,true); // csak ui frissités miatt
             equippedWeapon = secondaryWeapon;
+
+            OnWeaponEquipped?.Invoke(equippedWeapon.rightHandIkPos, equippedWeapon.leftHandIkPos);
+
         }
     }
 
@@ -65,6 +71,9 @@ public class PlayerEquipment : MonoBehaviour
             mainWeapon.ShowModel();
             playerResources.ChangeMainAmmo(0,true); // csak ui frissités miatt
             equippedWeapon = mainWeapon;
+
+            OnWeaponEquipped?.Invoke(equippedWeapon.rightHandIkPos, equippedWeapon.leftHandIkPos);
+
         }
     }
 
@@ -78,6 +87,8 @@ public class PlayerEquipment : MonoBehaviour
         {
             EquipMain(_weapon);
         }
+
+       
     }
 
 
@@ -100,6 +111,9 @@ public class PlayerEquipment : MonoBehaviour
         equippedWeapon = mainWeapon;
 
         playerResources.ChangeMainAmmo(0,true); // csak ui frissités miatt
+
+        OnWeaponEquipped?.Invoke(equippedWeapon.rightHandIkPos, equippedWeapon.leftHandIkPos);
+       
     }
 
     private void EquipSecondary(GameObject _secondary)
@@ -124,6 +138,9 @@ public class PlayerEquipment : MonoBehaviour
         equippedWeapon = secondaryWeapon;
  
         playerResources.ChangeSecondaryAmmo(0,true); // csak ui frissités miatt
+
+        OnWeaponEquipped?.Invoke(equippedWeapon.rightHandIkPos, equippedWeapon.leftHandIkPos);
+
     }
 
     public void FireEquippedWeapon()

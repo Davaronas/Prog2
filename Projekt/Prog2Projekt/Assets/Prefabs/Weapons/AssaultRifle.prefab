@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1513755730684414088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 507885614608719640}
+  m_Layer: 6
+  m_Name: LH_Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &507885614608719640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513755730684414088}
+  m_LocalRotation: {x: -0.6285946, y: -0.060904615, z: -0.12409507, w: 0.76534957}
+  m_LocalPosition: {x: 4.058, y: -0.836, z: 1.475}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6861365809337152330}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -77.77, y: 17.24, z: -32.36}
+--- !u!1 &1779484830155721166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4365041346673307454}
+  m_Layer: 6
+  m_Name: RH_Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4365041346673307454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779484830155721166}
+  m_LocalRotation: {x: -0.00000020861616, y: 0.000000089406925, z: -0.6937716, w: 0.72019506}
+  m_LocalPosition: {x: -4.012, y: -1.048, z: -0.242}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6861365809337152330}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -87.859}
 --- !u!1 &2530648331699875628
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,6 +90,36 @@ Transform:
   m_Father: {fileID: 1550423125702792324}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5357328950729322959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5144325569232928287}
+  m_Layer: 6
+  m_Name: AnimationEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5144325569232928287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5357328950729322959}
+  m_LocalRotation: {x: -0.03700707, y: -0.7061378, z: 0.03700707, w: 0.7061378}
+  m_LocalPosition: {x: 0, y: 0.44, z: -2.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1550423125702792324}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 6}
 --- !u!1 &6085391643018357232
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +148,9 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4365041346673307454}
+  - {fileID: 507885614608719640}
   m_Father: {fileID: 1550423125702792324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -144,6 +236,7 @@ Transform:
   m_Children:
   - {fileID: 6861365809337152330}
   - {fileID: 8295208764844137704}
+  - {fileID: 5144325569232928287}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -160,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponName: Assault Rifle
-  localPlayerPosOnCamera: {x: 0.294, y: -0.246, z: 0.247}
+  localPlayerPosOnCamera: {x: 0.175, y: -0.341, z: 0.294}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 0
   secondaryRechargeInterval: 0.6
@@ -176,3 +269,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2049
   model: {fileID: 6085391643018357232}
+  modelAnimationEndTransform: {fileID: 5144325569232928287}
+  animationSpeed: 50
+  rightHandIkPos: {fileID: 4365041346673307454}
+  leftHandIkPos: {fileID: 507885614608719640}
