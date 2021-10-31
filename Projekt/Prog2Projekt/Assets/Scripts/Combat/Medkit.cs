@@ -6,12 +6,14 @@ using UnityEngine;
 public class Medkit : MonoBehaviour
 {
     [SerializeField] private int containsHealth = 10;
+    [SerializeField] private float destroyTime = 40f;
 
 
 
     public void SetAmount(int _a)
     {
         containsHealth = _a;
+        Invoke(nameof(DestroyDrop), destroyTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,5 +23,10 @@ public class Medkit : MonoBehaviour
             _pr.ChangeHealth(containsHealth);
             Destroy(gameObject);
         }
+    }
+
+    private void DestroyDrop()
+    {
+        Destroy(gameObject);
     }
 }

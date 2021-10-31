@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHealth: 100
   powerLevel: 3
-  powerPoint: 14
+  powerPoint: 10
 --- !u!114 &239763726
 MonoBehaviour:
   m_ObjectHideFlags: 0

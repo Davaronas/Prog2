@@ -457,7 +457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHealth: 600
   powerLevel: 9
-  powerPoint: 300
+  powerPoint: 35
 --- !u!114 &1063863128759376336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,8 +472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropChanceMedkit: 80
   dropChanceAmmo: 80
-  dropHealth: 60
-  dropAmmo: 60
+  dropHealth: 17
+  dropAmmo: 17
   moneyDrop: 500
   medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
   ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}

@@ -7,11 +7,14 @@ using UnityEngine;
 public class Ammo : MonoBehaviour
 {
     [SerializeField] private int containsAmmo = 20;
+    [SerializeField] private float destroyTime = 40f;
 
     public void SetAmount(int _a)
     {
         containsAmmo = _a;
+        Invoke(nameof(DestroyDrop), destroyTime);
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,5 +24,11 @@ public class Ammo : MonoBehaviour
             _pr.ChangeMainAmmo(containsAmmo);
             Destroy(gameObject);
         }
+    }
+
+
+    private void DestroyDrop()
+    {
+        Destroy(gameObject);
     }
 }

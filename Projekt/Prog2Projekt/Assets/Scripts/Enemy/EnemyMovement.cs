@@ -81,12 +81,18 @@ public class EnemyMovement : MonoBehaviour
                // print(navMeshAgent.remainingDistance + " " + stoppingDistanceAfterSpawning + " " + (navMeshAgent.remainingDistance <= stoppingDistanceAfterSpawning));
                 if (navMeshAgent.remainingDistance <= stoppingDistanceAfterSpawning)
                 {
-                    enableFollowingPlayer = true;
+                    Invoke(nameof(EnablePlayerFollowing), Time.deltaTime * 5); // ez megoldja azt a problémát hogy az ellenfél a kezdõpont elérése után egybõl támad
                     navMeshAgent.stoppingDistance = originalStoppingDistance;
+                    navMeshAgent.SetDestination(player.transform.position);
                 }
             }
 
         }
+    }
+
+    private void EnablePlayerFollowing()
+    {
+        enableFollowingPlayer = true;
     }
 
     private void ChasePlayer()

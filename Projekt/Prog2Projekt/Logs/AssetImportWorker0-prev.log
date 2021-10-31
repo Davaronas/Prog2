@@ -1,0 +1,485 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.3f1 (4bef613afd59) revision 4976481'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1288; Version 2009; 64bit' Language: 'hu' Physical Memory: 16239 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\unityhub\2021.1.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63521
+Successfully changed project path to: E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
+E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 105.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.3f1 (4bef613afd59)
+[Subsystems] Discovering subsystems at path E:/unityhub/2021.1.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     4043 MB
+    Driver:   30.0.14.7196
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'E:/unityhub/2021.1.3f1/Editor/Data/Managed'
+Mono path[1] = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/unityhub/2021.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001074 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 116.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.470 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003505 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 114.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.888 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4295 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 172.7 MB.
+System memory in use after: 170.1 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 4718.
+Total: 3.959800 ms (FindLiveObjects: 0.371900 ms CreateObjectMapping: 0.170400 ms MarkObjects: 2.221000 ms  DeleteObjects: 1.195600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Models/SniperRifle.fbx
+  artifactKey: Guid(014c845619b87634d9b5b8b9c9ccde9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/SniperRifle.fbx using Guid(014c845619b87634d9b5b8b9c9ccde9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cdc22714eac6567bd5d16dfc368563') in 0.468162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 135.220871 seconds.
+  path: Assets/Materials/WhiteSteel.mat
+  artifactKey: Guid(7dbe617ce8fca39488815ff092dc3206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WhiteSteel.mat using Guid(7dbe617ce8fca39488815ff092dc3206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac0d1b6e1eb29bb36d48f2acd5f71ad') in 0.060773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.149737 seconds.
+  path: Assets/Materials/Glass2.mat
+  artifactKey: Guid(46e596cf8bd5d8f4b9dd60599d47f95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Glass2.mat using Guid(46e596cf8bd5d8f4b9dd60599d47f95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cdab5cc2e3b6a0074a3966839eca20f') in 0.007790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.083340 seconds.
+  path: Assets/Materials/DarkGreen.mat
+  artifactKey: Guid(42a171e1aa6af6f42a4dc096df2eaff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DarkGreen.mat using Guid(42a171e1aa6af6f42a4dc096df2eaff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edae5b14fde7782c96be4ed4f671163') in 0.009574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 203.872209 seconds.
+  path: Assets/Prefabs/Projectiles/Player/Bullet1 1.prefab
+  artifactKey: Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/Bullet1 1.prefab using Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e71d6eb8766719c54da7bd80bc6438') in 0.017333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.279718 seconds.
+  path: Assets/Prefabs/Projectiles/Player/Bullet8.prefab
+  artifactKey: Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/Bullet8.prefab using Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094f0fdfcc3c6e76874fd01b50d4d060') in 0.007416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.038480 seconds.
+  path: Assets/Prefabs/Projectiles/Player/Bullet8.prefab
+  artifactKey: Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/Bullet8.prefab using Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856aae24f7bb236ac94d6f9c1f86ef4d') in 0.007435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.808700 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08e4c71b60bdd341eccd9bf764ca71a') in 0.010802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.867193 seconds.
+  path: Assets/Sprites/Shop/SniperRifle.PNG
+  artifactKey: Guid(a11770bdd7137304092e9a929999eac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Shop/SniperRifle.PNG using Guid(a11770bdd7137304092e9a929999eac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4ec907cd5b04d9cad20602db33dbd9') in 0.150025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.989900 seconds.
+  path: Assets/Sprites/Shop/SniperRifle.PNG
+  artifactKey: Guid(a11770bdd7137304092e9a929999eac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Shop/SniperRifle.PNG using Guid(a11770bdd7137304092e9a929999eac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a08e8ad4e3742d808d306c11bdb470') in 0.026610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.638179 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(2f55ea8abb93a5245ba8f46f10725362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(2f55ea8abb93a5245ba8f46f10725362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d74e69f2c4c8a4062078f093eaa4811') in 0.075953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.345367 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4718b7442a837c840b458cbef0cb4153') in 0.009881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.386815 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca23839ddff72d7bfc825fa6fa70523') in 0.009428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.363133 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4313e10cf9ca3c33137a5560155c3fa4') in 0.009461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.640583 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9799c3f831789a5796bdd2d25d939535') in 0.008844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.907479 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85650709b961a28e2595d60f65a9caf') in 0.009225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.351647 seconds.
+  path: Assets/Prefabs/Weapons/Flamethrower.prefab
+  artifactKey: Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Flamethrower.prefab using Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49ef2cf143fd594534ff9f3d5105e729') in 0.009858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.320040 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef0ab601264cefced18437838e42320') in 0.010602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.789818 seconds.
+  path: Assets/Scripts/Player/PlayerEquipment.cs
+  artifactKey: Guid(e39787181eeb6e146bc70389049c3b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerEquipment.cs using Guid(e39787181eeb6e146bc70389049c3b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a246d1dd65e828c626e87e4bba532e') in 0.006012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.508271 seconds.
+  path: Assets/Scripts/Player/PlayerResources.cs
+  artifactKey: Guid(0ceccbcee7020d64285b259bb52bf774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerResources.cs using Guid(0ceccbcee7020d64285b259bb52bf774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187bceb02b31c7db488c28156351f7ad') in 0.001473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.586685 seconds.
+  path: Assets/Scripts/Player/PlayerResources.cs
+  artifactKey: Guid(0ceccbcee7020d64285b259bb52bf774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerResources.cs using Guid(0ceccbcee7020d64285b259bb52bf774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c8c92b32f7b24787f82a4aaa2b329f') in 0.032014 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.181 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4220 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.5 MB.
+System memory in use after: 175.0 MB.
+
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 4837.
+Total: 6.777900 ms (FindLiveObjects: 0.552100 ms CreateObjectMapping: 0.343200 ms MarkObjects: 4.194400 ms  DeleteObjects: 1.686200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003418 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.289 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.5 MB.
+System memory in use after: 175.0 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4840.
+Total: 5.156200 ms (FindLiveObjects: 0.555500 ms CreateObjectMapping: 0.256200 ms MarkObjects: 3.021300 ms  DeleteObjects: 1.320600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.722530 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b43c188fe8bbc2d329f0a7a3a22ec81') in 0.160967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.054055 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5d72db848490b36843deae9d70a12a') in 0.034606 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003535 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.140 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.7 MB.
+System memory in use after: 175.1 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4879.
+Total: 4.380300 ms (FindLiveObjects: 0.442100 ms CreateObjectMapping: 0.189700 ms MarkObjects: 2.497500 ms  DeleteObjects: 1.249800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.653368 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27b5374f434a81328c649b8995978d0') in 0.156481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.679464 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '614aca9558a67fd9cc7e35eb9af8164f') in 0.008861 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003701 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.150 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.8 MB.
+System memory in use after: 175.2 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4918.
+Total: 4.913600 ms (FindLiveObjects: 0.411800 ms CreateObjectMapping: 0.224100 ms MarkObjects: 3.083900 ms  DeleteObjects: 1.192700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.306322 seconds.
+  path: Assets/Prefabs/Enemies/HumanoidRobotMelee_weak.prefab
+  artifactKey: Guid(ce586f128c902bf4783e1ba4e04cf962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemies/HumanoidRobotMelee_weak.prefab using Guid(ce586f128c902bf4783e1ba4e04cf962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc487ba24c461e6e8c36ae9441b46b24') in 0.210394 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002943 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.167 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.6 MB.
+System memory in use after: 189.1 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4958.
+Total: 4.821000 ms (FindLiveObjects: 0.333900 ms CreateObjectMapping: 0.169100 ms MarkObjects: 3.157500 ms  DeleteObjects: 1.159400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.862259 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babc08126322311a34bffdf2dd60b709') in 0.150633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.950643 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c7374de546271d98d0e451a8947ce6') in 0.035265 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002951 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.153 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.6 MB.
+System memory in use after: 189.1 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4997.
+Total: 5.084900 ms (FindLiveObjects: 0.531800 ms CreateObjectMapping: 0.307300 ms MarkObjects: 2.957100 ms  DeleteObjects: 1.286600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.011880 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc8e713370a85cca94f0c43cb826d095') in 0.155844 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002922 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.209 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.8 MB.
+System memory in use after: 189.2 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5036.
+Total: 5.240800 ms (FindLiveObjects: 0.529000 ms CreateObjectMapping: 0.325500 ms MarkObjects: 2.918800 ms  DeleteObjects: 1.466100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.687728 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dbf58624dce4ce6f694d1be2a737d76') in 0.159959 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004072 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.423 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.8 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5075.
+Total: 5.383600 ms (FindLiveObjects: 0.531900 ms CreateObjectMapping: 0.202600 ms MarkObjects: 3.055100 ms  DeleteObjects: 1.591900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.209938 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ee165aff899677c3370cf205d26f4e') in 0.175923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.468704 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59006aa416a425c7f2241ec9a644b3ec') in 0.009419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.820955 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930a8c98da7043552fb163e670aa0f33') in 0.008603 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003009 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.160 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.9 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5114.
+Total: 4.701500 ms (FindLiveObjects: 0.596900 ms CreateObjectMapping: 0.212800 ms MarkObjects: 2.729300 ms  DeleteObjects: 1.161400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.410026 seconds.
+  path: Assets/Prefabs/Weapons/SniperRifle.prefab
+  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3762abdba9ebdada9ce28f5cd80b8530') in 0.177917 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003475 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.170 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.0 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5153.
+Total: 5.454300 ms (FindLiveObjects: 0.378100 ms CreateObjectMapping: 0.186600 ms MarkObjects: 3.008000 ms  DeleteObjects: 1.879900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

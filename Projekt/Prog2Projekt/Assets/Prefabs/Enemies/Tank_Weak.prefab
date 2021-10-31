@@ -261,8 +261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropChanceMedkit: 70
   dropChanceAmmo: 70
-  dropHealth: 10
-  dropAmmo: 15
+  dropHealth: 5
+  dropAmmo: 10
   moneyDrop: 30
   medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
   ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}

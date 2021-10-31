@@ -22,8 +22,8 @@ public class RoundManager : MonoBehaviour
        
 
         enemyManager = GetComponent<EnemyManager>();
-        Invoke(nameof(FirstWaveDisplay), 1f); // ez azért kell mert az elsõ néhány frame-et nem szaggatva láthatjuk és a kiirás is rosszul fog kinézni
-        Invoke(nameof(StartRound), timeDelay);
+     //  Invoke(nameof(FirstWaveDisplay), 1f); // ez azért kell mert az elsõ néhány frame-et nem szaggatva láthatjuk és a kiirás is rosszul fog kinézni
+        //Invoke(nameof(StartRound), timeDelay);
 
     }
 

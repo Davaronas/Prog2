@@ -17,6 +17,7 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Skill tree to buy abilities instead of just being in the shop, 
 	this is a good way to introduce prerequisite abilites*
 -If the shop is opened while you're using your jetpack, you'll keep flying after you quit*
+-Enemies attack once when they reach their spawn target position*
 
 -Enemy shoot predicted position of player calculated from player velocity and distance to player (like in oblivion) *_
 
@@ -37,7 +38,7 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Spider like enemy with 8 legs that use IK for moving the legs, and their projectiles slow the 
 	player down. Lot of distance check with the way I would
 	like to do it, could cost performance. ?
--Options menu player arms material
+-Options menu player arms material ?
 -Options menu hud type: helmet or simple
 
 
@@ -52,7 +53,7 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 
 
 
-* le van zárva teljesen
+*--- le van zárva teljesen
 
 
 KÉRDÉSEK/DILEMMÁK
@@ -66,8 +67,8 @@ KÉRDÉSEK/DILEMMÁK
 	Gondolkoztam rajta hogy tudjunk sprintelni ugyanabból az erõforrásból mint a jetpack, de egyelõre elvetettem ezt az ötletet.
 
 
-
-*
+	
+*-----------------------------------
 -Pénz hova/hogyan legyen kiírva ?
 	Két megoldásra gondoltam, állandóan ki van írva a képernyõn, vagy csak mikor vásárolunk a boltban.
 	Egyelõre mind a két fajta UI stílusnál a képernyõ tetejére bal sarokba gondoltam rakni.
@@ -79,7 +80,9 @@ KÉRDÉSEK/DILEMMÁK
 		Hátrány lehet hogy a játékosnak megtévesztõ lehet hogy most mi a francért pont ennyi pénzünk van kör végén.
 
 			Valószíbûleg az elsõ megoldást fogom választani.
-*
+*------------------------------------
+
+
 
 
 
@@ -88,7 +91,11 @@ KÉRDÉSEK/DILEMMÁK
 	hogy minden lõszer amit felveszünk, akármennyit is vettünk fel a fõ fegyverünkhöz, töltse
 	fel teljesen a pisztolyt.
 
-*
+
+
+
+
+*----------------------------------------
 -A játékosnak több mobilitásra van szüksége, mert könnyen be tudunk szorulni egy rossz helyzetbe
  és lehetségesen nem is tudjuk elérni az ellenfelek által eldobott életet és lõszert
 	Boltban vásárolható dash ability ?
@@ -97,7 +104,7 @@ KÉRDÉSEK/DILEMMÁK
 
 	dash ability-t beleraktam a játékba, ha megvásároljuk az összes Mobility perket akkor kapunk jetpacket,
 	gyorsaságot, meg két dash-t.
-*
+*--------------------------------------------
 
 
 
@@ -431,4 +438,10 @@ kézbe/túl nagyok/túl kicsik. Többnyire nem okoztak túl sok problémát, nem annyir
 
 Végül úgy döntöttem saját kóddal fogom animálni a fegyvereket. A-ból el kell jutni B pozícióba,
 illetve A forgásból el kell jutni B forgásba. A kezek pedig folyamatosan lekövetik a fegyveren a megadott pozíciójukat.
+
+Új közelharci ellenfél aki egy lézerkardal akar megölni minket.
+
+2021. 10. 31
+
+Két új fegyver, egy másodlagos géppisztoly, és egy mesterlövész puska. Gameplay/balance változtatások(árak, sebzések, értékek stb).
 
