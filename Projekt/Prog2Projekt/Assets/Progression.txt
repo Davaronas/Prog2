@@ -18,28 +18,29 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 	this is a good way to introduce prerequisite abilites*
 -If the shop is opened while you're using your jetpack, you'll keep flying after you quit*
 -Enemies attack once when they reach their spawn target position*
+-Grenade explosion*
 
 -Enemy shoot predicted position of player calculated from player velocity and distance to player (like in oblivion) *_
 
 
-
 -Player death
+-Grenade counter
+-Health, ammo, grenade price
+-Grenade launcher ?
+
 -Enemy drops should be spawned at the same height
 -Should not be able buy/pick up health and ammo when they are full
 -When the shop is active gravity is blocked  ?
--Grenade launcher ?
 -Rocket launcher ?
 -Enemy projectiles sometimes throw player in the air for a split second, including melee
 -Sounds
 -Map
--Grenade explosion
--Grenade counter
--Health, ammo, grenade price
 -Spider like enemy with 8 legs that use IK for moving the legs, and their projectiles slow the 
 	player down. Lot of distance check with the way I would
 	like to do it, could cost performance. ?
 -Options menu player arms material ?
 -Options menu hud type: helmet or simple
+-Grenadier enemy
 
 
 
@@ -444,4 +445,10 @@ illetve A forgásból el kell jutni B forgásba. A kezek pedig folyamatosan lekövet
 2021. 10. 31
 
 Két új fegyver, egy másodlagos géppisztoly, és egy mesterlövész puska. Gameplay/balance változtatások(árak, sebzések, értékek stb).
+
+2021. 11. 03
+
+Új ellenségek, további tweakek balance változtatások, új pisztoly: revolver.
+Gránát robbanás effekt.
+Minimum erõ szinteket lehet bevezetem, kezdõ ellenfelek ne jöjjenek késõbbi körökben.
 

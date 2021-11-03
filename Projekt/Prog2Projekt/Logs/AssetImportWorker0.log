@@ -15,11 +15,11 @@ E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63810
+58749
 Successfully changed project path to: E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
 E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 108.92 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 112.46 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.3f1 (4bef613afd59)
 [Subsystems] Discovering subsystems at path E:/unityhub/2021.1.3f1/Editor/Data/Resources/UnitySubsystems
@@ -36,687 +36,552 @@ Initialize mono
 Mono path[0] = 'E:/unityhub/2021.1.3f1/Editor/Data/Managed'
 Mono path[1] = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/unityhub/2021.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001453 seconds.
+Registered in 0.001590 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 112.25 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 119.69 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.479 seconds
+- Completed reload, in  1.590 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004593 seconds.
+Registered in 0.003292 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 111.90 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 116.97 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.925 seconds
+- Completed reload, in  1.861 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.24 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4295 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.7 MB.
-System memory in use after: 170.1 MB.
+Unloading 4297 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.0 MB.
+System memory in use after: 171.4 MB.
 
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 4718.
-Total: 6.812000 ms (FindLiveObjects: 0.641000 ms CreateObjectMapping: 0.461500 ms MarkObjects: 3.944500 ms  DeleteObjects: 1.763100 ms)
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 4724.
+Total: 4.426100 ms (FindLiveObjects: 0.429300 ms CreateObjectMapping: 0.176100 ms MarkObjects: 2.712900 ms  DeleteObjects: 1.106900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Projectiles/Player/Bullet8.prefab
-  artifactKey: Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet8.prefab using Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4deef2cd82c982930eb99c1009050a4e') in 0.279162 seconds 
+  path: Assets/Materials/Test.mat
+  artifactKey: Guid(3979bee4968071d409559736cf052f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Test.mat using Guid(3979bee4968071d409559736cf052f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44d7a74b51910755fcff3f7b9ba5142') in 0.287744 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.668934 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet8.prefab
-  artifactKey: Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet8.prefab using Guid(894452177411d9d47802bbfa1a893d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5430dfece0f3b6a6770b39d5919fd05f') in 0.010109 seconds 
+  Time since last request: 890.003180 seconds.
+  path: Assets/Models/ThrowingStar.fbx
+  artifactKey: Guid(e2c3d216ce20a134ca7eeb4b90b59e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/ThrowingStar.fbx using Guid(e2c3d216ce20a134ca7eeb4b90b59e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1737197bfafbcd1920439dc843bddd') in 0.229760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.515162 seconds.
+  path: Assets/Prefabs/Weapons/Flamethrower.prefab
+  artifactKey: Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Flamethrower.prefab using Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f48cdc3ccb02a5ce0083bc802429d8') in 0.020070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.239935 seconds.
+  path: Assets/Prefabs/Weapons/MachinePistol1.prefab
+  artifactKey: Guid(69dde8113b51e134baced0b6aa2dd81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/MachinePistol1.prefab using Guid(69dde8113b51e134baced0b6aa2dd81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aaf0968cc4595620b4733d83542ac5d') in 0.010368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.362786 seconds.
+  path: Assets/Prefabs/Weapons/Pistol3.prefab
+  artifactKey: Guid(22cac54d0cfd3ea4f9c4ed9ee40a2e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Pistol3.prefab using Guid(22cac54d0cfd3ea4f9c4ed9ee40a2e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80dd90888b047188ec69d54b541d24a3') in 0.011866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.633526 seconds.
+  path: Assets/Prefabs/Weapons/Revolver.prefab
+  artifactKey: Guid(efa4fa8484e227a44b5c23ec48471d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Revolver.prefab using Guid(efa4fa8484e227a44b5c23ec48471d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119d9e2fa08c4724006063d1b0679d34') in 0.010716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.992949 seconds.
+  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
+  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a14f3af032779d0c5b64f17a970d872') in 0.009979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.255798 seconds.
+  path: Assets/Materials/GrenadeExplosion.mat
+  artifactKey: Guid(ccdd1883b791f0b4cab2286f6bde4d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GrenadeExplosion.mat using Guid(ccdd1883b791f0b4cab2286f6bde4d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4161ace0e416bf064584638a643307a8') in 0.008091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 215.335037 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a189149215a6d6432b3d3193de54732c') in 0.012639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.148081 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e9a6bd88633890a32a5cd6aa042fcd') in 0.009559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.840524 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62e8f2b76a0eb97133138a06a2c2dcac') in 0.008684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.542798 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf3a7f82cd79c8ab7ceed2cd3684878') in 0.010780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.216650 seconds.
+  path: Assets/Sprites/Shop/ThrowingStar.PNG
+  artifactKey: Guid(aeecd13b8d8eeee45a3ffb9d12cef91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Shop/ThrowingStar.PNG using Guid(aeecd13b8d8eeee45a3ffb9d12cef91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1632cd5dd7eefc1603b8dab4ba8bac4e') in 0.024042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.233770 seconds.
+  path: Assets/Sprites/Shop/ThrowingStar.PNG
+  artifactKey: Guid(aeecd13b8d8eeee45a3ffb9d12cef91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Shop/ThrowingStar.PNG using Guid(aeecd13b8d8eeee45a3ffb9d12cef91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac24fdfde13e504ef6e5d0f3481b2aa') in 0.020477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.676915 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(2f55ea8abb93a5245ba8f46f10725362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(2f55ea8abb93a5245ba8f46f10725362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700e33ac924dfcc5c0ac5dbaecb8547b') in 0.061256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.809881 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aaf7f14b82b9c10ad82099bbf9ecc73') in 0.008929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.292688 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feace0e1d7bb4c20f5fcf2a9b84531dd') in 0.010613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.769365 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12267bed33c1fff8fca8e46973d9f360') in 0.009159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.081342 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0603ca28a4e4a1c5ace2fd0c0432c7f') in 0.009460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.127932 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a17711f11ae07d0dfa2f499cab6dc77') in 0.009010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.188710 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a571fb145e750591b67608b54f7c4f') in 0.009152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.789596 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11251444120be5b63d2ad24276a6acd7') in 0.010244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.782179 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43b0b589bca9b360bba2227e712968a') in 0.009876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.965985 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12522d18bc70d8a1e3c322f638a12bb') in 0.009468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.992202 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '437f4c3dcf4d88caa469f9a631d937a6') in 0.010593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.014385 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1527a4eb1b0cfb4ccd5417756754535d') in 0.009598 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003072 seconds.
+Registered in 0.004797 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.140 seconds
+- Completed reload, in  1.257 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 175.4 MB.
-System memory in use after: 172.8 MB.
+Unloading 4217 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.0 MB.
+System memory in use after: 175.6 MB.
 
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4767.
-Total: 4.897600 ms (FindLiveObjects: 0.481800 ms CreateObjectMapping: 0.171200 ms MarkObjects: 3.023200 ms  DeleteObjects: 1.220200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 100.301764 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle.prefab
-  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c5fa5a5d0c21352ece85d721e8ec79') in 0.163960 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 72.974692 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle.prefab
-  artifactKey: Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle.prefab using Guid(68f3608ee1a1469468bdbc915367312c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '479690a42018ee3db04837d258756b9d') in 0.010456 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003145 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.200 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 175.6 MB.
-System memory in use after: 173.0 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4806.
-Total: 4.245800 ms (FindLiveObjects: 0.342200 ms CreateObjectMapping: 0.194700 ms MarkObjects: 2.498800 ms  DeleteObjects: 1.209000 ms)
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 4843.
+Total: 5.143100 ms (FindLiveObjects: 0.779200 ms CreateObjectMapping: 0.302800 ms MarkObjects: 2.889800 ms  DeleteObjects: 1.169900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003986 seconds.
+Registered in 0.003177 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.119 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 175.6 MB.
-System memory in use after: 173.0 MB.
+* Assertion at ..\mono\mini\mini-generic-sharing.c:877, condition `oti' not met
 
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4809.
-Total: 4.641500 ms (FindLiveObjects: 0.455100 ms CreateObjectMapping: 0.174000 ms MarkObjects: 2.806800 ms  DeleteObjects: 1.204100 ms)
+Crash!!!
+SymInit: Symbol-SearchPath: 'E:/unityhub/2021.1.3f1/Editor/Data/Mono;.;E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt;E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT;E:\unityhub\2021.1.3f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'Tibor'
+OS-Version: 10.0.0
+E:\unityhub\2021.1.3f1\Editor\Unity.exe:Unity.exe (00007FF7551E0000), size: 81915904 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2021.1.3.61281
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFC949B0000), size: 2052096 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1288
+C:\Program Files\AVAST Software\Avast\aswhook.dll:aswhook.dll (00007FFC71760000), size: 86016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 21.8.6586.694
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFC94200000), size: 778240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFC92300000), size: 2920448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFC92790000), size: 1400832 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFC925D0000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFC945B0000), size: 1708032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFC92700000), size: 139264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1288
+E:\unityhub\2021.1.3f1\Editor\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FFBDCCD0000), size: 43806720 (result: 0), SymType: '-deferred-', PDB: ''
+E:\unityhub\2021.1.3f1\Editor\optix.6.0.0.dll:optix.6.0.0.dll (00007FFC3CB10000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.0.0.0
+E:\unityhub\2021.1.3f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFBEFAF0000), size: 8974336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.0.0.0
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFC948D0000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFC928F0000), size: 1093632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFC92120000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
+E:\unityhub\2021.1.3f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFC318C0000), size: 1306624 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFC94490000), size: 704512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1052
+E:\unityhub\2021.1.3f1\Editor\etccompress.dll:etccompress.dll (00007FFC09DC0000), size: 5066752 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFC94540000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFC94830000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.546
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFC93790000), size: 7598080 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+E:\unityhub\2021.1.3f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6414336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFC943F0000), size: 634880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFC93660000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1288
+C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFC93600000), size: 348160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+E:\unityhub\2021.1.3f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFC2E8E0000), size: 1744896 (result: 0), SymType: '-deferred-', PDB: ''
+E:\unityhub\2021.1.3f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFC65D90000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFC92E80000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\WLDAP32.dll:WLDAP32.dll (00007FFC94900000), size: 352256 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+E:\unityhub\2021.1.3f1\Editor\tbb.dll:tbb.dll (00007FFC31850000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
+C:\WINDOWS\System32\Normaliz.dll:Normaliz.dll (00007FFC94160000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFC92FB0000), size: 3493888 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1288
+C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFC93EE0000), size: 196608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFC77510000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFC92A00000), size: 4661248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1237
+C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFC47460000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40664.0
+C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFC920D0000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFC77470000), size: 598016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFC926D0000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFC3FA10000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40664.0
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFC70270000), size: 1200128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFC94320000), size: 839680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.985
+C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFC91A90000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFC823F0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFC91520000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFC92730000), size: 393216 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFC8C0D0000), size: 1081344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFC84AF0000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFC90960000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFC77460000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+E:\unityhub\2021.1.3f1\Editor\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FFC2CB70000), size: 2535424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.1.0
+E:\unityhub\2021.1.3f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFBEF260000), size: 8978432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.0
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFC8CB50000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\MSWSOCK.dll:MSWSOCK.dll (00007FFC91880000), size: 434176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+E:\unityhub\2021.1.3f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFC317D0000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.20342
+C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFC86370000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFC91F90000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+E:\unityhub\2021.1.3f1\Editor\OpenRL.dll:OpenRL.dll (0000017763EC0000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
+C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (00000000614F0000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (0000000061410000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+E:\unityhub\2021.1.3f1\Editor\embree.dll:embree.dll (00007FFBEE270000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+E:\unityhub\2021.1.3f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (0000017764B10000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFC91CB0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFC8FFD0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFC921C0000), size: 536576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFC8FAF0000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFC93F10000), size: 708608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFC901D0000), size: 7929856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\Wldp.dll:Wldp.dll (00007FFC91B20000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.662
+C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFC92010000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFC94760000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFC8F630000), size: 253952 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFC8C1E0000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFC93ED0000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.610
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFC8D080000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFC8D060000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFC91570000), size: 835584 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFC8AFF0000), size: 520192 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFC8B9B0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+E:\unityhub\2021.1.3f1\Editor\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFBE2670000), size: 602112 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFC8E2F0000), size: 2506752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFC909A0000), size: 999424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_b8346c359fcd6093\nvldumdx.dll:nvldumdx.dll (00007FFC800B0000), size: 1073152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 30.0.14.7196
+C:\WINDOWS\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFC8CB10000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\SYSTEM32\drvstore.dll:drvstore.dll (00007FFC8A400000), size: 1351680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\devobj.dll:devobj.dll (00007FFC91E70000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFC94810000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFC91A70000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFC91190000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1052
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_b8346c359fcd6093\nvwgf2umx.dll:nvwgf2umx.dll (00007FFC28010000), size: 77615104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 30.0.14.7196
+C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFC52B10000), size: 2895872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.23.0.74
+C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFC90DA0000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFC83F90000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFC8BD30000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFC8BC70000), size: 598016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFC8C2A0000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFC8A100000), size: 1093632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFC8C250000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFC91FD0000), size: 188416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.572
+C:\Program Files\AVAST Software\Avast\aswAMSI.dll:aswAMSI.dll (00007FFC74D90000), size: 1761280 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 21.8.6586.0
+C:\WINDOWS\SYSTEM32\POWRPROF.dll:POWRPROF.dll (00007FFC91690000), size: 307200 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\UMPDC.dll:UMPDC.dll (00007FFC91500000), size: 73728 (result: 0), SymType: '-deferred-', PDB: ''
+E:\unityhub\2021.1.3f1\Editor\cudart64_90.dll:cudart64_90.dll (00007FFC70540000), size: 397312 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.14.11.9000
+C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFC45B70000), size: 1482752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.1.0
+E:\unityhub\2021.1.3f1\Editor\radeonrays.dll:radeonrays.dll (00007FFC4D200000), size: 552960 (result: 0), SymType: '-deferred-', PDB: ''
+E:\unityhub\2021.1.3f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFC34690000), size: 7790592 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFC94960000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\PackageCache\com.unity.burst@1.4.1\.Runtime\burst-llvm-10.dll:burst-llvm-10.dll (00007FFC076F0000), size: 37199872 (result: 0), SymType: '-deferred-', PDB: ''
+E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT\50af718d5640f91db1a09164537fc758.dll:50af718d5640f91db1a09164537fc758.dll (00007FFC8D7D0000), size: 16384 (result: 0), SymType: '-deferred-', PDB: ''
+E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT\348a232e963c16dd4bf5715a201b34e1.dll:348a232e963c16dd4bf5715a201b34e1.dll (00007FFC8C8F0000), size: 16384 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFC8A7E0000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.1023
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\comctl32.dll:comctl32.dll (00007FFC84420000), size: 2727936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.10.19041.1110
+C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFC8F8E0000), size: 1785856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\apphelp.dll:apphelp.dll (00007FFC8F690000), size: 589824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.928
+C:\Program Files (x86)\Common Files\Adobe\CoreSyncExtension\CoreSync_x64.dll:CoreSync_x64.dll (00007FFC693D0000), size: 704512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.21.1.1
+C:\PROGRA~1\MICROS~2\Office15\GROOVEEX.DLL:GROOVEEX.DLL (00007FFC61C50000), size: 2338816 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 15.0.4505.1000
+C:\WINDOWS\SYSTEM32\ATL100.DLL:ATL100.DLL (00000000613E0000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\msi.dll:msi.dll (00007FFC815B0000), size: 3330048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 5.0.19041.1237
+C:\PROGRA~1\MICROS~2\Office15\1038\GrooveIntlResource.dll:GrooveIntlResource.dll (0000017904000000), size: 8892416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 15.0.4505.1000
+C:\Program Files\AVAST Software\Avast\ashShell.dll:ashShell.dll (00007FFC61900000), size: 3457024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 21.8.6586.0
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1288_none_91a663c8cc864906\gdiplus.dll:gdiplus.dll (00007FFC84060000), size: 1740800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1288
+C:\WINDOWS\SYSTEM32\WTSAPI32.dll:WTSAPI32.dll (00007FFC8DA10000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\MSCTF.dll:MSCTF.dll (00007FFC93FC0000), size: 1134592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\Windows\System32\EhStorShell.dll:EhStorShell.dll (00007FFC71720000), size: 225280 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\Windows\System32\thumbcache.dll:thumbcache.dll (00007FFC71BD0000), size: 417792 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\policymanager.dll:policymanager.dll (00007FFC8D230000), size: 655360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\msvcp110_win.dll:msvcp110_win.dll (00007FFC91220000), size: 565248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\Windows\System32\MrmCoreR.dll:MrmCoreR.dll (00007FFC868A0000), size: 1003520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\Windows\System32\iertutil.dll:iertutil.dll (00007FFC84810000), size: 2818048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.19041.1266
+C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll:windows.staterepositorycore.dll (00007FFC7A460000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\Windows\System32\bcp47mrm.dll:bcp47mrm.dll (00007FFC84C90000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\Windows\System32\Windows.UI.dll:Windows.UI.dll (00007FFC7FE60000), size: 1314816 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\Windows\System32\WindowManagementAPI.dll:WindowManagementAPI.dll (00007FFC863D0000), size: 659456 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\System32\TextInputFramework.dll:TextInputFramework.dll (00007FFC84250000), size: 1019904 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1266
+C:\Windows\System32\InputHost.dll:InputHost.dll (00007FFC75F70000), size: 1384448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\SYSTEM32\twinapi.appcore.dll:twinapi.appcore.dll (00007FFC85CF0000), size: 2101248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.964
+C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFC8DCF0000), size: 1392640 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1202
+C:\Windows\System32\CoreMessaging.dll:CoreMessaging.dll (00007FFC8F3F0000), size: 991232 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\Windows\System32\CoreUIComponents.dll:CoreUIComponents.dll (00007FFC8F090000), size: 3530752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\edputil.dll:edputil.dll (00007FFC79B00000), size: 147456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\Windows\System32\Windows.StateRepositoryPS.dll:Windows.StateRepositoryPS.dll (00007FFC76E60000), size: 1335296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFC8C2C0000), size: 1982464 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.867
 
-========================================================================
-Received Import Request.
-  Time since last request: 1522.701230 seconds.
-  path: Assets/Models/SubmachinePistol.fbx
-  artifactKey: Guid(b0c1911e83ab7f54eb523b1a65e75e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/SubmachinePistol.fbx using Guid(b0c1911e83ab7f54eb523b1a65e75e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7b854a71c2c53049e515eb46cae678') in 0.277890 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 314.269863 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet3 1.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet3 1.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb858d4ff8933835839bc74f2311f81') in 0.010352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.030533 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f782bc4f751a99e2203586d1f834d37') in 0.011326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.321727 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ac64fcda266cc6cb2fe80b88e5e0e5') in 0.012144 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.358864 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8aafc886f63d78d8d0244098141b9bf') in 0.009757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.050733 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86df80e9b9f452911991943467829f72') in 0.011101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.061804 seconds.
-  path: Assets/Sprites/Shop/SubmachinePistol.PNG
-  artifactKey: Guid(1e9c7798a6156ed4d804a3045886c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Shop/SubmachinePistol.PNG using Guid(1e9c7798a6156ed4d804a3045886c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f84f7bb7eb7be7132d0feb8167d56b') in 0.028605 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.179891 seconds.
-  path: Assets/Sprites/Shop/SubmachinePistol.PNG
-  artifactKey: Guid(1e9c7798a6156ed4d804a3045886c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Shop/SubmachinePistol.PNG using Guid(1e9c7798a6156ed4d804a3045886c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2840dd1e49357ef7c4d195c1f5fa03') in 0.021873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 53.326371 seconds.
-  path: Assets/Prefabs/Canvas.prefab
-  artifactKey: Guid(2f55ea8abb93a5245ba8f46f10725362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Canvas.prefab using Guid(2f55ea8abb93a5245ba8f46f10725362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af207bb3516b675db85707da0a3f640') in 0.058855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 46.021260 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401cbd6522bcd7543840582b46ec62e8') in 0.012005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.436863 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1565eed6b7fa37a9372c50d854075e') in 0.010575 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.528743 seconds.
-  path: Assets/Prefabs/Weapons/Pistol2.prefab
-  artifactKey: Guid(5f1240483b68ac94dabde2069ff5063e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/Pistol2.prefab using Guid(5f1240483b68ac94dabde2069ff5063e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e01c6a9888517c4a8df900efefb4da') in 0.027922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.998786 seconds.
-  path: Assets/Prefabs/Weapons/Flamethrower.prefab
-  artifactKey: Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/Flamethrower.prefab using Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964aba96072cf38dd61e497ee2b51860') in 0.011213 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.241968 seconds.
-  path: Assets/Prefabs/Weapons/Flamethrower.prefab
-  artifactKey: Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/Flamethrower.prefab using Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d42868699cb690b7d07050488ef1ab') in 0.012718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.144774 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651b959482ff17e6fcdcf75aa15696c7') in 0.011303 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.573285 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84275f31961e33b244ea22003bbcaf8') in 0.010667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.269474 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1644b6c46c7b2dfa96e0342fe74f5933') in 0.010911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.864853 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601ad1166acf5cddde40e2e4e3ac9437') in 0.010796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.848300 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0f226c53cf0af5468d18955f221a5d') in 0.013235 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.278009 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808ac09dbb479c492d68b2be917b61d6') in 0.010684 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.967489 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71db8488d91db8ff842097b28e2d1e30') in 0.011023 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003156 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.207 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4220 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.2 MB.
-System memory in use after: 174.6 MB.
+========== OUTPUTTING STACK TRACE ==================
 
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 4918.
-Total: 4.713300 ms (FindLiveObjects: 0.454300 ms CreateObjectMapping: 0.393100 ms MarkObjects: 2.708700 ms  DeleteObjects: 1.155900 ms)
+0x00007FFC92334F99 (KERNELBASE) RaiseException
+0x00007FFC346A6025 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\utils\mono-log-common.c:142] mono_log_write_logfile 
+0x00007FFC34694CC3 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\eglib\goutput.c:141] monoeg_assertion_message 
+0x00007FFC348A0059 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-generic-sharing.c:2534] fill_runtime_generic_context 
+0x00007FFC348A4A21 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-generic-sharing.c:2596] mono_class_fill_runtime_generic_context 
+0x00007FFC3489BE42 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-trampolines.c:1078] mono_rgctx_lazy_fetch_trampoline 
+SymInit: Symbol-SearchPath: 'E:/unityhub/2021.1.3f1/Editor/Data/Mono;.;E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt;E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT;E:\unityhub\2021.1.3f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'Tibor'
+OS-Version: 10.0.0
+E:\unityhub\2021.1.3f1\Editor\Unity.exe:Unity.exe (00007FF7551E0000), size: 81915904 (result: 0), SymType: 'PDB', PDB: 'E:\unityhub\2021.1.3f1\Editor\Unity_x64.pdb', fileVersion: 2021.1.3.61281
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFC949B0000), size: 2052096 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\ntdll.dll', fileVersion: 10.0.19041.1288
+C:\Program Files\AVAST Software\Avast\aswhook.dll:aswhook.dll (00007FFC71760000), size: 86016 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Program Files\AVAST Software\Avast\aswhook.dll', fileVersion: 21.8.6586.694
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFC94200000), size: 778240 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\KERNEL32.DLL', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFC92300000), size: 2920448 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\KERNELBASE.dll', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFC92790000), size: 1400832 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\CRYPT32.dll', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFC925D0000), size: 1048576 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\ucrtbase.dll', fileVersion: 10.0.19041.789
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFC945B0000), size: 1708032 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\USER32.dll', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFC92700000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\win32u.dll', fileVersion: 10.0.19041.1288
+E:\unityhub\2021.1.3f1\Editor\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FFBDCCD0000), size: 43806720 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\OpenImageDenoise.dll'
+E:\unityhub\2021.1.3f1\Editor\optix.6.0.0.dll:optix.6.0.0.dll (00007FFC3CB10000), size: 208896 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\optix.6.0.0.dll', fileVersion: 6.0.0.0
+E:\unityhub\2021.1.3f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFBEFAF0000), size: 8974336 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\libfbxsdk.dll', fileVersion: 2020.0.0.0
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFC948D0000), size: 176128 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\GDI32.dll', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFC928F0000), size: 1093632 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\gdi32full.dll', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFC92120000), size: 643072 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\msvcp_win.dll', fileVersion: 10.0.19041.789
+E:\unityhub\2021.1.3f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFC318C0000), size: 1306624 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\umbraoptimizer64.dll'
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFC94490000), size: 704512 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\ADVAPI32.dll', fileVersion: 10.0.19041.1052
+E:\unityhub\2021.1.3f1\Editor\etccompress.dll:etccompress.dll (00007FFC09DC0000), size: 5066752 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\etccompress.dll'
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFC94540000), size: 438272 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\WS2_32.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFC94830000), size: 647168 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\msvcrt.dll', fileVersion: 7.0.19041.546
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFC93790000), size: 7598080 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\SHELL32.dll', fileVersion: 10.0.19041.1266
+E:\unityhub\2021.1.3f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6414336 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\FreeImage.dll', fileVersion: 3.18.0.0
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFC943F0000), size: 634880 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\sechost.dll', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFC93660000), size: 1220608 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\RPCRT4.dll', fileVersion: 10.0.19041.1288
+C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFC93600000), size: 348160 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\SHLWAPI.dll', fileVersion: 10.0.19041.1023
+E:\unityhub\2021.1.3f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFC2E8E0000), size: 1744896 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\ispc_texcomp.dll'
+E:\unityhub\2021.1.3f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFC65D90000), size: 45056 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\WinPixEventRuntime.dll', fileVersion: 1.0.1812.6001
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFC92E80000), size: 1220608 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\ole32.dll', fileVersion: 10.0.19041.1202
+C:\WINDOWS\System32\WLDAP32.dll:WLDAP32.dll (00007FFC94900000), size: 352256 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\WLDAP32.dll', fileVersion: 10.0.19041.546
+E:\unityhub\2021.1.3f1\Editor\tbb.dll:tbb.dll (00007FFC31850000), size: 413696 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\tbb.dll', fileVersion: 2017.0.2016.1004
+C:\WINDOWS\System32\Normaliz.dll:Normaliz.dll (00007FFC94160000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\Normaliz.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFC92FB0000), size: 3493888 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\combase.dll', fileVersion: 10.0.19041.1288
+C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFC93EE0000), size: 196608 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\IMM32.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFC77510000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll', fileVersion: 14.28.29334.0
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFC92A00000), size: 4661248 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\SETUPAPI.dll', fileVersion: 10.0.19041.1237
+C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFC47460000), size: 679936 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSVCP120.dll', fileVersion: 12.0.40664.0
+C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFC920D0000), size: 319488 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\cfgmgr32.dll', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFC77470000), size: 598016 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSVCP140.dll', fileVersion: 14.28.29334.0
+C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFC926D0000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\bcrypt.dll', fileVersion: 10.0.19041.1023
+C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFC3FA10000), size: 978944 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSVCR120.dll', fileVersion: 12.0.40664.0
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFC70270000), size: 1200128 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\OPENGL32.dll', fileVersion: 10.0.19041.1081
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFC94320000), size: 839680 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\OLEAUT32.dll', fileVersion: 10.0.19041.985
+C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFC91A90000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFC823F0000), size: 180224 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\GLU32.dll', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFC91520000), size: 241664 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFC92730000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\WINTRUST.dll', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFC8C0D0000), size: 1081344 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\WINHTTP.dll', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFC84AF0000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\WINMM.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFC90960000), size: 53248 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\HID.DLL', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFC77460000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll', fileVersion: 14.28.29334.0
+E:\unityhub\2021.1.3f1\Editor\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FFC2CB70000), size: 2535424 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\RadeonImageFilters.dll', fileVersion: 1.5.1.0
+E:\unityhub\2021.1.3f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFBEF260000), size: 8978432 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\SketchUpAPI.dll', fileVersion: 19.0.753.0
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFC8CB50000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\VERSION.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\MSWSOCK.dll:MSWSOCK.dll (00007FFC91880000), size: 434176 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSWSOCK.dll', fileVersion: 10.0.19041.546
+E:\unityhub\2021.1.3f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFC317D0000), size: 483328 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\SketchUpCommonPreferences.dll', fileVersion: 19.0.753.20342
+C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFC86370000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\Secur32.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFC91F90000), size: 200704 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\SSPICLI.DLL', fileVersion: 10.0.19041.1266
+E:\unityhub\2021.1.3f1\Editor\OpenRL.dll:OpenRL.dll (0000017763EC0000), size: 12779520 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\OpenRL.dll', fileVersion: 1.5.0.2907
+C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (00000000614F0000), size: 622592 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSVCP100.dll', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (0000000061410000), size: 860160 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSVCR100.dll', fileVersion: 10.0.40219.325
+E:\unityhub\2021.1.3f1\Editor\embree.dll:embree.dll (00007FFBEE270000), size: 16711680 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\embree.dll', fileVersion: 2.14.0.0
+E:\unityhub\2021.1.3f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (0000017764B10000), size: 61440 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\OpenRL_pthread.dll', fileVersion: 2.9.0.0
+C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFC91CB0000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSASN1.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFC8FFD0000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\kernel.appcore.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFC921C0000), size: 536576 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\bcryptPrimitives.dll', fileVersion: 10.0.19041.1202
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFC8FAF0000), size: 647168 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\uxtheme.dll', fileVersion: 10.0.19041.1266
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFC93F10000), size: 708608 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\shcore.dll', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFC901D0000), size: 7929856 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\windows.storage.dll', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\Wldp.dll:Wldp.dll (00007FFC91B20000), size: 180224 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\Wldp.dll', fileVersion: 10.0.19041.662
+C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFC92010000), size: 126976 (result: 0), SymType: '-nosymbols-', PDB: 'C:\WINDOWS\SYSTEM32\profapi.dll', fileVersion: 10.0.19041.844
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFC94760000), size: 692224 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\clbcatq.dll', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFC8F630000), size: 253952 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\netprofm.dll', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFC8C1E0000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\npmproxy.dll', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFC93ED0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\NSI.dll', fileVersion: 10.0.19041.610
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFC8D080000), size: 94208 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFC8D060000), size: 118784 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFC91570000), size: 835584 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\DNSAPI.dll', fileVersion: 10.0.19041.1266
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFC8AFF0000), size: 520192 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\fwpuclnt.dll', fileVersion: 10.0.19041.1266
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFC8B9B0000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\rasadhlp.dll', fileVersion: 10.0.19041.546
+E:\unityhub\2021.1.3f1\Editor\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFBE2670000), size: 602112 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\Data\Tools\astcenc-avx2.dll'
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFC8E2F0000), size: 2506752 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\d3d11.dll', fileVersion: 10.0.19041.1202
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFC909A0000), size: 999424 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dxgi.dll', fileVersion: 10.0.19041.1266
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_b8346c359fcd6093\nvldumdx.dll:nvldumdx.dll (00007FFC800B0000), size: 1073152 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_b8346c359fcd6093\nvldumdx.dll', fileVersion: 30.0.14.7196
+C:\WINDOWS\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFC8CB10000), size: 200704 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\cryptnet.dll', fileVersion: 10.0.19041.906
+C:\WINDOWS\SYSTEM32\drvstore.dll:drvstore.dll (00007FFC8A400000), size: 1351680 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\drvstore.dll', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\devobj.dll:devobj.dll (00007FFC91E70000), size: 212992 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\devobj.dll', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFC94810000), size: 118784 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\imagehlp.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFC91A70000), size: 98304 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\CRYPTSP.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFC91190000), size: 212992 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\rsaenh.dll', fileVersion: 10.0.19041.1052
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_b8346c359fcd6093\nvwgf2umx.dll:nvwgf2umx.dll (00007FFC28010000), size: 77615104 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_b8346c359fcd6093\nvwgf2umx.dll', fileVersion: 30.0.14.7196
+C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFC52B10000), size: 2895872 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\nvspcap64.dll', fileVersion: 3.23.0.74
+C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFC90DA0000), size: 208896 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\ntmarta.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFC83F90000), size: 241664 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dxcore.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFC8BD30000), size: 69632 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\wbem\wbemprox.dll', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFC8BC70000), size: 598016 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\wbemcomn.dll', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFC8C2A0000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\wbem\wbemsvc.dll', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFC8A100000), size: 1093632 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\wbem\fastprox.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFC8C250000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\amsi.dll', fileVersion: 10.0.19041.746
+C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFC91FD0000), size: 188416 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\USERENV.dll', fileVersion: 10.0.19041.572
+C:\Program Files\AVAST Software\Avast\aswAMSI.dll:aswAMSI.dll (00007FFC74D90000), size: 1761280 (result: 0), SymType: '-exported-', PDB: 'C:\Program Files\AVAST Software\Avast\aswAMSI.dll', fileVersion: 21.8.6586.0
+C:\WINDOWS\SYSTEM32\POWRPROF.dll:POWRPROF.dll (00007FFC91690000), size: 307200 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\POWRPROF.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\UMPDC.dll:UMPDC.dll (00007FFC91500000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\UMPDC.dll'
+E:\unityhub\2021.1.3f1\Editor\cudart64_90.dll:cudart64_90.dll (00007FFC70540000), size: 397312 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\cudart64_90.dll', fileVersion: 6.14.11.9000
+C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFC45B70000), size: 1482752 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\opencl.dll', fileVersion: 3.0.1.0
+E:\unityhub\2021.1.3f1\Editor\radeonrays.dll:radeonrays.dll (00007FFC4D200000), size: 552960 (result: 0), SymType: '-exported-', PDB: 'E:\unityhub\2021.1.3f1\Editor\radeonrays.dll'
+E:\unityhub\2021.1.3f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFC34690000), size: 7790592 (result: 0), SymType: 'PDB', PDB: 'E:\unityhub\2021.1.3f1\Editor\mono-2.0-bdwgc.pdb'
+C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFC94960000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\PSAPI.DLL', fileVersion: 10.0.19041.546
+E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\PackageCache\com.unity.burst@1.4.1\.Runtime\burst-llvm-10.dll:burst-llvm-10.dll (00007FFC076F0000), size: 37199872 (result: 0), SymType: '-exported-', PDB: 'E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\PackageCache\com.unity.burst@1.4.1\.Runtime\burst-llvm-10.dll'
+E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT\50af718d5640f91db1a09164537fc758.dll:50af718d5640f91db1a09164537fc758.dll (00007FFC8D7D0000), size: 16384 (result: 0), SymType: 'PDB', PDB: 'E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT\50af718d5640f91db1a09164537fc758.pdb'
+E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT\348a232e963c16dd4bf5715a201b34e1.dll:348a232e963c16dd4bf5715a201b34e1.dll (00007FFC8C8F0000), size: 16384 (result: 0), SymType: 'PDB', PDB: 'E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\BurstCache\JIT\348a232e963c16dd4bf5715a201b34e1.pdb'
+C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFC8A7E0000), size: 1007616 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\PROPSYS.dll', fileVersion: 7.0.19041.1023
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\comctl32.dll:comctl32.dll (00007FFC84420000), size: 2727936 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\comctl32.dll', fileVersion: 6.10.19041.1110
+C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFC8F8E0000), size: 1785856 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\WindowsCodecs.dll', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\apphelp.dll:apphelp.dll (00007FFC8F690000), size: 589824 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\apphelp.dll', fileVersion: 10.0.19041.928
+C:\Program Files (x86)\Common Files\Adobe\CoreSyncExtension\CoreSync_x64.dll:CoreSync_x64.dll (00007FFC693D0000), size: 704512 (result: 0), SymType: '-exported-', PDB: 'C:\Program Files (x86)\Common Files\Adobe\CoreSyncExtension\CoreSync_x64.dll', fileVersion: 4.21.1.1
+C:\PROGRA~1\MICROS~2\Office15\GROOVEEX.DLL:GROOVEEX.DLL (00007FFC61C50000), size: 2338816 (result: 0), SymType: '-exported-', PDB: 'C:\PROGRA~1\MICROS~2\Office15\GROOVEEX.DLL', fileVersion: 15.0.4505.1000
+C:\WINDOWS\SYSTEM32\ATL100.DLL:ATL100.DLL (00000000613E0000), size: 176128 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\ATL100.DLL', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\msi.dll:msi.dll (00007FFC815B0000), size: 3330048 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\msi.dll', fileVersion: 5.0.19041.1237
+C:\PROGRA~1\MICROS~2\Office15\1038\GrooveIntlResource.dll:GrooveIntlResource.dll (0000017904000000), size: 8892416 (result: 0), SymType: '-nosymbols-', PDB: 'C:\PROGRA~1\MICROS~2\Office15\1038\GrooveIntlResource.dll', fileVersion: 15.0.4505.1000
+C:\Program Files\AVAST Software\Avast\ashShell.dll:ashShell.dll (00007FFC61900000), size: 3457024 (result: 0), SymType: '-exported-', PDB: 'C:\Program Files\AVAST Software\Avast\ashShell.dll', fileVersion: 21.8.6586.0
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1288_none_91a663c8cc864906\gdiplus.dll:gdiplus.dll (00007FFC84060000), size: 1740800 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1288_none_91a663c8cc864906\gdiplus.dll', fileVersion: 10.0.19041.1288
+C:\WINDOWS\SYSTEM32\WTSAPI32.dll:WTSAPI32.dll (00007FFC8DA10000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\WTSAPI32.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\MSCTF.dll:MSCTF.dll (00007FFC93FC0000), size: 1134592 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\MSCTF.dll', fileVersion: 10.0.19041.1202
+C:\Windows\System32\EhStorShell.dll:EhStorShell.dll (00007FFC71720000), size: 225280 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\EhStorShell.dll', fileVersion: 10.0.19041.746
+C:\Windows\System32\thumbcache.dll:thumbcache.dll (00007FFC71BD0000), size: 417792 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\thumbcache.dll', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\policymanager.dll:policymanager.dll (00007FFC8D230000), size: 655360 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\policymanager.dll', fileVersion: 10.0.19041.1266
+C:\WINDOWS\SYSTEM32\msvcp110_win.dll:msvcp110_win.dll (00007FFC91220000), size: 565248 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\msvcp110_win.dll', fileVersion: 10.0.19041.546
+C:\Windows\System32\MrmCoreR.dll:MrmCoreR.dll (00007FFC868A0000), size: 1003520 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\MrmCoreR.dll', fileVersion: 10.0.19041.1266
+C:\Windows\System32\iertutil.dll:iertutil.dll (00007FFC84810000), size: 2818048 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\iertutil.dll', fileVersion: 11.0.19041.1266
+C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll:windows.staterepositorycore.dll (00007FFC7A460000), size: 69632 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll', fileVersion: 10.0.19041.844
+C:\Windows\System32\bcp47mrm.dll:bcp47mrm.dll (00007FFC84C90000), size: 184320 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\bcp47mrm.dll', fileVersion: 10.0.19041.1266
+C:\Windows\System32\Windows.UI.dll:Windows.UI.dll (00007FFC7FE60000), size: 1314816 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\Windows.UI.dll', fileVersion: 10.0.19041.746
+C:\Windows\System32\WindowManagementAPI.dll:WindowManagementAPI.dll (00007FFC863D0000), size: 659456 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\WindowManagementAPI.dll'
+C:\Windows\System32\TextInputFramework.dll:TextInputFramework.dll (00007FFC84250000), size: 1019904 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\TextInputFramework.dll', fileVersion: 10.0.19041.1266
+C:\Windows\System32\InputHost.dll:InputHost.dll (00007FFC75F70000), size: 1384448 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\InputHost.dll', fileVersion: 10.0.19041.906
+C:\WINDOWS\SYSTEM32\twinapi.appcore.dll:twinapi.appcore.dll (00007FFC85CF0000), size: 2101248 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\twinapi.appcore.dll', fileVersion: 10.0.19041.964
+C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFC8DCF0000), size: 1392640 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\wintypes.dll', fileVersion: 10.0.19041.1202
+C:\Windows\System32\CoreMessaging.dll:CoreMessaging.dll (00007FFC8F3F0000), size: 991232 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\CoreMessaging.dll', fileVersion: 10.0.19041.746
+C:\Windows\System32\CoreUIComponents.dll:CoreUIComponents.dll (00007FFC8F090000), size: 3530752 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\CoreUIComponents.dll', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\edputil.dll:edputil.dll (00007FFC79B00000), size: 147456 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\edputil.dll', fileVersion: 10.0.19041.546
+C:\Windows\System32\Windows.StateRepositoryPS.dll:Windows.StateRepositoryPS.dll (00007FFC76E60000), size: 1335296 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\Windows.StateRepositoryPS.dll', fileVersion: 10.0.19041.844
+C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFC8C2C0000), size: 1982464 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dbghelp.dll', fileVersion: 10.0.19041.867
+  ERROR: SymGetSymFromAddr64, GetLastError: 'A megadott modul nem található.' (Address: 00000177668508C3)
+  ERROR: SymGetModuleInfo64, GetLastError: 'Nem sikerült egy dinamikus csatolású függvénytár (DLL) inicializáló rutinját végrehajtani.' (Address: 00000177668508C3)
+0x00000177668508C3 ((<unknown>)) (function-name not available)
+0x00000178D9C5CDAB (Mono JIT Code) System.Collections.ObjectModel.ReadOnlyCollection`1<T_REF>:GetEnumerator ()
+0x00000178D9F29553 (Mono JIT Code) [E:\Davaronas\Unity project\Projekt\Projekt\Projekt\Prog2Projekt\Library\PackageCache\com.unity.render-pipelines.core@11.0.0\Runtime\Volume\VolumeComponent.cs:138] UnityEngine.Rendering.VolumeComponent:OnDisable () 
+0x00000178D9C588F0 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x00007FFC347BE640 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\mini\mini-runtime.c:2812] mono_jit_runtime_invoke 
+0x00007FFC34742AD2 (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\metadata\object.c:2921] do_runtime_invoke 
+0x00007FFC3474BB2F (mono-2.0-bdwgc) [c:\build\output\unity-technologies\mono\mono\metadata\object.c:2968] mono_runtime_invoke 
+0x00007FF756001534 (Unity) scripting_method_invoke
+0x00007FF755FFCBA1 (Unity) ScriptingInvocation::Invoke
+0x00007FF755FFCCFE (Unity) ScriptingInvocation::InvokeChecked
+0x00007FF756054196 (Unity) SerializableManagedRef::CallMethod
+0x00007FF755FDC2C6 (Unity) MonoBehaviour::WillUnloadScriptableObject
+0x00007FF755FD633A (Unity) MonoManager::RemoveBehavioursFromManager
+0x00007FF755FCD148 (Unity) MonoManager::BeginReloadAssembly
+0x00007FF755FD6118 (Unity) MonoManager::ReloadAssembly
+0x00007FF75676FA62 (Unity) LoadDomainAndUserAssemblies
+0x00007FF75676FE1C (Unity) LoadUserAssemblies
+0x00007FF75697AD58 (Unity) <lambda_15c8da1c90a30e86cd2096f929d4dd2f>::operator()
+0x00007FF7569FFD32 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007FF756A01FA0 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007FF756A0568E (Unity) asio::io_service::run
+0x00007FF7569A4D1A (Unity) RunAssetImportWorkerClientV2
+0x00007FF7569A4D70 (Unity) RunAssetImporterV2
+0x00007FF7564A97E6 (Unity) Application::InitializeProject
+0x00007FF7568B7437 (Unity) WinMain
+0x00007FF758425782 (Unity) __scrt_common_main_seh
+0x00007FFC94217034 (KERNEL32) BaseThreadInitThunk
+0x00007FFC94A02651 (ntdll) RtlUserThreadStart
 
-========================================================================
-Received Import Request.
-  Time since last request: 81.356414 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e4cb61a19e1ff010b0a96363be4605') in 0.163933 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003430 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.113 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.2 MB.
-System memory in use after: 174.6 MB.
+========== END OF STACKTRACE ===========
 
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4957.
-Total: 7.691800 ms (FindLiveObjects: 0.622800 ms CreateObjectMapping: 0.615100 ms MarkObjects: 4.276800 ms  DeleteObjects: 2.174800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.367986 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd3eb10fa4782d98fd65ff78a2cc475') in 0.189556 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.984824 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c7ed79cce1e1348600c9011829fa29') in 0.010524 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.447363 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9655e667b2b5442c761d24e295a832ad') in 0.010553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.998260 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a89a4fa3ff2c29be1b150d0673ceb47') in 0.011658 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003219 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.138 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.2 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4996.
-Total: 4.321200 ms (FindLiveObjects: 0.361300 ms CreateObjectMapping: 0.170000 ms MarkObjects: 2.569100 ms  DeleteObjects: 1.219700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.969408 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e955c34b12a52556975a7558c07497') in 0.156535 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003737 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.212 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.3 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5035.
-Total: 4.879500 ms (FindLiveObjects: 0.368500 ms CreateObjectMapping: 0.172700 ms MarkObjects: 3.075300 ms  DeleteObjects: 1.261400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.980249 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a36012c53127a69f6152140a5fd3089') in 0.186771 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003975 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.205 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.3 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5074.
-Total: 4.539900 ms (FindLiveObjects: 0.423300 ms CreateObjectMapping: 0.226800 ms MarkObjects: 2.640100 ms  DeleteObjects: 1.248100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 89.256985 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1935f74ddfe38d053221dd85d306c7ad') in 0.149876 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003080 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.155 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.4 MB.
-System memory in use after: 174.9 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5113.
-Total: 5.585200 ms (FindLiveObjects: 0.483400 ms CreateObjectMapping: 0.176500 ms MarkObjects: 3.620200 ms  DeleteObjects: 1.303800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.462250 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f191b3f90049554fada2eb1702a0733') in 0.157319 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.254163 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9534ecfb10bb0d3d49061b5e54895fd1') in 0.009241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.878845 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ef25ec0c4993d65c84b746861a899b') in 0.042609 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003457 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.283 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.4 MB.
-System memory in use after: 174.9 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5152.
-Total: 7.601100 ms (FindLiveObjects: 0.398300 ms CreateObjectMapping: 0.193700 ms MarkObjects: 5.188100 ms  DeleteObjects: 1.819500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 50.531031 seconds.
-  path: Assets/Prefabs/Projectiles/Player/Bullet9.prefab
-  artifactKey: Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Player/Bullet9.prefab using Guid(835471f74a17a84448ac2d96e67ccb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f12b3e0fb0e54992fc914a4900e3ad8') in 0.176116 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002857 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.112 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.6 MB.
-System memory in use after: 175.0 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5191.
-Total: 5.494900 ms (FindLiveObjects: 0.381400 ms CreateObjectMapping: 0.234100 ms MarkObjects: 3.524300 ms  DeleteObjects: 1.353800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002903 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.171 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.6 MB.
-System memory in use after: 175.0 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5194.
-Total: 5.673100 ms (FindLiveObjects: 0.533400 ms CreateObjectMapping: 0.442300 ms MarkObjects: 3.306900 ms  DeleteObjects: 1.389200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003613 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.088 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.5 MB.
-System memory in use after: 174.9 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5197.
-Total: 7.786300 ms (FindLiveObjects: 0.577800 ms CreateObjectMapping: 0.306700 ms MarkObjects: 4.912200 ms  DeleteObjects: 1.987800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 187.470587 seconds.
-  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
-  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199a5af922603b9a744712b5aba2147b') in 0.164586 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003022 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.6 MB.
-System memory in use after: 175.1 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5236.
-Total: 5.779100 ms (FindLiveObjects: 0.552100 ms CreateObjectMapping: 0.196300 ms MarkObjects: 3.581400 ms  DeleteObjects: 1.448100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1580.264120 seconds.
-  path: Assets/Prefabs/Weapons/MachinePistol2.prefab
-  artifactKey: Guid(00cf0d578bdee144a84eb12683c25a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/MachinePistol2.prefab using Guid(00cf0d578bdee144a84eb12683c25a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd582a8080ee8d359799a1d42edc2537') in 0.195470 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003638 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.185 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.8 MB.
-System memory in use after: 175.2 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5275.
-Total: 5.794000 ms (FindLiveObjects: 0.807600 ms CreateObjectMapping: 0.489200 ms MarkObjects: 3.075400 ms  DeleteObjects: 1.420500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005335 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.181 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.23 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.8 MB.
-System memory in use after: 175.2 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5278.
-Total: 4.781500 ms (FindLiveObjects: 0.375300 ms CreateObjectMapping: 0.191100 ms MarkObjects: 2.910700 ms  DeleteObjects: 1.302700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 98.621448 seconds.
-  path: Assets/Prefabs/Weapons/Gun1.prefab
-  artifactKey: Guid(0242f3099f73a3e4d980b54c71477413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/Gun1.prefab using Guid(0242f3099f73a3e4d980b54c71477413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960258fb3f2eb0819d7313d7314d82e2') in 0.215487 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004092 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.188 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.9 MB.
-System memory in use after: 175.3 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5317.
-Total: 5.200000 ms (FindLiveObjects: 0.389700 ms CreateObjectMapping: 0.218100 ms MarkObjects: 3.333300 ms  DeleteObjects: 1.257900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.925339 seconds.
-  path: Assets/Prefabs/Weapons/MachinePistol2.prefab
-  artifactKey: Guid(00cf0d578bdee144a84eb12683c25a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/MachinePistol2.prefab using Guid(00cf0d578bdee144a84eb12683c25a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0eee2cfa44517a3c58b20ba071a39a') in 0.156802 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005406 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.181 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.9 MB.
-System memory in use after: 175.3 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5356.
-Total: 5.119100 ms (FindLiveObjects: 0.579900 ms CreateObjectMapping: 0.209200 ms MarkObjects: 3.144000 ms  DeleteObjects: 1.185000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 63.593052 seconds.
-  path: Assets/Prefabs/Weapons/Flamethrower.prefab
-  artifactKey: Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/Flamethrower.prefab using Guid(d0d89042f4822df4589b305bce841dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46cf8f7406530c12e26c68064f9e8b7d') in 0.184359 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003053 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.232 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.1 MB.
-System memory in use after: 175.5 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 5395.
-Total: 5.893600 ms (FindLiveObjects: 0.640000 ms CreateObjectMapping: 0.180500 ms MarkObjects: 3.517400 ms  DeleteObjects: 1.554600 ms)
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/Tibor/AppData/Local/Temp/Unity/Editor/Crashes

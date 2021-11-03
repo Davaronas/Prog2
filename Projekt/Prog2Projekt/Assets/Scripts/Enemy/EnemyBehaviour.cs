@@ -37,7 +37,12 @@ public class EnemyBehaviour : MonoBehaviour
 
         Rigidbody _newProjectile = Instantiate(projectile, projectileSpawn.position, Quaternion.LookRotation(_targetPos - projectileSpawn.position)).GetComponent<Rigidbody>();
         _newProjectile.AddForce((predictedPosition_ - projectileSpawn.position).normalized * projectileSpeed, ForceMode.VelocityChange);
-        _newProjectile.GetComponent<Projectile>().SetDamage(damage);
+
+        Projectile _p;
+        if (_newProjectile.TryGetComponent(out _p))
+        {
+            _p.SetDamage(damage);
+        }
 
         StartCoroutine(AttackCooldown());
     }

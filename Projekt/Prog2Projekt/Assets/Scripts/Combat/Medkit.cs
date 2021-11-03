@@ -20,8 +20,11 @@ public class Medkit : MonoBehaviour
     {
         if(other.TryGetComponent(out PlayerResources _pr))
         {
-            _pr.ChangeHealth(containsHealth);
-            Destroy(gameObject);
+            if (!_pr.IsFullHealth())
+            {
+                _pr.ChangeHealth(containsHealth);
+                Destroy(gameObject);
+            }
         }
     }
 

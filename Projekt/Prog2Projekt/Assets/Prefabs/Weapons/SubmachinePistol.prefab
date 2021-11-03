@@ -110,12 +110,12 @@ MonoBehaviour:
   localPlayerPosOnCamera: {x: 0.344, y: -0.149, z: 0.483}
   localPlayerRotOnCameraEuler: {x: 0, y: 0, z: 0}
   isSecondary: 1
-  secondaryRechargeInterval: 0.2
+  secondaryRechargeInterval: 0.18
   ammoCost: 2
   fireInterval: 0.07
   projectileSpeed: 40
-  damage: 32
-  cost: 4000
+  damage: 34
+  cost: 7000
   projectile: {fileID: 5307188461605554704, guid: 835471f74a17a84448ac2d96e67ccb54, type: 3}
   projectileSpawn: {fileID: 4774807801384898830}
   pSystem: {fileID: 0}
@@ -207,7 +207,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5299350832576379943}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -267,7 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6947004578404537906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.521, z: 3.872}
+  m_LocalPosition: {x: 0, y: 0.63, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4886006498864627412}

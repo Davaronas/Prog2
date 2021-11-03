@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containsAmmo: 20
+  destroyTime: 30
 --- !u!114 &4065241278291939322
 MonoBehaviour:
   m_ObjectHideFlags: 0

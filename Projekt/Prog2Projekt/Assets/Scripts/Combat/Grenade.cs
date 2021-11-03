@@ -7,7 +7,10 @@ public class Grenade : MonoBehaviour
     [SerializeField] private int damage = 100;
     [SerializeField] private float explosionTime = 5f;
     [SerializeField] private float explosionRadius = 10f;
+    [Space]
     [SerializeField] private GameObject explosionEffect = null;
+    [SerializeField] private float explosionLiveTime = 0.2f;
+   
     void Start()
     {
         Invoke(nameof(Explode), explosionTime);
@@ -25,7 +28,9 @@ public class Grenade : MonoBehaviour
     {
         if (explosionEffect)
         {
-            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            GameObject _explosion = Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            LeanTween.scale(_explosion, new Vector3(explosionRadius * 2, explosionRadius * 2, explosionRadius * 2),explosionLiveTime);
+            Destroy(_explosion, explosionLiveTime);
         }
 
 
@@ -43,8 +48,13 @@ public class Grenade : MonoBehaviour
             _hb_out = null;
         }
 
-
+        
 
         Destroy(gameObject);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }

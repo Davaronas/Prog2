@@ -15,15 +15,15 @@ public class Perk : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         public static int Endurance4_DamageReduction = 66;
         public static int Endurance5_DamageReduction = 80;
 
-        public static int Ammunition1_AmmoSpareChance = 15;
+        public static int Ammunition1_AmmoSpareChance = 20;
         public static int Ammunition2_AmmoPickedUpPlus = 20;
-        public static int Ammunition3_AmmoSpareChance = 30;
+        public static int Ammunition3_AmmoSpareChance = 40;
         public static int Ammunition4_AmmoPickedUpPlus = 40;
-        public static int Ammunition5_AmmoSpareChance = 45;
+        public static int Ammunition5_AmmoSpareChance = 60;
 
 
-        public static int Mobility2_MovementSpeed = 1;
-        public static int Mobility4_MovementSpeed = 2;
+        public static int Mobility2_MovementSpeed = 2;
+        public static int Mobility4_MovementSpeed = 4;
 
 
         public static string GetPerkName(PerkType _pt, int _l)
@@ -182,6 +182,9 @@ public class Perk : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public static Action<string, string, string> OnPerkHoverGlobal;
     public static Action OnPerkHoverEndGlobal;
+
+    public static Action<string> OnSimpleHoverGlobal;
+    public static Action OnSimpleHoverEndGlobal;
 
 
 

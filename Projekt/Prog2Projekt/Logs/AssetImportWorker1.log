@@ -1,0 +1,809 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.3f1 (4bef613afd59) revision 4976481'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1288; Version 2009; 64bit' Language: 'hu' Physical Memory: 16239 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\unityhub\2021.1.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+58749
+Successfully changed project path to: E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
+E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 140.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.3f1 (4bef613afd59)
+[Subsystems] Discovering subsystems at path E:/unityhub/2021.1.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Davaronas/Unity project/Projekt/Projekt/Projekt/Prog2Projekt/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     4043 MB
+    Driver:   30.0.14.7196
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'E:/unityhub/2021.1.3f1/Editor/Data/Managed'
+Mono path[1] = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/unityhub/2021.1.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/unityhub/2021.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001485 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 141.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.137 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003898 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 144.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.497 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4297 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.0 MB.
+System memory in use after: 171.5 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 4724.
+Total: 5.586700 ms (FindLiveObjects: 0.715400 ms CreateObjectMapping: 0.529000 ms MarkObjects: 3.072700 ms  DeleteObjects: 1.267800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340d682dff62cdfc7c8883e925df41bd') in 0.321432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.748336 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4477e035590f37c732f64b0e1acc2efc') in 0.010291 seconds 
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.7 MB.
+System memory in use after: 90.2 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 4795.
+Total: 5.442000 ms (FindLiveObjects: 0.548700 ms CreateObjectMapping: 0.232700 ms MarkObjects: 3.438600 ms  DeleteObjects: 1.220500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.572987 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ac99a3f0c30e45d57d6112e81b93ab') in 0.022325 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002892 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.184 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.2 MB.
+System memory in use after: 173.7 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4772.
+Total: 5.554200 ms (FindLiveObjects: 0.717700 ms CreateObjectMapping: 0.524900 ms MarkObjects: 3.076400 ms  DeleteObjects: 1.233700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.024270 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd165277fe8314852cb58efea2ca16e01') in 0.159751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.175614 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d26c35301ea111be51fa4c4b0f11fb3') in 0.007977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.003589 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48b4c76e26c5d8b08cd5acd849c9638') in 0.011477 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003024 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.123 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.4 MB.
+System memory in use after: 173.9 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4811.
+Total: 7.581200 ms (FindLiveObjects: 0.480200 ms CreateObjectMapping: 0.234600 ms MarkObjects: 4.406800 ms  DeleteObjects: 2.457700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.773941 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86396dcbea2e244e802352d7aa5aedbb') in 0.162260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.364461 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1923995d468e581c2edc437abdff37e') in 0.009370 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.162 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.5 MB.
+System memory in use after: 174.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4850.
+Total: 5.319200 ms (FindLiveObjects: 0.542500 ms CreateObjectMapping: 0.268700 ms MarkObjects: 2.959000 ms  DeleteObjects: 1.547800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.037971 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6693e79359de0b0f988b1aae06721acc') in 0.152707 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004324 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.164 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.5 MB.
+System memory in use after: 174.0 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4889.
+Total: 4.552800 ms (FindLiveObjects: 0.470100 ms CreateObjectMapping: 0.192500 ms MarkObjects: 2.689600 ms  DeleteObjects: 1.199200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.409479 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958972e42159c12a19ffec49210970a4') in 0.170450 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003370 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.216 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.6 MB.
+System memory in use after: 174.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4928.
+Total: 4.576000 ms (FindLiveObjects: 0.376800 ms CreateObjectMapping: 0.179300 ms MarkObjects: 2.792000 ms  DeleteObjects: 1.226800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.687412 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb6ba41ff5f82786d00ab48460057f1') in 0.169917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.401596 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdee152074042d95f3b472d346848af6') in 0.010228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.192143 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255a432038b208bcd853f57f95383eb9') in 0.011965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.797598 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ef4579f267ebcdfbfaab0394448523') in 0.009951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.391177 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7deadb8b03ad8c8f4d1fcf9132f29349') in 0.009899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.157332 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae26b94bf87b0666e4a9b93ddd209c88') in 0.010128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.839295 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fda481d099262a94cb6a3af988e1dbe') in 0.009785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.130727 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b81e80ea441805735a17cb5e694e982') in 0.008777 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003668 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.216 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.8 MB.
+System memory in use after: 174.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 4967.
+Total: 4.935500 ms (FindLiveObjects: 0.401000 ms CreateObjectMapping: 0.186900 ms MarkObjects: 2.847900 ms  DeleteObjects: 1.498000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.060861 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec17843ada2f23bd421d1b9fd00ad998') in 0.175142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.492769 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9d177b13ee4af289a7f98037ee33eb') in 0.009557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.434603 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe186cf56cfe494d3df8b45da491b4bf') in 0.009146 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002997 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.143 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.7 MB.
+System memory in use after: 174.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5006.
+Total: 4.418200 ms (FindLiveObjects: 0.364900 ms CreateObjectMapping: 0.182500 ms MarkObjects: 2.655900 ms  DeleteObjects: 1.213900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.510579 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f6cb28f7b07b2d8279e8a707a95e0d') in 0.157172 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002976 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.111 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.8 MB.
+System memory in use after: 174.3 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5045.
+Total: 4.743000 ms (FindLiveObjects: 0.370200 ms CreateObjectMapping: 0.176600 ms MarkObjects: 2.904100 ms  DeleteObjects: 1.290900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.306036 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02af34ce8d683758eced9a266d3534b3') in 0.164981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.175754 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80edb58e26db86b0a2b6a138bf0471f1') in 0.009185 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003528 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.114 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.9 MB.
+System memory in use after: 174.3 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5084.
+Total: 5.241300 ms (FindLiveObjects: 0.404500 ms CreateObjectMapping: 0.197600 ms MarkObjects: 3.385500 ms  DeleteObjects: 1.252200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.817535 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29b2f77b7a49c929389da1194f7ed1e') in 0.157290 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003168 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.132 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.0 MB.
+System memory in use after: 174.5 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5123.
+Total: 4.930500 ms (FindLiveObjects: 0.344300 ms CreateObjectMapping: 0.169600 ms MarkObjects: 3.203800 ms  DeleteObjects: 1.211800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.462266 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd972acce0879c025572c9d8ad0343a6') in 0.173221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.497516 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c477be7191514a29a407d7bbfaafff') in 0.010857 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003172 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.111 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.0 MB.
+System memory in use after: 174.5 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5162.
+Total: 4.766000 ms (FindLiveObjects: 0.666500 ms CreateObjectMapping: 0.181600 ms MarkObjects: 2.756600 ms  DeleteObjects: 1.160100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.011559 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1547ee16fb6eeddd6afc00d34d9dabfb') in 0.156347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.553172 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a892c1ec55857a8a5915139057b84fb') in 0.013216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.201439 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af5ebafa07b0205fd563ef97adc2611') in 0.011063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.752852 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9044ac086940830b825a2ad469ae934b') in 0.010786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 83.469731 seconds.
+  path: Assets/Prefabs/Weapons/SubmachinePistol.prefab
+  artifactKey: Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/SubmachinePistol.prefab using Guid(194d8fb5da4fb314c8e00d49b4fb4e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a671c1171b6fc171a579726b0355f2f') in 0.013132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.091936 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d7e9ba0a5c1d621ff42ece1cf7ee6d') in 0.009460 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003388 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.196 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.0 MB.
+System memory in use after: 174.6 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5202.
+Total: 5.275400 ms (FindLiveObjects: 0.626100 ms CreateObjectMapping: 0.241000 ms MarkObjects: 3.235900 ms  DeleteObjects: 1.171300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003707 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.184 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.1 MB.
+System memory in use after: 174.6 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5205.
+Total: 4.629700 ms (FindLiveObjects: 0.362000 ms CreateObjectMapping: 0.181200 ms MarkObjects: 2.820900 ms  DeleteObjects: 1.263700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.359198 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e245c0b84e8ff53f3a2e9d3e75a35f9f') in 0.195384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.062929 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086ca2df3170d760110f8f12d7a86fe0') in 0.008888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.085234 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '743efc43ee3ad24bd6645a9c72c7a40c') in 0.008566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.490330 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '608e3bea710a80a6f8a1a2e83a55a33a') in 0.008218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.069660 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a9e4232e391f4a5f1ee137ac9fb27d') in 0.008589 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003304 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.231 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 174.7 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5244.
+Total: 4.984600 ms (FindLiveObjects: 0.382900 ms CreateObjectMapping: 0.177500 ms MarkObjects: 3.186200 ms  DeleteObjects: 1.237000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.154732 seconds.
+  path: Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab
+  artifactKey: Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/Player/ThrowingStarProjectile.prefab using Guid(409c1511ccdc4e849bca77f4f8b3504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c7ab17c1179f244c2e5f4366be7e24') in 0.153644 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.163 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.2 MB.
+System memory in use after: 174.7 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5283.
+Total: 5.506500 ms (FindLiveObjects: 0.524700 ms CreateObjectMapping: 0.219900 ms MarkObjects: 3.513300 ms  DeleteObjects: 1.247000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.184107 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a5236fb87079241993c686b2b904c9') in 0.159908 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003079 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.216 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 174.8 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5322.
+Total: 5.136400 ms (FindLiveObjects: 0.520500 ms CreateObjectMapping: 0.214800 ms MarkObjects: 3.158300 ms  DeleteObjects: 1.241600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003511 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.163 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 174.8 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5325.
+Total: 9.839400 ms (FindLiveObjects: 0.613200 ms CreateObjectMapping: 0.264300 ms MarkObjects: 7.702400 ms  DeleteObjects: 1.257900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 141.561040 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66c9ba20723776dfca4bf31c873fb9b') in 0.184883 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004017 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.474 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.3 MB.
+System memory in use after: 174.8 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5364.
+Total: 6.712900 ms (FindLiveObjects: 0.401800 ms CreateObjectMapping: 0.196100 ms MarkObjects: 4.509300 ms  DeleteObjects: 1.604300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006024 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.192 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 174.9 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5367.
+Total: 6.184000 ms (FindLiveObjects: 0.762100 ms CreateObjectMapping: 0.422400 ms MarkObjects: 3.583100 ms  DeleteObjects: 1.415100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.914598 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5379a7074e3a0a0fdb44a334502586e2') in 0.174488 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003302 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.128 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 174.9 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5406.
+Total: 5.484000 ms (FindLiveObjects: 0.492200 ms CreateObjectMapping: 0.188000 ms MarkObjects: 3.550700 ms  DeleteObjects: 1.251700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 173.357022 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb3ff13b7b57e9b395d8309f3c43cbc4') in 0.159407 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003069 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.186 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.7 MB.
+System memory in use after: 175.3 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5445.
+Total: 8.349600 ms (FindLiveObjects: 0.727700 ms CreateObjectMapping: 0.287500 ms MarkObjects: 5.513200 ms  DeleteObjects: 1.819900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.160177 seconds.
+  path: Assets/Prefabs/Weapons/ThrowingStar.prefab
+  artifactKey: Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/ThrowingStar.prefab using Guid(619844fee3bf191458b3e88e84cec69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830936e711b02c9cdd2b4d5cf0c53289') in 0.185209 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003133 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.198 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.7 MB.
+System memory in use after: 175.4 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 5484.
+Total: 5.507000 ms (FindLiveObjects: 0.433400 ms CreateObjectMapping: 0.234200 ms MarkObjects: 3.427600 ms  DeleteObjects: 1.410200 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

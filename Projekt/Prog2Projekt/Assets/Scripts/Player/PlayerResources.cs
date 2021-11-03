@@ -22,7 +22,7 @@ public class PlayerResources : MonoBehaviour
     private int mainAmmo = 0;
     private int secondaryAmmo = 0;
 
-    private int money = 5000000;
+    private int money =  5000000;
 
     private float jetpackEnergy = 0;
 
@@ -212,6 +212,30 @@ public class PlayerResources : MonoBehaviour
     public int GetMoney()
     {
         return money;
+    }
+
+    public bool IsBothAmmoTypeFull()
+    {
+        if(mainAmmo == baseMainAmmo && secondaryAmmo == baseSecondaryAmmo)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool IsFullHealth()
+    {
+        if(health == baseHealth)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
 

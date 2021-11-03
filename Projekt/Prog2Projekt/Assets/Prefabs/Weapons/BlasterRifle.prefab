@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3857500967735385041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0181, z: 0.5067}
+  m_LocalPosition: {x: 0, y: 0.0181, z: -0.136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2234069971855481224}
@@ -259,8 +259,8 @@ MonoBehaviour:
   ammoCost: 5
   fireInterval: 0.35
   projectileSpeed: 80
-  damage: 40
-  cost: 1800
+  damage: 57
+  cost: 1500
   projectile: {fileID: 5307188461605554704, guid: 672ead84ceef2f247a5a2e2987aa1db4, type: 3}
   projectileSpawn: {fileID: 7905057842251640337}
   pSystem: {fileID: 0}

@@ -22,8 +22,8 @@ public class RoundManager : MonoBehaviour
        
 
         enemyManager = GetComponent<EnemyManager>();
-     //  Invoke(nameof(FirstWaveDisplay), 1f); // ez azért kell mert az elsõ néhány frame-et nem szaggatva láthatjuk és a kiirás is rosszul fog kinézni
-        //Invoke(nameof(StartRound), timeDelay);
+       Invoke(nameof(FirstWaveDisplay), 1f); // ez azért kell mert az elsõ néhány frame-et nem szaggatva láthatjuk és a kiirás is rosszul fog kinézni
+       Invoke(nameof(StartRound), timeDelay);
 
     }
 
@@ -33,6 +33,7 @@ public class RoundManager : MonoBehaviour
     }
 
    
+    
 
     private int GetPowerPoint(int _round)
     {
@@ -67,5 +68,12 @@ public class RoundManager : MonoBehaviour
     {
        
         enemyManager.SpawnEnemies(GetPowerPoint(roundNumber), GetPowerLevel(roundNumber));
+    }
+
+
+
+    public int GetCurrentWaveNumber()
+    {
+        return roundNumber;
     }
 }

@@ -14,7 +14,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private Text perkTooltip_name = null;
     [SerializeField] private Text perkTooltip_content = null;
     [SerializeField] private Text perkTooltip_cost = null;
-    [SerializeField] private float perkTooltip_MinusY = 100f;
+    [SerializeField] private Vector3 perkTooltip_MinusY = Vector3.zero;
     [Space]
     [SerializeField] private RectTransform weaponTooltip = null;
     [SerializeField] private Text weaponTooltip_name = null;
@@ -24,8 +24,12 @@ public class Shop : MonoBehaviour
     [SerializeField] private Image weaponTooltip_fireRate = null;
     [SerializeField] private Image weaponTooltip_projectileSpeed = null;
     [SerializeField] private Image weaponTooltip_damage = null;
-    [SerializeField] private float weaponTooltip_MinusY = 100f;
+    [SerializeField] private Vector3 weaponTooltip_MinusY = Vector3.zero;
     [SerializeField] private BuyConfirmPanel buyConfirmPanel = null;
+    [Space]
+    [SerializeField] private RectTransform simpleTooltip = null;
+    [SerializeField] private Text simpleTooltipText = null;
+    [SerializeField] private Vector3 simpleTooltip_MinusY = Vector3.zero;
 
 
     public Action OnShopOpened;
@@ -37,10 +41,11 @@ public class Shop : MonoBehaviour
 
    private bool isPerkTooltipActive = false;
     private bool isWeaponTooltipActive = false;
+    private bool isSimpleTooltipActive = false;
 
 
-    private Vector3 minusTooltipVector_ = Vector3.zero;
     WeaponData.WeaponInfo weaponInfo_;
+
 
 
 
@@ -48,7 +53,6 @@ public class Shop : MonoBehaviour
     {
         shopPanel.SetActive(false);
         perkTooltip.gameObject.SetActive(false);
-        minusTooltipVector_ = new Vector3(0, -perkTooltip_MinusY, 0);
 
         buyConfirmPanel = FindObjectOfType<BuyConfirmPanel>();
         buyConfirmPanel.gameObject.SetActive(false);
@@ -61,7 +65,8 @@ public class Shop : MonoBehaviour
         InventoryWeapon.OnWeaponHoverGlobal += OnWeaponHoverCallback;
         InventoryWeapon.OnWeaponHoverEndGlobal += OnWeaponHoverEndCallback;
 
-
+       Perk.OnSimpleHoverGlobal += OnSimpleHoverCallback;
+        Perk.OnSimpleHoverEndGlobal += OnSimpleHoverEndCallback;
     }
 
     private void OnDestroy()
@@ -71,6 +76,9 @@ public class Shop : MonoBehaviour
 
         InventoryWeapon.OnWeaponHoverGlobal -= OnWeaponHoverCallback;
         InventoryWeapon.OnWeaponHoverEndGlobal -= OnWeaponHoverEndCallback;
+
+        Perk.OnSimpleHoverGlobal -= OnSimpleHoverCallback;
+        Perk.OnSimpleHoverEndGlobal -= OnSimpleHoverEndCallback;
     }
 
     public void OpenShop() // round ends
@@ -89,14 +97,19 @@ public class Shop : MonoBehaviour
 
     private void Update()
     {
-        if(isPerkTooltipActive)
+        if (isPerkTooltipActive)
         {
-            perkTooltip.position = Input.mousePosition + minusTooltipVector_;
+            perkTooltip.position = Input.mousePosition + perkTooltip_MinusY;
         }
 
-        if(isWeaponTooltipActive)
+        if (isWeaponTooltipActive)
         {
-            weaponTooltip.position = Input.mousePosition + minusTooltipVector_;
+            weaponTooltip.position = Input.mousePosition + weaponTooltip_MinusY;
+        }
+
+        if (isSimpleTooltipActive)
+        {
+            simpleTooltip.position = Input.mousePosition + simpleTooltip_MinusY;
         }
     }
 
@@ -146,6 +159,21 @@ public class Shop : MonoBehaviour
     private void OnWeaponHoverEndCallback()
     {
         weaponTooltip.gameObject.SetActive(false);
+    }
+
+
+    private void OnSimpleHoverCallback(string _text)
+    {
+        print("callback");
+
+        simpleTooltipText.text = _text;
+        simpleTooltip.gameObject.SetActive(true);
+        isSimpleTooltipActive = true;
+    }
+
+    private void OnSimpleHoverEndCallback()
+    {
+        simpleTooltip.gameObject.SetActive(false);
     }
 
 }

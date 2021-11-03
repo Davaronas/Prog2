@@ -922,6 +922,7 @@ MonoBehaviour:
   damageIndicatorSpawn: {fileID: 0}
   damageIndicatorPrefab: {fileID: 0}
   moneyText: {fileID: 0}
+  grenadeText: {fileID: 0}
 --- !u!114 &2889353748659984287
 MonoBehaviour:
   m_ObjectHideFlags: 0

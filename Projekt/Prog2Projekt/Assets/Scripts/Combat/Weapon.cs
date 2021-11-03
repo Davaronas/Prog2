@@ -113,7 +113,12 @@ public class Weapon : MonoBehaviour
 
         Rigidbody _newProjectile = Instantiate(projectile, projectileSpawn.position, Quaternion.LookRotation(projectileSpawn.forward)).GetComponent<Rigidbody>();
         _newProjectile.AddForce(projectileSpawn.forward * projectileSpeed, ForceMode.VelocityChange);
-        _newProjectile.GetComponent<Projectile>().SetDamage(damage);
+
+        Projectile _p;
+        if (_newProjectile.TryGetComponent(out _p))
+        {
+            _newProjectile.GetComponent<Projectile>().SetDamage(damage);
+        }
 
         StartCoroutine(FireCooldown());
 

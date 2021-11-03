@@ -38,6 +38,7 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] private GameObject damageIndicatorPrefab = null;
     [Space]
     [SerializeField] private Text moneyText = null;
+    [SerializeField] private Text grenadeText = null;
 
 
 
@@ -224,8 +225,11 @@ public class PlayerUI : MonoBehaviour
                 dash2Display.color = dashInactiveColor;
             }
         }
+    }
 
-     
+    public void Grenades(int _current, int _max)
+    {
+        grenadeText.text = _current + " / " + _max;
     }
 
     public void Money(int _amount)

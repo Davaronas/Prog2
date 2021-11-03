@@ -16,6 +16,7 @@ public class PlayerEquipment : MonoBehaviour
 
 
     private PlayerResources playerResources = null;
+    private PlayerUI playerUI = null;
     private int grenades = 0;
     private Weapon secondaryWeapon = null;
     private Weapon mainWeapon = null;
@@ -24,14 +25,25 @@ public class PlayerEquipment : MonoBehaviour
     public Action<Transform, Transform> OnWeaponEquipped;
 
 
-
+    private Shop shop = null;
 
     //  PLAYER RESOURCES START NEEDS TO RUN BEFORE PLAYER EQUIPMENT START (EquipSecondary)
 
     void Start()
     {
         playerResources = GetComponent<PlayerResources>();
+        playerUI = GetComponent<PlayerUI>();
+        shop = FindObjectOfType<Shop>();
         EquipSecondary(defaultPistol);
+
+        shop.OnShopOpened += SwitchToMain; // váltsunk át a fõ fegyverünkre ha van, hogy lássuk mennyi lõszerünk van és kell e venni
+
+        playerUI.Grenades(grenades, baseGrenades);
+    }
+
+    private void OnDestroy()
+    {
+        shop.OnShopOpened -= SwitchToMain;
     }
 
 
@@ -170,6 +182,8 @@ public class PlayerEquipment : MonoBehaviour
         Rigidbody _rb = Instantiate(grenadePrefab, grenadeThrowPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
         _rb.AddForce(playerCam.forward * grenadeThrowForce, ForceMode.VelocityChange);
         grenades--;
+
+        playerUI.Grenades(grenades, baseGrenades);
     }
 
 
@@ -179,6 +193,20 @@ public class PlayerEquipment : MonoBehaviour
         if(grenades < baseGrenades )
         {
             grenades++;
+
+            playerUI.Grenades(grenades, baseGrenades);
+        }
+    }
+
+    public bool AreGrenadesFull()
+    {
+        if(grenades == baseGrenades)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

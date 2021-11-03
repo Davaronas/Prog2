@@ -232,11 +232,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ce7c6534cf5274985f8f5a9cf33ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropChanceMedkit: 50
-  dropChanceAmmo: 70
+  dropChanceMedkit: 40
+  dropChanceAmmo: 50
   dropHealth: 10
   dropAmmo: 15
-  moneyDrop: 40
+  moneyDrop: 50
   medkit: {fileID: 375178021728833297, guid: 814bef78fbe9b9541869315635cff03e, type: 3}
   ammo: {fileID: 3845282992196689931, guid: 376a8400e846fdf49a411b394c921e9d, type: 3}
 --- !u!1 &2050542314333922447
