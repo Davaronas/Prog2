@@ -452,3 +452,15 @@ Két új fegyver, egy másodlagos géppisztoly, és egy mesterlövész puska. Gameplay/
 Gránát robbanás effekt.
 Minimum erõ szinteket lehet bevezetem, kezdõ ellenfelek ne jöjjenek késõbbi körökben.
 
+Beleraktam a játékba két új ellenfelet, mind a kettõ azt a célt szolgálja hogy jobban oda kelljen figyelni.
+Az egyik gránátokat dobál a játékosra, a gránátok páncél nélkül tele életrõl megölik a játékost, ha nem vesszük
+észre akár egy hiba is halált jelent.
+Illetve egy guruló gömböt ami odasiet a játékoshoz és amint odaért felrobbatnja magát, nagyon gyors,
+kevés élete van.
+
+2021. 11. 11
+
+Importáltam az új pályát javítva meg több tereptárggyal. Világítás még néhol rossz, meg hiányzik egy fal.
+Tesztelgetem a játékmentet itt is.
+
+

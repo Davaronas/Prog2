@@ -28,7 +28,7 @@ public class EnemyMovement : MonoBehaviour
     private void Start()
     {
         //DEV
-       // Initialize(transform.position + (Vector3.forward * 3));
+        //Initialize(transform.position + (Vector3.forward * 3));
     }
 
     public void Initialize(Vector3 _firstMovementPosition)

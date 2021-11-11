@@ -901,7 +901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc108d8398cf20f49b5956cd342a64e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: 0
+  ui: 1
   healthBar: {fileID: 0}
   ammoBar: {fileID: 0}
   jetpackBar: {fileID: 0}
