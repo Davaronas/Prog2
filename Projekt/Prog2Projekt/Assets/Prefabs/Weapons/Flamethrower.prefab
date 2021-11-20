@@ -147,12 +147,13 @@ MonoBehaviour:
   pSystem: {fileID: 0}
   raycastLayerMask:
     serializedVersion: 2
-    m_Bits: 2049
+    m_Bits: 6145
   model: {fileID: 2965186004229415563}
   modelAnimationEndTransform: {fileID: 0}
   animationSpeed: 1
   rightHandIkPos: {fileID: 2005481657193820398}
   leftHandIkPos: {fileID: 3828052227387006719}
+  isEquipped: 0
 --- !u!1 &4700487560824309832
 GameObject:
   m_ObjectHideFlags: 0

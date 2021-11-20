@@ -18,6 +18,8 @@ public class PlayerResources : MonoBehaviour
     private PlayerEquipment playerEquipment = null;
     private PlayerModifiers playerModifiers = null;
 
+    private RoundManager roundManager = null;
+
     private int health = 0;
     private int mainAmmo = 0;
     private int secondaryAmmo = 0;
@@ -30,6 +32,7 @@ public class PlayerResources : MonoBehaviour
     private HitBroadcast hitBroadcast = null;
 
     private Coroutine rechargeJetpack_ = null;
+
 
     //  PLAYER RESOURCES START NEEDS TO RUN BEFORE PLAYER EQUIPMENT START (EquipSecondary)
 
@@ -52,6 +55,8 @@ public class PlayerResources : MonoBehaviour
 
         playerEquipment = GetComponent<PlayerEquipment>();
         playerModifiers = GetComponent<PlayerModifiers>();
+
+        roundManager = FindObjectOfType<RoundManager>();
         
     }
 
@@ -94,7 +99,7 @@ public class PlayerResources : MonoBehaviour
 
         if(health <= 0)
         {
-            // die
+            roundManager.PlayerDied();
         }
     }
 

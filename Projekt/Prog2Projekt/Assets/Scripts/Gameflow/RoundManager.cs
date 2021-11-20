@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class RoundManager : MonoBehaviour
@@ -17,6 +18,9 @@ public class RoundManager : MonoBehaviour
    
     void Start()
     {
+      //  Application.targetFrameRate = 60;
+
+
         shop = FindObjectOfType<Shop>();
         waveDisplay = FindObjectOfType<WaveDisplay>();
        
@@ -62,6 +66,7 @@ public class RoundManager : MonoBehaviour
         shop.CloseShop();
         waveDisplay.Display(roundNumber);
         Invoke(nameof(StartRound), timeDelay);
+        PlayerPrefs.SetInt("RecordWave", roundNumber - 1);
     }
 
     private void StartRound()
@@ -75,5 +80,15 @@ public class RoundManager : MonoBehaviour
     public int GetCurrentWaveNumber()
     {
         return roundNumber;
+    }
+
+    public void PlayerDied()
+    {
+        PlayerPrefs.SetInt("CurrentWave", roundNumber - 1);
+        if(roundNumber - 1 >= PlayerPrefs.GetInt("RecordWave",0))
+        {
+            PlayerPrefs.SetInt("RecordWave", roundNumber - 1);
+        }
+        SceneManager.LoadScene(0);
     }
 }

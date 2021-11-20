@@ -29,6 +29,8 @@ public class Weapon : MonoBehaviour
     public Transform rightHandIkPos;
     public Transform leftHandIkPos;
 
+    [HideInInspector] public bool isEquipped = false;
+
     private Vector3 originalModelPosition = Vector3.zero;
     private Quaternion originalModelRotation = Quaternion.identity;
     private Coroutine animationCoroutine = null;
@@ -65,9 +67,13 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
-        if(Physics.Raycast(projectileSpawn.position,projectileSpawn.forward,out ray_,Mathf.Infinity,raycastLayerMask))
+        if (isEquipped)
         {
-            playerUI.Crosshair(ray_.point,ray_.collider.GetComponent<HitBroadcast>());
+
+            if (Physics.Raycast(projectileSpawn.position, projectileSpawn.forward, out ray_, Mathf.Infinity, raycastLayerMask))
+            {
+                playerUI.Crosshair(ray_.point, ray_.collider.GetComponent<HitBroadcast>());
+            }
         }
      
       

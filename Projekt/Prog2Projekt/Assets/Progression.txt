@@ -19,6 +19,9 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -If the shop is opened while you're using your jetpack, you'll keep flying after you quit*
 -Enemies attack once when they reach their spawn target position*
 -Grenade explosion*
+-Should not be able buy/pick up health and ammo when they are full*
+-Map*
+-Grenadier enemy*
 
 -Enemy shoot predicted position of player calculated from player velocity and distance to player (like in oblivion) *_
 
@@ -28,19 +31,16 @@ nem minden teendõ van ide leírva, csak azok amiket félek hogy elfelejtek/kimarad
 -Health, ammo, grenade price
 -Grenade launcher ?
 
--Enemy drops should be spawned at the same height
--Should not be able buy/pick up health and ammo when they are full
+-Enemy drops should be spawned at the same height ?
 -When the shop is active gravity is blocked  ?
 -Rocket launcher ?
--Enemy projectiles sometimes throw player in the air for a split second, including melee
--Sounds
--Map
+-Enemy projectiles sometimes throw player in the air for a split second, including melee ?
+-Sounds 
 -Spider like enemy with 8 legs that use IK for moving the legs, and their projectiles slow the 
 	player down. Lot of distance check with the way I would
 	like to do it, could cost performance. ?
 -Options menu player arms material ?
 -Options menu hud type: helmet or simple
--Grenadier enemy
 
 
 
@@ -462,5 +462,10 @@ kevés élete van.
 
 Importáltam az új pályát javítva meg több tereptárggyal. Világítás még néhol rossz, meg hiányzik egy fal.
 Tesztelgetem a játékmentet itt is.
+
+2021. 11. 17 
+
+kész van a pálya teljesen, tesztelgetések után csináltam egy pár változtatást, javítást.
+A világítás még mindig nem a legszebb.
 
 

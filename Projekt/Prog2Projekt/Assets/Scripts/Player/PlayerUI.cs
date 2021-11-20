@@ -49,6 +49,16 @@ public class PlayerUI : MonoBehaviour
 
     private void Awake()
     {
+
+        if(PlayerPrefs.GetInt("HUD",1) == 1)
+        {
+            ui = TypeUI.Helmet;
+        }
+        else
+        {
+            ui = TypeUI.Simplistic;
+        }
+
         crosshairImage = crosshair.GetComponent<Image>();
         enemyHealthbarBg.gameObject.SetActive(false);
 

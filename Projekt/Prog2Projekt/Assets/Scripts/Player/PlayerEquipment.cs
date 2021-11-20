@@ -56,12 +56,14 @@ public class PlayerEquipment : MonoBehaviour
                 if(mainWeapon == equippedWeapon)
                 {
                     mainWeapon.HideModel();
+                    mainWeapon.isEquipped = false;
                 }
             }
 
             secondaryWeapon.ShowModel();
             playerResources.ChangeSecondaryAmmo(0,true); // csak ui frissités miatt
             equippedWeapon = secondaryWeapon;
+            equippedWeapon.isEquipped = true;
 
             OnWeaponEquipped?.Invoke(equippedWeapon.rightHandIkPos, equippedWeapon.leftHandIkPos);
 
@@ -77,12 +79,14 @@ public class PlayerEquipment : MonoBehaviour
                 if (secondaryWeapon == equippedWeapon)
                 {
                     secondaryWeapon.HideModel();
+                    secondaryWeapon.isEquipped = false;
                 }
             }
 
             mainWeapon.ShowModel();
             playerResources.ChangeMainAmmo(0,true); // csak ui frissités miatt
             equippedWeapon = mainWeapon;
+            equippedWeapon.isEquipped = true;
 
             OnWeaponEquipped?.Invoke(equippedWeapon.rightHandIkPos, equippedWeapon.leftHandIkPos);
 
@@ -114,6 +118,7 @@ public class PlayerEquipment : MonoBehaviour
         if(secondaryWeapon == equippedWeapon)
         {
             secondaryWeapon.HideModel();
+            secondaryWeapon.isEquipped = false;
         }
 
         mainWeapon = Instantiate(_main, transform.position, Quaternion.identity, playerCam).GetComponent<Weapon>();
@@ -121,6 +126,7 @@ public class PlayerEquipment : MonoBehaviour
         mainWeapon.transform.localRotation = Quaternion.Euler(secondaryWeapon.localPlayerRotOnCameraEuler);
 
         equippedWeapon = mainWeapon;
+        equippedWeapon.isEquipped = true;
 
         playerResources.ChangeMainAmmo(0,true); // csak ui frissités miatt
 
@@ -140,6 +146,7 @@ public class PlayerEquipment : MonoBehaviour
             if(mainWeapon == equippedWeapon)
             {
                 mainWeapon.HideModel();
+                mainWeapon.isEquipped = false;
             }
         }
 
@@ -148,6 +155,7 @@ public class PlayerEquipment : MonoBehaviour
         secondaryWeapon.transform.localRotation = Quaternion.Euler(secondaryWeapon.localPlayerRotOnCameraEuler);
 
         equippedWeapon = secondaryWeapon;
+        equippedWeapon.isEquipped = true;
  
         playerResources.ChangeSecondaryAmmo(0,true); // csak ui frissités miatt
 

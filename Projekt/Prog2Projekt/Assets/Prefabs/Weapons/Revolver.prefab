@@ -267,9 +267,10 @@ MonoBehaviour:
   pSystem: {fileID: 0}
   raycastLayerMask:
     serializedVersion: 2
-    m_Bits: 2049
+    m_Bits: 6145
   model: {fileID: 340521321809655879}
   modelAnimationEndTransform: {fileID: 5784186695567233338}
   animationSpeed: 20
   rightHandIkPos: {fileID: 7011781374210303390}
   leftHandIkPos: {fileID: 6571542417341742191}
+  isEquipped: 0
