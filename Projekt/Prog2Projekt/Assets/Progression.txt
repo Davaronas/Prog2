@@ -468,4 +468,11 @@ Tesztelgetem a játékmentet itt is.
 kész van a pálya teljesen, tesztelgetések után csináltam egy pár változtatást, javítást.
 A világítás még mindig nem a legszebb.
 
+2021. 11. 20
+
+Menüt befejeztem, lehet állítani a HUD típust, kiirja a rekordunkat.
+
+Kész a projekt, még hangok kellenének de igazából programozás szempontjából egy sorok, viszont
+hangokat keresni hozzá/készíteni sok idõ.
+
 
