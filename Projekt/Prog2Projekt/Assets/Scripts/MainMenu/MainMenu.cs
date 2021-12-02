@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
 
+        Cursor.lockState = CursorLockMode.None;
 
         HUD_dropdown.ClearOptions();
         List<Dropdown.OptionData> _options = new List<Dropdown.OptionData>();

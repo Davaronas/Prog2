@@ -24,7 +24,7 @@ public class PlayerResources : MonoBehaviour
     private int mainAmmo = 0;
     private int secondaryAmmo = 0;
 
-    private int money =  5000000;
+    private int money =  0;
 
     private float jetpackEnergy = 0;
 
